@@ -8,7 +8,7 @@ entity ID_selector is
         clk:    in std_logic;
         state:  in std_logic;
         sw:     in std_logic_vector(2 downto 0);
-        ID:     out std_logic_vector(2 downto 0) := "000"
+        ID:     out std_logic_vector(3 downto 0) := "0000"
     );
 end ID_selector;
 
@@ -18,7 +18,7 @@ begin
     begin
         if (rising_edge(clk)) then
             if (state = '1') then
-                ID <= sw;
+                ID <= "0"&sw;
             end if;
         end if;
     end process;
