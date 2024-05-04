@@ -7,6 +7,7 @@ entity state_init is
     Port (
         clk:        in std_logic;
         sm_state:   in std_logic_vector(2 downto 0);
+
         leds:       out std_logic_vector(3 downto 0):= "0000";
         active:     out std_logic:= '0'
     );
@@ -14,13 +15,12 @@ end state_init;
 
 architecture Behavioral of state_init is
 
-    signal counter: integer:= 0;
     signal complete: std_logic:= '0';
-
     constant scale: integer:= 10;
 
 begin
     process(clk)
+    variable counter: integer:= 0;
     begin
         if rising_edge(clk) then
             if (to_integer(unsigned(sm_state)) = 2) then

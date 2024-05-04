@@ -7,6 +7,7 @@ use ieee.numeric_std.all;
 entity ram_reader is
     Port (
         ID: in std_logic_vector(3 downto 0);
+
         data: out std_logic_vector(31 downto 0)
     );
 end ram_reader;

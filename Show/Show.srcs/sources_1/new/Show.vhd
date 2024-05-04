@@ -10,8 +10,8 @@ entity LedShow is
         V:          in std_logic_vector (31 downto 0);
         sublevel:   in std_logic_vector (3 downto 0);
         led:        out std_logic_vector (3 DOWNTO 0);
-        active:     out std_logic:= '0
-        );
+        active:     out std_logic:= '0'
+    );
 end LedShow;
 
 architecture Behavioral of LedShow is
@@ -31,7 +31,7 @@ begin
     speed <= 125000000 when subleveli < th1 else
             62500000 when subleveli < th2 and subleveli > th1 else
             31250000 when subleveli < th3 and subleveli > th2 else
-            15625000 when subleveli > th3 
+            15625000 when subleveli > th3
             else 125000000;
 
     process(clk)
