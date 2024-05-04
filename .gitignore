@@ -18,6 +18,11 @@ state_wait/state_wait.sim/*
 state_wait/state_wait.ip_user_files/*
 state_wait/state_wait.runs/*
 
+state_init/state_init.cache/*
+state_init/state_init.sim/*
+state_init/state_init.ip_user_files/*
+state_init/state_init.runs/*
+
 Show/Show.cache/*
 Show/Show.sim/*
 Show/Show.ip_user_files/*

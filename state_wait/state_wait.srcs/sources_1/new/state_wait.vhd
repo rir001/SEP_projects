@@ -7,13 +7,13 @@ entity state_wait is
     Port (
         btn:        in std_logic_vector(3 downto 0);
         sm_state:   in std_logic_vector(2 downto 0);
-        active:     out std_logic
+        active:     out std_logic:= '0'
     );
 end state_wait;
 
 architecture Behavioral of state_wait is
 
-    signal pressed: std_logic;
+    signal pressed: std_logic:= '0';
 
 begin
     process(btn, sm_state)
