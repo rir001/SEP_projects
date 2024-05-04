@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DATA/2024/7mo semestre/SEP/Proyectos/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_ram_reader_0_0/ip/levels/sim/levels.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module levels
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DATA/2024/7mo semestre/SEP/Proyectos/memorice/memorice.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
