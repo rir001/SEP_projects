@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri May  3 23:35:03 2024
+# Process ID: 16016
+# Current directory: C:/Users/gusta/Documents/SEP_projects/ID_selector
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13212 C:\Users\gusta\Documents\SEP_projects\ID_selector\ID_selector.xpr
+# Log file: C:/Users/gusta/Documents/SEP_projects/ID_selector/vivado.log
+# Journal file: C:/Users/gusta/Documents/SEP_projects/ID_selector\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/gusta/Documents/SEP_projects/ID_selector/ID_selector.xpr
+update_compile_order -fileset sources_1
