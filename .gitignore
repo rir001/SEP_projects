@@ -1,12 +1,12 @@
 ID_selector/ID_selector.cache/*
 ID_selector/ID_selector.sim/*
-# ID_selector/ID_selector.ip_user_files/*
+ID_selector/ID_selector.ip_user_files/*
 
 ram_reader/ram_reader.cache/*
 ram_reader/ram_reader.sim/*
-# ram_reader/ram_reader.ip_user_files/*
-# ram_reader/ram_reader.runs/*
+ram_reader/ram_reader.ip_user_files/*
+ram_reader/ram_reader.runs/*
 
 memorice/memorice.cache/*
 memorice/memorice.sim/*
-# memorice/memorice.ip_user_files/*
+memorice/memorice.ip_user_files/*
