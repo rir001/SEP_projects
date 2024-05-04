@@ -19,7 +19,7 @@ architecture Behavioral of state_results is
     signal counter: integer:= 0;
     signal complete: std_logic:= '0';
 
-    signal scale: integer:= 10;
+    constant scale: integer:= 10;
 
 begin
     process(clk)
