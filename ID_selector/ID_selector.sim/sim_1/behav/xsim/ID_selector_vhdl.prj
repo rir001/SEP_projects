@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../ID_selector.srcs/sources_1/new/ID_selector.vhd" \
-
-# Do not sort compile order
-nosort
