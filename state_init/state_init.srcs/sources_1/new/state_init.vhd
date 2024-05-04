@@ -26,7 +26,7 @@ begin
             if (to_integer(unsigned(sm_state)) = 2) then
                 if (complete = '0') then
                     active <= '1';
-                    counter <= counter + 1;
+                    counter := counter + 1;
 
                     if    (counter < 1*scale) then
                         leds <= "0001";
@@ -47,7 +47,7 @@ begin
             else
                 active <= '0';
                 complete <= '0';
-                counter <= 0;
+                counter := 0;
             end if;
         end if;
     end process;
