@@ -17,3 +17,8 @@ state_wait/state_wait.cache/*
 state_wait/state_wait.sim/*
 state_wait/state_wait.ip_user_files/*
 state_wait/state_wait.runs/*
+
+Show/Show.cache/*
+Show/Show.sim/*
+Show/Show.ip_user_files/*
+Show/Show.runs/*
