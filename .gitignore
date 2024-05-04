@@ -27,3 +27,8 @@ Show/Show.cache/*
 Show/Show.sim/*
 Show/Show.ip_user_files/*
 Show/Show.runs/*
+
+state_results/state_results.cache/*
+state_results/state_results.sim/*
+state_results/state_results.ip_user_files/*
+state_results/state_results.runs/*
