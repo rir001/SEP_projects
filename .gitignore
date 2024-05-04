@@ -1,6 +1,7 @@
 ID_selector/ID_selector.cache/*
 ID_selector/ID_selector.sim/*
 ID_selector/ID_selector.ip_user_files/*
+ID_selector/ID_selector.runs/*
 
 ram_reader/ram_reader.cache/*
 ram_reader/ram_reader.sim/*
@@ -10,3 +11,9 @@ ram_reader/ram_reader.runs/*
 memorice/memorice.cache/*
 memorice/memorice.sim/*
 memorice/memorice.ip_user_files/*
+memorice/memorice.runs/*
+
+state_wait/state_wait.cache/*
+state_wait/state_wait.sim/*
+state_wait/state_wait.ip_user_files/*
+state_wait/state_wait.runs/*
