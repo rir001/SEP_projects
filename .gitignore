@@ -32,3 +32,8 @@ state_results/state_results.cache/*
 state_results/state_results.sim/*
 state_results/state_results.ip_user_files/*
 state_results/state_results.runs/*
+
+SM/SM.cache/*
+SM/SM.sim/*
+SM/SM.ip_user_files/*
+SM/SM.runs/*
