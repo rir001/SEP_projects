@@ -6,7 +6,7 @@ use ieee.numeric_std.all;
 entity LedShow is
     Port (
         clk:        in STD_LOGIC;
-        flagstart:  in std_logic;
+        sm_s:  in std_logic_vector (2 downto 0);
         V:          in std_logic_vector (31 downto 0);
         sublevel:   in std_logic_vector (3 downto 0);
         led:        out std_logic_vector (3 DOWNTO 0);
@@ -18,6 +18,7 @@ architecture Behavioral of LedShow is
 
     signal speed: integer;
     signal subleveli: integer;
+    signal flagstart: std_logic := '0';
     constant th1: integer := 2;
     constant th2: integer := 4;
     constant th3: integer := 6;
@@ -33,7 +34,10 @@ begin
             31250000 when subleveli < th3 and subleveli > th2 else
             15625000 when subleveli > th3
             else 125000000;
-
+    
+    flagstart <= '1' when sm_s = "011"
+                else '0'; 
+                
     process(clk)
     variable counter1: integer := 0;
     variable counter2: integer := 0;

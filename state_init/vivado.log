@@ -2,10 +2,10 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sat May  4 14:53:34 2024
-# Process ID: 17824
+# Start of session at: Sat May  4 15:33:28 2024
+# Process ID: 7144
 # Current directory: C:/Users/gusta/Documents/SEP_projects/state_init
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4196 C:\Users\gusta\Documents\SEP_projects\state_init\state_init.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2676 C:\Users\gusta\Documents\SEP_projects\state_init\state_init.xpr
 # Log file: C:/Users/gusta/Documents/SEP_projects/state_init/vivado.log
 # Journal file: C:/Users/gusta/Documents/SEP_projects/state_init\vivado.jou
 #-----------------------------------------------------------
@@ -19,7 +19,7 @@ CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digi
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
-open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:29 . Memory (MB): peak = 1062.504 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1049.863 ; gain = 0.000
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat May  4 15:25:27 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat May  4 20:01:01 2024...
