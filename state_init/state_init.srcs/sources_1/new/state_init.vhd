@@ -10,8 +10,8 @@ entity state_init is
         clk:        in std_logic;
         sm_state:   in std_logic_vector(2 downto 0);
 
-        leds:       out std_logic_vector(3 downto 0):= "0000";
-        active:     out std_logic:= '0'
+        active:     out std_logic:= '0';
+        leds:       out std_logic_vector(3 downto 0):= "0000"
     );
 end state_init;
 

@@ -11,8 +11,8 @@ entity state_results is
         sm_state:   in std_logic_vector(2 downto 0);
         option:     in std_logic_vector(2 downto 0);
 
-        RGB:        out std_logic_vector(2 downto 0):= "000";
-        active:     out std_logic:= '0'
+        active:     out std_logic:= '0';
+        RGB:        out std_logic_vector(2 downto 0):= "000"
     );
 end state_results;
 
