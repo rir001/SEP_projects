@@ -3,6 +3,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_unsigned;
 use ieee.numeric_std.all;
 
+
+
 entity ID_selector is
     Port (
         sw:     in std_logic_vector(2 downto 0);
