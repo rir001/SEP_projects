@@ -1,0 +1,259 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xDA1604D17410E744",
+      "device": "xc7z010clg400-1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ID_selector_0": "",
+      "SM_0": "",
+      "state_init_0": "",
+      "state_wait_0": "",
+      "state_results_0": "",
+      "ram_reader_0": "",
+      "Comparer_0": "",
+      "LedShow_0": "",
+      "driver_0": ""
+    },
+    "ports": {
+      "btn": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "state": {
+        "direction": "I"
+      },
+      "sw": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "data": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "led_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "RGB_0": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      }
+    },
+    "components": {
+      "ID_selector_0": {
+        "vlnv": "xilinx.com:user:ID_selector:1.0",
+        "xci_name": "design_1_ID_selector_0_0"
+      },
+      "SM_0": {
+        "vlnv": "xilinx.com:user:SM:1.0",
+        "xci_name": "design_1_SM_0_0"
+      },
+      "state_init_0": {
+        "vlnv": "xilinx.com:user:state_init:1.0",
+        "xci_name": "design_1_state_init_0_0"
+      },
+      "state_wait_0": {
+        "vlnv": "xilinx.com:user:state_wait:1.0",
+        "xci_name": "design_1_state_wait_0_0"
+      },
+      "state_results_0": {
+        "vlnv": "xilinx.com:user:state_results:1.0",
+        "xci_name": "design_1_state_results_0_0"
+      },
+      "ram_reader_0": {
+        "vlnv": "xilinx.com:user:ram_reader:1.0",
+        "xci_name": "design_1_ram_reader_0_0"
+      },
+      "Comparer_0": {
+        "vlnv": "xilinx.com:user:Comparer:1.0",
+        "xci_name": "design_1_Comparer_0_0"
+      },
+      "LedShow_0": {
+        "vlnv": "xilinx.com:user:LedShow:1.0",
+        "xci_name": "design_1_LedShow_0_0"
+      },
+      "driver_0": {
+        "vlnv": "xilinx.com:user:driver:1.0",
+        "xci_name": "design_1_driver_0_0"
+      }
+    },
+    "nets": {
+      "ID_selector_0_ID": {
+        "ports": [
+          "ID_selector_0/ID",
+          "ram_reader_0/ID"
+        ]
+      },
+      "Comparer_0_opt": {
+        "ports": [
+          "Comparer_0/opt",
+          "state_results_0/option",
+          "driver_0/opt"
+        ]
+      },
+      "state_wait_0_active": {
+        "ports": [
+          "state_wait_0/active",
+          "driver_0/active_state_wait"
+        ]
+      },
+      "btn_0_1": {
+        "ports": [
+          "btn",
+          "state_wait_0/btn",
+          "Comparer_0/btn"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "state_init_0/clk",
+          "state_results_0/clk",
+          "LedShow_0/clk"
+        ]
+      },
+      "state_0_1": {
+        "ports": [
+          "state",
+          "SM_0/state",
+          "ID_selector_0/state"
+        ]
+      },
+      "sw_0_1": {
+        "ports": [
+          "sw",
+          "ID_selector_0/sw"
+        ]
+      },
+      "SM_0_sm_state": {
+        "ports": [
+          "SM_0/sm_state",
+          "state_wait_0/sm_state",
+          "state_init_0/sm_state",
+          "state_results_0/sm_state",
+          "Comparer_0/sm_s",
+          "LedShow_0/sm_state"
+        ]
+      },
+      "SM_0_sub": {
+        "ports": [
+          "SM_0/sub",
+          "Comparer_0/sublevel",
+          "LedShow_0/sub",
+          "driver_0/sub"
+        ]
+      },
+      "ram_reader_0_data": {
+        "ports": [
+          "ram_reader_0/data",
+          "data",
+          "Comparer_0/data",
+          "LedShow_0/data"
+        ]
+      },
+      "state_init_0_active": {
+        "ports": [
+          "state_init_0/active",
+          "driver_0/active_state_init"
+        ]
+      },
+      "state_init_0_leds": {
+        "ports": [
+          "state_init_0/leds",
+          "driver_0/led_state_init"
+        ]
+      },
+      "LedShow_0_active": {
+        "ports": [
+          "LedShow_0/active",
+          "driver_0/active_state_show"
+        ]
+      },
+      "LedShow_0_leds": {
+        "ports": [
+          "LedShow_0/leds",
+          "driver_0/led_state_show"
+        ]
+      },
+      "Comparer_0_active": {
+        "ports": [
+          "Comparer_0/active",
+          "driver_0/active_state_compare"
+        ]
+      },
+      "state_results_0_active": {
+        "ports": [
+          "state_results_0/active",
+          "driver_0/active_state_result"
+        ]
+      },
+      "state_results_0_RGB": {
+        "ports": [
+          "state_results_0/RGB",
+          "driver_0/RGB_state_result"
+        ]
+      },
+      "driver_0_back_state": {
+        "ports": [
+          "driver_0/back_state",
+          "SM_0/back_state"
+        ]
+      },
+      "driver_0_next_state": {
+        "ports": [
+          "driver_0/next_state",
+          "SM_0/next_state"
+        ]
+      },
+      "driver_0_led": {
+        "ports": [
+          "driver_0/led",
+          "led_0"
+        ]
+      },
+      "driver_0_RGB": {
+        "ports": [
+          "driver_0/RGB",
+          "RGB_0"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 22ed7c50248e43a9850313e063cf03b3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.Comparer [comparer_default]
+Compiling architecture design_1_comparer_0_0_arch of entity xil_defaultlib.design_1_Comparer_0_0 [design_1_comparer_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.ID_selector [id_selector_default]
+Compiling architecture design_1_id_selector_0_0_arch of entity xil_defaultlib.design_1_ID_selector_0_0 [design_1_id_selector_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedShow [ledshow_default]
+Compiling architecture design_1_ledshow_0_0_arch of entity xil_defaultlib.design_1_LedShow_0_0 [design_1_ledshow_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.SM [sm_default]
+Compiling architecture design_1_sm_0_0_arch of entity xil_defaultlib.design_1_SM_0_0 [design_1_sm_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.driver [driver_default]
+Compiling architecture design_1_driver_0_0_arch of entity xil_defaultlib.design_1_driver_0_0 [design_1_driver_0_0_default]
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="z...
+Compiling module xil_defaultlib.levels
+Compiling architecture behavioral of entity xil_defaultlib.ram_reader [ram_reader_default]
+Compiling architecture design_1_ram_reader_0_0_arch of entity xil_defaultlib.design_1_ram_reader_0_0 [design_1_ram_reader_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.state_init [state_init_default]
+Compiling architecture design_1_state_init_0_0_arch of entity xil_defaultlib.design_1_state_init_0_0 [design_1_state_init_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.state_results [state_results_default]
+Compiling architecture design_1_state_results_0_0_arch of entity xil_defaultlib.design_1_state_results_0_0 [design_1_state_results_0_0_defau...]
+Compiling architecture behavioral of entity xil_defaultlib.state_wait [state_wait_default]
+Compiling architecture design_1_state_wait_0_0_arch of entity xil_defaultlib.design_1_state_wait_0_0 [design_1_state_wait_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper
+Built simulation snapshot design_1_wrapper_behav

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="driver_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="driver" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="79fs"></ZoomEndTime>
+      <Cursor1Time time="56fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="181"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/driver/active_state_wait" type="logic">
+      <obj_property name="ElementShortName">active_state_wait</obj_property>
+      <obj_property name="ObjectShortName">active_state_wait</obj_property>
+   </wvobject>
+   <wvobject fp_name="/driver/active_state_init" type="logic">
+      <obj_property name="ElementShortName">active_state_init</obj_property>
+      <obj_property name="ObjectShortName">active_state_init</obj_property>
+   </wvobject>
+   <wvobject fp_name="/driver/active_state_show" type="logic">
+      <obj_property name="ElementShortName">active_state_show</obj_property>
+      <obj_property name="ObjectShortName">active_state_show</obj_property>
+   </wvobject>
+   <wvobject fp_name="/driver/active_state_compare" type="logic">
+      <obj_property name="ElementShortName">active_state_compare</obj_property>
+      <obj_property name="ObjectShortName">active_state_compare</obj_property>
+   </wvobject>
+   <wvobject fp_name="/driver/active_state_result" type="logic">
+      <obj_property name="ElementShortName">active_state_result</obj_property>
+      <obj_property name="ObjectShortName">active_state_result</obj_property>
+   </wvobject>
+   <wvobject fp_name="/driver/led_state_init" type="array">
+      <obj_property name="ElementShortName">led_state_init[3:0]</obj_property>
+      <obj_property name="ObjectShortName">led_state_init[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/driver/led_state_show" type="array">
+      <obj_property name="ElementShortName">led_state_show[3:0]</obj_property>
+      <obj_property name="ObjectShortName">led_state_show[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/driver/RGB_state_result" type="array">
+      <obj_property name="ElementShortName">RGB_state_result[2:0]</obj_property>
+      <obj_property name="ObjectShortName">RGB_state_result[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/driver/sub" type="array">
+      <obj_property name="ElementShortName">sub[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sub[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/driver/opt" type="array">
+      <obj_property name="ElementShortName">opt[1:0]</obj_property>
+      <obj_property name="ObjectShortName">opt[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/driver/back_state" type="logic">
+      <obj_property name="ElementShortName">back_state</obj_property>
+      <obj_property name="ObjectShortName">back_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/driver/next_state" type="logic">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/driver/led" type="array">
+      <obj_property name="ElementShortName">led[3:0]</obj_property>
+      <obj_property name="ObjectShortName">led[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/driver/RGB" type="array">
+      <obj_property name="ElementShortName">RGB[2:0]</obj_property>
+      <obj_property name="ObjectShortName">RGB[2:0]</obj_property>
+   </wvobject>
+</wave_config>

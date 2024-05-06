@@ -8,11 +8,6 @@ ram_reader/ram_reader.sim/*
 ram_reader/ram_reader.ip_user_files/*
 ram_reader/ram_reader.runs/*
 
-memorice/memorice.cache/*
-memorice/memorice.sim/*
-memorice/memorice.ip_user_files/*
-memorice/memorice.runs/*
-
 state_wait/state_wait.cache/*
 state_wait/state_wait.sim/*
 state_wait/state_wait.ip_user_files/*
@@ -28,12 +23,24 @@ Show/Show.sim/*
 Show/Show.ip_user_files/*
 Show/Show.runs/*
 
+Comparer/Comparer.cache/*
+Comparer/Comparer.sim/*
+Comparer/Comparer.ip_user_files/*
+Comparer/Comparer.runs/*
+
 state_results/state_results.cache/*
 state_results/state_results.sim/*
 state_results/state_results.ip_user_files/*
 state_results/state_results.runs/*
 
+driver/driver.cache/*
+driver/driver.sim/*
+driver/driver.ip_user_files/*
+driver/driver.runs/*
+
 SM/SM.cache/*
 SM/SM.sim/*
 SM/SM.ip_user_files/*
 SM/SM.runs/*
+
+memorice *

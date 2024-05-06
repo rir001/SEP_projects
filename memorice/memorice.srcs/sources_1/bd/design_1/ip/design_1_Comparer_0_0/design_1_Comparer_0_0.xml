@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>design_1_Comparer_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>Comparer</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon May 06 00:26:51 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:8f89a23a</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsimulationwrapper</spirit:name>
+        <spirit:displayName>VHDL Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>design_1_Comparer_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon May 06 00:26:51 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:8f89a23a</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>sm_s</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>btn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sublevel</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>active</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>opt</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="2">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/91b1/sources_1/new/Comparer.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/design_1_Comparer_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>Comparer_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">design_1_Comparer_0_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>Comparer_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>6</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e7f1434_ARCHIVE_LOCATION">c:/data/2024/7mo semestre/sep/proyectos/comparer/comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ab343f5_ARCHIVE_LOCATION">c:/data/2024/7mo semestre/sep/proyectos/comparer/comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d6eff85_ARCHIVE_LOCATION">c:/data/2024/7mo semestre/sep/proyectos/comparer/comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cad1a94_ARCHIVE_LOCATION">c:/data/2024/7mo semestre/sep/proyectos/comparer/comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d2a91a1_ARCHIVE_LOCATION">c:/data/2024/7mo semestre/sep/proyectos/comparer/comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b00e00_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10db1af8_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@431218db_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c1ff1f5_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c89d4ae_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cad3d42_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2691a713_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12d6ed06_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a653318_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7de9f7a5_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57e736d2_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4722ab7d_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f1e4106_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4af73b40_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ea1971a_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cd3dad0_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20be0f8f_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56b27291_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55497c10_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4289951_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c680ae5_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a797577_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6781a1c8_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d034474_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52423d02_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b9c889c_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f307226_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b886c18_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@243a1a10_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@371a139c_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@781a4e21_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16692378_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b93b36c_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b6c032_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4705340b_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23181a72_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@247fdbba_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@543bf337_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5af4e70a_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@634d1abb_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6286c556_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f9e0052_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Comparer/Comparer.srcs</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="30e76f4e"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="b8f5ae87"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="4c9cba62"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

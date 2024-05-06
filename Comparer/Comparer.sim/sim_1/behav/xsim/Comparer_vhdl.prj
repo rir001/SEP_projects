@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Comparer.srcs/sources_1/new/Comparer.vhd" \
-
-# Do not sort compile order
-nosort

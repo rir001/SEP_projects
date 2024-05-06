@@ -36,7 +36,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a6407725</spirit:value>
+            <spirit:value>fe563d12</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -52,7 +52,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a6407725</spirit:value>
+            <spirit:value>fe563d12</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -86,7 +86,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>sm_s</spirit:name>
+        <spirit:name>sm_state</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
@@ -103,45 +103,28 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>V</spirit:name>
+        <spirit:name>sub</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>data</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
             <spirit:left spirit:format="long">31</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>sublevel</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">3</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>led</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">3</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -169,6 +152,26 @@
           </spirit:driver>
         </spirit:wire>
       </spirit:port>
+      <spirit:port>
+        <spirit:name>leds</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="4">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
     </spirit:ports>
   </spirit:model>
   <spirit:fileSets>
@@ -177,7 +180,7 @@
       <spirit:file>
         <spirit:name>Show.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_a6407725</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_fe563d12</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -220,8 +223,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>LedShow_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>3</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-05-05T01:47:03Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>14</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-05-05T22:45:30Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3c351a3d_ARCHIVE_LOCATION">c:/users/gusta/documents/sep_projects/show/show.srcs/sources_1/new</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@166b8e92_ARCHIVE_LOCATION">c:/users/gusta/documents/sep_projects/show/show.srcs/sources_1/new</xilinx:tag>
@@ -250,13 +253,134 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5b5b84f0_ARCHIVE_LOCATION">c:/Users/gusta/Documents/SEP_projects/Show/Show.srcs/sources_1/new</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2811289b_ARCHIVE_LOCATION">c:/Users/gusta/Documents/SEP_projects/Show/Show.srcs/sources_1/new</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@35c6287_ARCHIVE_LOCATION">c:/Users/gusta/Documents/SEP_projects/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ebc3586_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e680202_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61795b55_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68b22b91_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c057f98_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54fd1fe5_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1323f11b_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a379d09_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c488eee_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71068a8e_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63472dd_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@532d17f7_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58412aba_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41769421_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cfa9d7d_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70d46af0_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@463c009c_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34544dc7_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1beaeee_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63b3374f_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d31dade_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fdb354f_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5555c8b9_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d6ab276_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b308de2_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15a4d82d_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@637d5be0_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c5cb622_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75ca1ef8_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bfe6650_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12f1d676_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44730402_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77116d21_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21f53d99_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4debc450_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d8107e1_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3da5fb79_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7908e943_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40b79a2e_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59903834_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f391d2c_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1af918b3_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71ea2200_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7764b2b8_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c72631c_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a4e228b_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f518bb3_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44bb381a_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46c90599_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d12fe29_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52ed7234_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53038b86_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@596bf72c_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35ef37e8_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f0b59b6_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61682b0_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6efedb2d_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@783fb173_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f2e578c_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45ecde5a_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a4dffb_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ab70804_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42d2f54e_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@587686d8_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76f5d16f_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75608f9b_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1aa312cc_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4865611_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aaa854f_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c06efee_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@258acbda_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15132fe0_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a940f47_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fcc0302_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@665f779e_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23ee7aec_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55ae1854_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e289f18_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@224d96c3_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46be35d5_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58780cac_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@535dfe1b_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6da1e2bf_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2788698a_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39bf7b87_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3435e6bd_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17f0840a_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@461a5ef9_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7364769a_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@656b656a_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38b21e40_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a86b804_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73f1700e_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69dbf7b1_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58f54443_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c42f65e_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@410c7a37_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73fa44ee_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@812c51b_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c35b878_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c646b31_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a62572_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ba6eebe_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b6c611b_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d54c14f_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d1f2603_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e398e65_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2322473a_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25661554_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@208deef5_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a0ff8f_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34a7aa29_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29f83f1c_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62f65bbe_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c8f7d85_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a24ccf4_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6600c4a6_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78ad8bde_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e1c1183_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@319b448c_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2934c014_ARCHIVE_LOCATION">c:/DATA/2024/7mo semestre/SEP/Proyectos/Show/Show.srcs/sources_1/new</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a88d4390"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="668d2b12"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="6bc00c71"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="60c8e6e7"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="7f7d2bc6"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="c0733382"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
