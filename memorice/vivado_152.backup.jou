@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun May  5 20:55:37 2024
+# Process ID: 152
+# Current directory: C:/Users/gusta/Documents/SEP_projects/memorice
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19560 C:\Users\gusta\Documents\SEP_projects\memorice\memorice.xpr
+# Log file: C:/Users/gusta/Documents/SEP_projects/memorice/vivado.log
+# Journal file: C:/Users/gusta/Documents/SEP_projects/memorice\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/gusta/Documents/SEP_projects/memorice/memorice.xpr
+update_compile_order -fileset sources_1
+set_property board_part digilentinc.com:zybo-z7-10:part0:1.1 [current_project]
+open_bd_design {C:/Users/gusta/Documents/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {2 292 751} [get_bd_cells state_init_0]
+undo

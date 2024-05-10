@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr1/Game/Game.srcs/sources_1/new/LedShow.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedShow'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr1/Game/Game.srcs/sources_1/new/Game.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Game'

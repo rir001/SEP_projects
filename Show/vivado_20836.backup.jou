@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat May  4 20:12:06 2024
+# Process ID: 20836
+# Current directory: C:/Users/gusta/Documents/SEP_projects/Show
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20604 C:\Users\gusta\Documents\SEP_projects\Show\Show.xpr
+# Log file: C:/Users/gusta/Documents/SEP_projects/Show/vivado.log
+# Journal file: C:/Users/gusta/Documents/SEP_projects/Show\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/gusta/Documents/SEP_projects/Show/Show.xpr
+update_compile_order -fileset sources_1

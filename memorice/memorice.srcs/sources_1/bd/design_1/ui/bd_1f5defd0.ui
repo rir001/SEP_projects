@@ -2,8 +2,8 @@
    "ActiveEmotionalView":"Default View",
    "Default View_Layers":"",
    "Default View_Layout":"",
-   "Default View_ScaleFactor":"0.578571",
-   "Default View_TopLeft":"-548,491",
+   "Default View_ScaleFactor":"0.377551",
+   "Default View_TopLeft":"-898,490",
    "ExpandedHierarchyInLayout":"",
    "No Loops_ScaleFactor":"0.947143",
    "No Loops_TopLeft":"-166,0",
@@ -62,29 +62,28 @@ pagesize -pg 1 -db -bbox -sgen -120 0 1120 720
 preplace port clk -pg 1 -lvl 0 -x -100 -y 920 -defaultsOSRD
 preplace port state -pg 1 -lvl 0 -x -100 -y 570 -defaultsOSRD
 preplace portBus btn -pg 1 -lvl 0 -x -100 -y 820 -defaultsOSRD
-preplace portBus sw -pg 1 -lvl 0 -x -100 -y 550 -defaultsOSRD
-preplace portBus data -pg 1 -lvl 5 -x 1110 -y 560 -defaultsOSRD
-preplace portBus led_0 -pg 1 -lvl 5 -x 1110 -y 910 -defaultsOSRD
-preplace portBus RGB_0 -pg 1 -lvl 5 -x 1110 -y 930 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x -100 -y 540 -defaultsOSRD
+preplace portBus led -pg 1 -lvl 5 -x 1120 -y 900 -defaultsOSRD
+preplace portBus RGB -pg 1 -lvl 5 -x 1120 -y 930 -defaultsOSRD
 preplace inst ID_selector_0 -pg 1 -lvl 1 -x 60 -y 560 -defaultsOSRD
-preplace inst SM_0 -pg 1 -lvl 2 -x 320 -y 700 -swap {0 2 1 3 4} -defaultsOSRD
 preplace inst state_init_0 -pg 1 -lvl 3 -x 610 -y 930 -defaultsOSRD
 preplace inst state_wait_0 -pg 1 -lvl 3 -x 610 -y 810 -defaultsOSRD
 preplace inst state_results_0 -pg 1 -lvl 3 -x 610 -y 1380 -swap {0 2 1 3 4} -defaultsOSRD
 preplace inst ram_reader_0 -pg 1 -lvl 2 -x 320 -y 560 -defaultsOSRD
 preplace inst Comparer_0 -pg 1 -lvl 3 -x 610 -y 1230 -defaultsOSRD
 preplace inst LedShow_0 -pg 1 -lvl 3 -x 610 -y 1070 -swap {1 0 2 3 4 5} -defaultsOSRD
-preplace inst driver_0 -pg 1 -lvl 4 -x 940 -y 900 -defaultsOSRD
+preplace inst driver_0 -pg 1 -lvl 4 -x 950 -y 900 -defaultsOSRD
+preplace inst SM_0 -pg 1 -lvl 2 -x 320 -y 700 -swap {0 2 1 3 4} -defaultsOSRD
 preplace netloc ID_selector_0_ID 1 1 1 NJ 560
-preplace netloc Comparer_0_opt 1 2 2 460 1460 800
+preplace netloc Comparer_0_opt 1 2 2 450 1460 800
 preplace netloc state_wait_0_active 1 3 1 N 810
 preplace netloc btn_0_1 1 0 3 NJ 820 NJ 820 470
-preplace netloc clk_0_1 1 0 3 NJ 920 NJ 920 460J
+preplace netloc clk_0_1 1 0 3 NJ 920 NJ 920 450J
 preplace netloc state_0_1 1 0 2 -80 680 NJ
-preplace netloc sw_0_1 1 0 1 NJ 550
-preplace netloc SM_0_sm_state 1 2 1 440 690n
-preplace netloc SM_0_sub 1 2 2 450J 740 760J
-preplace netloc ram_reader_0_data 1 2 3 480J 560 NJ 560 N
+preplace netloc sw_0_1 1 0 1 -80J 540n
+preplace netloc SM_0_sm_state 1 2 1 430 690n
+preplace netloc SM_0_sub 1 2 2 440J 740 760J
+preplace netloc ram_reader_0_data 1 2 1 460J 560n
 preplace netloc state_init_0_active 1 3 1 720 830n
 preplace netloc state_init_0_leds 1 3 1 740 910n
 preplace netloc LedShow_0_active 1 3 1 730 850n
@@ -92,12 +91,12 @@ preplace netloc LedShow_0_leds 1 3 1 780 930n
 preplace netloc Comparer_0_active 1 3 1 750 870n
 preplace netloc state_results_0_active 1 3 1 770 890n
 preplace netloc state_results_0_RGB 1 3 1 790 950n
-preplace netloc driver_0_back_state 1 1 4 150 620 NJ 620 NJ 620 1090
-preplace netloc driver_0_next_state 1 1 4 150 780 470J 730 NJ 730 1080
-preplace netloc driver_0_led 1 4 1 NJ 910
+preplace netloc driver_0_back_state 1 1 4 150 620 NJ 620 NJ 620 1100
+preplace netloc driver_0_next_state 1 1 4 150 780 450J 730 NJ 730 1090
+preplace netloc driver_0_led 1 4 1 1100J 900n
 preplace netloc driver_0_RGB 1 4 1 NJ 930
-levelinfo -pg 1 -100 60 320 610 940 1110
-pagesize -pg 1 -db -bbox -sgen -200 -90 1240 1520
+levelinfo -pg 1 -100 60 320 610 950 1120
+pagesize -pg 1 -db -bbox -sgen -200 -90 1230 1520
 "
 }
 0

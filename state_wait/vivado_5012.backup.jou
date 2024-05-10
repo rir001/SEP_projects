@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun May  5 23:00:10 2024
+# Process ID: 5012
+# Current directory: C:/Users/gusta/Documents/SEP_projects/state_wait
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4348 C:\Users\gusta\Documents\SEP_projects\state_wait\state_wait.xpr
+# Log file: C:/Users/gusta/Documents/SEP_projects/state_wait/vivado.log
+# Journal file: C:/Users/gusta/Documents/SEP_projects/state_wait\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/gusta/Documents/SEP_projects/state_wait/state_wait.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/gusta/Documents/SEP_projects/state_wait/state_wait.srcs/constrs_1
+file mkdir C:/Users/gusta/Documents/SEP_projects/state_wait/state_wait.srcs/constrs_1/new
+close [ open C:/Users/gusta/Documents/SEP_projects/state_wait/state_wait.srcs/constrs_1/new/Zybo-Z7_Master.xdc w ]
+add_files -fileset constrs_1 C:/Users/gusta/Documents/SEP_projects/state_wait/state_wait.srcs/constrs_1/new/Zybo-Z7_Master.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

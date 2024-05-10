@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr1/Game/Game.sim/sim_1/impl/timing/xsim/Game_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Game
+INFO: [VRFC 10-311] analyzing module LedShow
+INFO: [VRFC 10-311] analyzing module glbl

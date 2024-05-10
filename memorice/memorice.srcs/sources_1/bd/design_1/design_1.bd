@@ -1,23 +1,24 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x0",
+      "boundary_crc": "0xFC8C5D89F23D1E58",
       "device": "xc7z010clg400-1",
       "name": "design_1",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2020.1"
+      "tool_version": "2020.1",
+      "validated": "true"
     },
     "design_tree": {
       "ID_selector_0": "",
-      "SM_0": "",
       "state_init_0": "",
       "state_wait_0": "",
       "state_results_0": "",
       "ram_reader_0": "",
       "Comparer_0": "",
       "LedShow_0": "",
-      "driver_0": ""
+      "driver_0": "",
+      "SM_0": ""
     },
     "ports": {
       "btn": {
@@ -27,7 +28,29 @@
       },
       "clk": {
         "type": "clk",
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
       },
       "state": {
         "direction": "I"
@@ -37,17 +60,12 @@
         "left": "2",
         "right": "0"
       },
-      "data": {
-        "direction": "O",
-        "left": "31",
-        "right": "0"
-      },
-      "led_0": {
+      "led": {
         "direction": "O",
         "left": "3",
         "right": "0"
       },
-      "RGB_0": {
+      "RGB": {
         "direction": "O",
         "left": "2",
         "right": "0"
@@ -57,10 +75,6 @@
       "ID_selector_0": {
         "vlnv": "xilinx.com:user:ID_selector:1.0",
         "xci_name": "design_1_ID_selector_0_0"
-      },
-      "SM_0": {
-        "vlnv": "xilinx.com:user:SM:1.0",
-        "xci_name": "design_1_SM_0_0"
       },
       "state_init_0": {
         "vlnv": "xilinx.com:user:state_init:1.0",
@@ -89,6 +103,10 @@
       "driver_0": {
         "vlnv": "xilinx.com:user:driver:1.0",
         "xci_name": "design_1_driver_0_0"
+      },
+      "SM_0": {
+        "vlnv": "xilinx.com:user:SM:1.0",
+        "xci_name": "design_1_SM_0_0"
       }
     },
     "nets": {
@@ -129,8 +147,8 @@
       "state_0_1": {
         "ports": [
           "state",
-          "SM_0/state",
-          "ID_selector_0/state"
+          "ID_selector_0/state",
+          "SM_0/state"
         ]
       },
       "sw_0_1": {
@@ -160,7 +178,6 @@
       "ram_reader_0_data": {
         "ports": [
           "ram_reader_0/data",
-          "data",
           "Comparer_0/data",
           "LedShow_0/data"
         ]
@@ -222,13 +239,13 @@
       "driver_0_led": {
         "ports": [
           "driver_0/led",
-          "led_0"
+          "led"
         ]
       },
       "driver_0_RGB": {
         "ports": [
           "driver_0/RGB",
-          "RGB_0"
+          "RGB"
         ]
       }
     }
