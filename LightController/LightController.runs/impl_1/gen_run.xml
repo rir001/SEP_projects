@@ -16,9 +16,12 @@
   <File Type="BITSTR-BMM" Name="LightController_bd.bmm"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="LightController_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MMI" Name="LightController.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="LightController_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="LightController.sysdef"/>
+  <File Type="ROUTE-DRC-RPX" Name="LightController_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="LightController.ltx"/>
+  <File Type="RCFI_FILE" Name="LightController.rcfi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="LightController_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="LightController.hwdef"/>
@@ -48,11 +51,8 @@
   <File Type="PHYSOPT-DCP" Name="LightController_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="LightController_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="LightController_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="LightController_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="LightController_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="LightController_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="LightController.pdi"/>
-  <File Type="RCFI_FILE" Name="LightController.rcfi"/>
   <File Type="CFI_FILE" Name="LightController.cfi"/>
   <File Type="RNPI_FILE" Name="LightController.rnpi"/>
   <File Type="NPI_FILE" Name="LightController.npi"/>

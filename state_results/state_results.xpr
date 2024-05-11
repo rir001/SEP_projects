@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="C:/DATA/2024/7mo semestre/SEP/Proyectos/state_results/state_results.xpr">
+<Project Version="7" Minor="49" Path="C:/DATA/2024/sem07/SEP/SEP_projects/state_results/state_results.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f7a973ee73f748cfb9ab8c68cc41ee4b"/>
