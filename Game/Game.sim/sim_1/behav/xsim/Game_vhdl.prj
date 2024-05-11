@@ -1,8 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Game.srcs/sources_1/new/Comparer.vhd" \
-"../../../../Game.srcs/sources_1/new/LedShow.vhd" \
-"../../../../Game.srcs/sources_1/new/Game.vhd" \
-
-# Do not sort compile order
-nosort

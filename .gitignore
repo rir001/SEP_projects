@@ -18,16 +18,6 @@ state_init/state_init.sim/*
 state_init/state_init.ip_user_files/*
 state_init/state_init.runs/*
 
-Show/Show.cache/*
-Show/Show.sim/*
-Show/Show.ip_user_files/*
-Show/Show.runs/*
-
-Comparer/Comparer.cache/*
-Comparer/Comparer.sim/*
-Comparer/Comparer.ip_user_files/*
-Comparer/Comparer.runs/*
-
 state_results/state_results.cache/*
 state_results/state_results.sim/*
 state_results/state_results.ip_user_files/*
@@ -38,9 +28,14 @@ driver/driver.sim/*
 driver/driver.ip_user_files/*
 driver/driver.runs/*
 
-SM/SM.cache/*
-SM/SM.sim/*
-SM/SM.ip_user_files/*
-SM/SM.runs/*
+game/game.cache/*
+game/game.sim/*
+game/game.ip_user_files/*
+game/game.runs/*
+
+init_axi/init_axi.cache/*
+init_axi/init_axi.sim/*
+init_axi/init_axi.ip_user_files/*
+init_axi/init_axi.runs/*
 
 memorice *
