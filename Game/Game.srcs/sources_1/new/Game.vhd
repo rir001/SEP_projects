@@ -83,6 +83,15 @@ architecture Behavioral of Game is
         );
     end component LedShow;
     
+    component GDebouncer is
+        port(
+        clk: in std_logic; 
+        btns_in: in std_logic_vector (3 downto 0);
+        btns_out: out std_logic_vector (3 downto 0):= "0000"
+         );
+     end component GDebouncer;
+    
+    
     -- fixed values for simulation:
     constant data0:  std_logic_vector (31 downto 0) := "10000100001000011000010000100001";
     
@@ -94,8 +103,10 @@ architecture Behavioral of Game is
     signal opt0: std_logic_vector (1 downto 0);
     signal sm: std_logic:= '0';
     signal buff: std_logic := '0';
+    signal complete_g: std_logic := '0';
     signal complete_l: std_logic := '0';
     signal complete_c: std_logic := '0';
+    signal dbtns: std_logic_vector (3 downto 0) := "0000";
 
     
     function "+" (a: std_logic_vector (3 downto 0)) return std_logic_vector is
@@ -110,7 +121,7 @@ begin
         port map (
             sm_s => state,
             data => data0,
-            btn => btns,
+            btn => dbtns,
             sublevel => sublevel0,
             
             --rgb => rgb0,
@@ -133,54 +144,66 @@ begin
             complete => complete_l
             );
      
+     GDebouncer0: GDebouncer
+        port map (
+            btns_in => btns,
+            clk => clk0,
+            btns_out => dbtns
+            );
+     
+     
      sm <= '1' when sm_s0 = "011"
            else '0';
             
      --rgb0 <= complete_c;
      
      process(clk0)
-     variable active_l_a: std_logic := '0';
      begin
      
      
      --active_g <= buff;
      
      if rising_edge (clk0) then
-        active_l_a := active_l;
+     
          if sm = '1' then
-            
-            buff <= '1';
-            if complete_c = '1' then
-                --rgb0 <= '1';
-                if opt0 = "01" then
-                    --result <= '0';
-                    buff <= '0';
-                    sublevel0 <= "0001";
-                    state <= "01";
-                    
-                    
-                elsif opt0 = "11" then
-                    
-                    if sublevel0 = "1000" then -- quizas es 0111
-                        --result <= '1';
+            if complete_g = '0' then
+                buff <= '1';
+                if complete_c = '1' then
+                    --rgb0 <= '1';
+                    if opt0 = "01" then
+                        --result <= '0';
                         buff <= '0';
                         sublevel0 <= "0001";
                         state <= "01";
+                        complete_g <= '1';
                         
-                    else 
-                        sublevel0 <= +(sublevel0);
-                        state <= "01";
-                    end if;
-                 end if; 
-            
-            elsif complete_l = '1' then -- quias agregar el and 
+                        
+                    elsif opt0 = "11" then
+                        
+                        if sublevel0 = "1000" then -- quizas es 0111
+                            --result <= '1';
+                            buff <= '0';
+                            sublevel0 <= "0001";
+                            state <= "01";
+                            complete_g <= '1';
+                            
+                        else 
+                            sublevel0 <= +(sublevel0);
+                            state <= "01";
+                        end if;
+                     end if; 
                 
-                state <= "10";
-            end if; 
-          else 
-              buff <= '0';
-          end if;
+                elsif complete_l = '1' then -- quias agregar el and 
+                    --rgb0 <= '1';
+                    state <= "10";
+                end if; 
+              end if;
               
+              else 
+                  complete_g <= '0';
+                  buff <= '0';
+              end if;
+                  
       
       end if;
       

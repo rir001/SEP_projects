@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -89,6 +91,8 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   C:/Users/gusta/Documents/SEP_projects/Game/Game.srcs/sources_1/new/Comparer.vhd
+  C:/Users/gusta/Documents/SEP_projects/Game/Game.srcs/sources_1/new/Debouncer.vhd
+  C:/Users/gusta/Documents/SEP_projects/Game/Game.srcs/sources_1/new/GDebouncer.vhd
   C:/Users/gusta/Documents/SEP_projects/Game/Game.srcs/sources_1/new/LedShow.vhd
   C:/Users/gusta/Documents/SEP_projects/Game/Game.srcs/sources_1/new/Game.vhd
 }

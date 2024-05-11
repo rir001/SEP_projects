@@ -12,7 +12,7 @@ entity Comparer is
         btn: in std_logic_vector (3 downto 0);
         sublevel: in std_logic_vector (3 downto 0);
     
-        rgb: out std_logic:= '0';
+        --rgb: out std_logic:= '0';
         active: out std_logic := '0';
         opt: out std_logic_vector (1 downto 0):= "00";
         complete:   out std_logic := '0'
@@ -31,7 +31,7 @@ begin
     subleveli <= to_integer(unsigned(sublevel));
     click <= btn(0) or btn(1) or btn(2) or btn(3);
     complete <= buff;
-    rgb <= buff;
+    --rgb <= buff;
     
     process(click, sm_s)
     variable obj: std_logic_vector (3 downto 0);
@@ -69,6 +69,7 @@ begin
             end if;
         end if;
         if sm_S = "00" or sm_S = "11" or sm_S = "01" then
+            --rgb <= '0';
             step <= 0;
             opt <= "00";
             active <= '0';
