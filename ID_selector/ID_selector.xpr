@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="C:/DATA/2024/7mo semestre/SEP/Proyectos/ID_selector/ID_selector.xpr">
+<Project Version="7" Minor="49" Path="C:/DATA/2024/sem07/SEP/SEP_projects/ID_selector/ID_selector.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="cff27bd3f5234b499fa08c8b2fa40b4e"/>

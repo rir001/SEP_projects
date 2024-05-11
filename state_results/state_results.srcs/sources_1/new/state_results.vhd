@@ -6,6 +6,11 @@ use ieee.numeric_std.all;
 
 
 entity state_results is
+    generic(
+        red: std_logic_vector (2 downto 0) := "001";
+        blue: std_logic_vector (2 downto 0) := "100";
+        green: std_logic_vector (2 downto 0) := "010"
+    );
     Port (
         clk:        in std_logic;
         sm_state:   in std_logic_vector(2 downto 0);
@@ -26,16 +31,16 @@ begin
     variable counter: integer:= 0;
     begin
         if rising_edge(clk) then
-            if sm_state = "100" then
+                if sm_state = "100" then
                 if (complete = '0') then
                     active <= '1';
                     counter := counter + 1;
 
                     if (counter < 1*scale) then
                         if (option = "11") then
-                            RGB <= "010";
+                            RGB <= green;
                         else
-                            RGB <= "100";
+                            RGB <= blue;
                         end if;
                     else
                         RGB <= "000";
