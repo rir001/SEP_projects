@@ -1,0 +1,89 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x212DCA4811C692B9",
+      "device": "xc7z010clg400-1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "state_init_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "sm_state": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "rgb": {
+        "direction": "O"
+      },
+      "leds": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "state_init_0": {
+        "vlnv": "xilinx.com:user:state_init:1.0",
+        "xci_name": "design_1_state_init_0_0"
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "state_init_0/clk"
+        ]
+      },
+      "sm_state_0_1": {
+        "ports": [
+          "sm_state",
+          "state_init_0/sm_state"
+        ]
+      },
+      "state_init_0_rgb": {
+        "ports": [
+          "state_init_0/rgb",
+          "rgb"
+        ]
+      },
+      "state_init_0_leds": {
+        "ports": [
+          "state_init_0/leds",
+          "leds"
+        ]
+      }
+    }
+  }
+}

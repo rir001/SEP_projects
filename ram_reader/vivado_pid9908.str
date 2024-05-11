@@ -1,0 +1,145 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 9908
+License: Customer
+
+Current time: 	Sat May 11 13:46:51 CLST 2024
+Time zone: 	Chile Standard Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	gusta
+User home directory: C:/Users/gusta
+User working directory: C:/Users/gusta/Documents/SEP_projects/ram_reader
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/gusta/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/gusta/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/gusta/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/gusta/Documents/SEP_projects/ram_reader/vivado.log
+Vivado journal file location: 	C:/Users/gusta/Documents/SEP_projects/ram_reader/vivado.jou
+Engine tmp dir: 	C:/Users/gusta/Documents/SEP_projects/ram_reader/.Xil/Vivado-9908-LAPTOP-5LB4VBU3
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_SDK: C:/Xilinx/Vitis/2020.1
+XILINX_VITIS: C:/Xilinx/Vitis/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,023 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\gusta\Documents\SEP_projects\ram_reader\ram_reader.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/gusta/Documents/SEP_projects/ram_reader/ram_reader.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 52 MB. Current time: 5/11/24, 1:46:52 PM CLST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 63 MB (+63123kb) [00:00:12]
+// [Engine Memory]: 1,023 MB (+920709kb) [00:00:12]
+// [GUI Memory]: 82 MB (+16616kb) [00:00:13]
+// [GUI Memory]: 101 MB (+15620kb) [00:00:13]
+// [GUI Memory]: 108 MB (+2654kb) [00:00:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  3116 ms.
+// Tcl Message: open_project C:/Users/gusta/Documents/SEP_projects/ram_reader/ram_reader.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/DATA/2024/7mo semestre/SEP/Proyectos/ram_reader' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// Project name: ram_reader; location: C:/Users/gusta/Documents/SEP_projects/ram_reader; part: xc7z010clg400-1
+// [GUI Memory]: 114 MB (+819kb) [00:00:15]
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1049.625 ; gain = 0.000 
+dismissDialog("Open Project"); // bz (cs)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// a (cs): Critical Messages: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ram_reader(Behavioral) (ram_reader.vhd)]", 1, true); // B (F, cs) - Node
+// [GUI Memory]: 127 MB (+7497kb) [00:00:21]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ram_reader(Behavioral) (ram_reader.vhd)]", 1, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+// [GUI Memory]: 139 MB (+5848kb) [00:00:33]
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ram_reader(Behavioral) (ram_reader.vhd), levels_1 : levels (levels.xci)]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ram_reader(Behavioral) (ram_reader.vhd), levels_1 : levels (levels.xci)]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// O (cs):  Re-customize IP : addNotify
+// r (cs): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // O (cs)
+dismissDialog("Re-customize IP"); // r (cs)
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1801ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3375 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1763 ms. Increasing delay to 5289 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1050 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 78 MB. Current time: 5/11/24, 2:16:54 PM CLST
+// WARNING: HEventQueue.dispatchEvent() is taking  1362 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1545 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 69 MB. Current time: 5/11/24, 2:46:55 PM CLST
+// WARNING: HEventQueue.dispatchEvent() is taking  1078 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 68 MB. Current time: 5/11/24, 3:16:55 PM CLST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 354ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 5605 seconds
+selectTreeTableHeader(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Start", 15); // az (J, cs)
+// Elapsed time: 746 seconds
+closeMainWindow("ram_reader - [C:/Users/gusta/Documents/SEP_projects/ram_reader/ram_reader.xpr] - Vivado 2020.1"); // cs
+// Run Command: PAResourceCommand.PACommandNames_EXIT
+// A (cs): Exit Vivado: addNotify

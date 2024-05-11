@@ -1,0 +1,405 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 15584
+License: Customer
+
+Current time: 	Sat May 11 10:23:08 CLST 2024
+Time zone: 	Chile Standard Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	gusta
+User home directory: C:/Users/gusta
+User working directory: C:/Users/gusta/Documents/SEP_projects/Game
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/gusta/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/gusta/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/gusta/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/gusta/Documents/SEP_projects/Game/vivado.log
+Vivado journal file location: 	C:/Users/gusta/Documents/SEP_projects/Game/vivado.jou
+Engine tmp dir: 	C:/Users/gusta/Documents/SEP_projects/Game/.Xil/Vivado-15584-LAPTOP-5LB4VBU3
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_SDK: C:/Xilinx/Vitis/2020.1
+XILINX_VITIS: C:/Xilinx/Vitis/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,048 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\gusta\Documents\SEP_projects\Game\Game.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/gusta/Documents/SEP_projects/Game/Game.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 79 MB (+80486kb) [00:00:09]
+// [Engine Memory]: 1,048 MB (+947485kb) [00:00:09]
+// [GUI Memory]: 95 MB (+12080kb) [00:00:09]
+// [GUI Memory]: 118 MB (+19130kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  2471 ms.
+// Tcl Message: open_project C:/Users/gusta/Documents/SEP_projects/Game/Game.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/gusta/Documents/SEP_projects/Game/Game.srcs'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 60 MB. Current time: 5/11/24, 10:23:08 AM CLST
+// Project name: Game; location: C:/Users/gusta/Documents/SEP_projects/Game; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bz (cs)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game(Behavioral) (Game.vhd)]", 1); // B (F, cs)
+// [GUI Memory]: 124 MB (+905kb) [00:09:11]
+// Elapsed time: 1206 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Zybo-Z7-Master.xdc]", 8, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Zybo-Z7-Master.xdc]", 8, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("Zybo-Z7-Master.xdc", 57, 158); // bP (w, cs)
+typeControlKey((HResource) null, "Zybo-Z7-Master.xdc", 'c'); // bP (w, cs)
+// Elapsed time: 348 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Zybo-Z7-Master.xdc", 1); // m (l, cs)
+// [GUI Memory]: 131 MB (+627kb) [00:26:31]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game(Behavioral) (Game.vhd), LedShow0 : LedShow(Behavioral) (LedShow.vhd)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game(Behavioral) (Game.vhd), LedShow0 : LedShow(Behavioral) (LedShow.vhd)]", 3, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("LedShow.vhd", 207, 155); // bP (w, cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  1188 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 78 MB. Current time: 5/11/24, 10:53:13 AM CLST
+// Elapsed time: 1740 seconds
+selectCodeEditor("LedShow.vhd", 209, 112); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 169, 95); // bP (w, cs)
+// Elapsed time: 83 seconds
+selectCodeEditor("LedShow.vhd", 403, 156); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game(Behavioral) (Game.vhd)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game(Behavioral) (Game.vhd)]", 1, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("Game.vhd", 86, 250); // bP (w, cs)
+selectCodeEditor("Game.vhd", 281, 282); // bP (w, cs)
+typeControlKey((HResource) null, "Game.vhd", 'v'); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("Game.vhd", 230, 141); // bP (w, cs)
+// Elapsed time: 58 seconds
+selectCodeEditor("Game.vhd", 366, 33); // bP (w, cs)
+selectCodeEditor("Game.vhd", 417, 39); // bP (w, cs)
+selectCodeEditor("Game.vhd", 423, 39); // bP (w, cs)
+selectCodeEditor("Game.vhd", 468, 37); // bP (w, cs)
+selectCodeEditor("Game.vhd", 748, 34); // bP (w, cs)
+selectCodeEditor("Game.vhd", 748, 34); // bP (w, cs)
+selectCodeEditor("Game.vhd", 214, 144); // bP (w, cs)
+selectCodeEditor("Game.vhd", 202, 162); // bP (w, cs)
+// Elapsed time: 42 seconds
+selectCodeEditor("Game.vhd", 65, 148); // bP (w, cs)
+selectCodeEditor("Game.vhd", 54, 139); // bP (w, cs)
+// Elapsed time: 26 seconds
+selectCodeEditor("Game.vhd", 46, 184); // bP (w, cs)
+selectCodeEditor("Game.vhd", 141, 74); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 71 MB. Current time: 5/11/24, 11:23:13 AM CLST
+// Elapsed time: 33 seconds
+selectCodeEditor("Game.vhd", 68, 102); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("Game.vhd", 330, 171); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("Game.vhd", 159, 55); // bP (w, cs)
+selectCodeEditor("Game.vhd", 127, 71); // bP (w, cs)
+// Elapsed time: 35 seconds
+selectCodeEditor("Game.vhd", 376, 133); // bP (w, cs)
+// Elapsed time: 60 seconds
+selectCodeEditor("Game.vhd", 384, 208); // bP (w, cs)
+// Elapsed time: 27 seconds
+selectCodeEditor("Game.vhd", 433, 120); // bP (w, cs)
+// Elapsed time: 30 seconds
+selectCodeEditor("Game.vhd", 345, 146); // bP (w, cs)
+selectCodeEditor("Game.vhd", 483, 150); // bP (w, cs)
+selectCodeEditor("Game.vhd", 635, 184); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("Game.vhd", 722, 139); // bP (w, cs)
+selectCodeEditor("Game.vhd", 544, 179); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("Game.vhd", 722, 136); // bP (w, cs)
+selectCodeEditor("Game.vhd", 567, 186); // bP (w, cs)
+// Elapsed time: 19 seconds
+selectCodeEditor("Game.vhd", 76, 270); // bP (w, cs)
+// Elapsed time: 41 seconds
+selectCodeEditor("Game.vhd", 614, 148); // bP (w, cs)
+selectCodeEditor("Game.vhd", 653, 135); // bP (w, cs)
+selectCodeEditor("Game.vhd", 653, 135); // bP (w, cs)
+// Elapsed time: 36 seconds
+selectCodeEditor("Game.vhd", 545, 227); // bP (w, cs)
+selectCodeEditor("Game.vhd", 141, 241); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("Game.vhd", 294, 213); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LedShow.vhd", 2); // m (l, cs)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LedShow.vhd", 2, false, true); // m (l, cs) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N (aI, cs)
+selectCodeEditor("LedShow.vhd", 407, 148); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 365, 120); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 189, 70); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("LedShow.vhd", 383, 150); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 229, 456); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("LedShow.vhd", 515, 264); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("LedShow.vhd", 702, 264); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 670, 268); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("LedShow.vhd", 536, 265); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("LedShow.vhd", 405, 57); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("LedShow.vhd", 300, 81); // bP (w, cs)
+// Elapsed time: 78 seconds
+selectCodeEditor("LedShow.vhd", 1324, 91); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 652, 137); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 655, 122); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 25 seconds
+selectCodeEditor("LedShow.vhd", 490, 141); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 422, 101); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 495, 226); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 383, 209); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 492, 221); // bP (w, cs)
+// Elapsed time: 44 seconds
+selectCodeEditor("LedShow.vhd", 602, 319); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 616, 311); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("LedShow.vhd", 448, 58); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 483, 72); // bP (w, cs)
+// Elapsed time: 20 seconds
+selectCodeEditor("LedShow.vhd", 683, 253); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 647, 235); // bP (w, cs)
+// Elapsed time: 40 seconds
+selectCodeEditor("LedShow.vhd", 456, 456); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("LedShow.vhd", 678, 368); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 91 seconds
+selectCodeEditor("LedShow.vhd", 290, 444); // bP (w, cs)
+// Elapsed time: 18 seconds
+selectCodeEditor("LedShow.vhd", 478, 380); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 497, 362); // bP (w, cs)
+// Elapsed time: 29 seconds
+selectCodeEditor("LedShow.vhd", 398, 455); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 1184, 349); // bP (w, cs)
+selectCodeEditor("LedShow.vhd", 556, 442); // bP (w, cs)
+// Elapsed time: 20 seconds
+selectCodeEditor("LedShow.vhd", 723, 299); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game(Behavioral) (Game.vhd)]", 1); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game(Behavioral) (Game.vhd), Comparer0 : Comparer(Behavioral) (Comparer.vhd)]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game(Behavioral) (Game.vhd), Comparer0 : Comparer(Behavioral) (Comparer.vhd)]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("Comparer.vhd", 67, 243); // bP (w, cs)
+selectCodeEditor("Comparer.vhd", 132, 137); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LedShow.vhd", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Comparer.vhd", 4); // m (l, cs)
+selectCodeEditor("Comparer.vhd", 208, 191); // bP (w, cs)
+selectCodeEditor("Comparer.vhd", 176, 180); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("Comparer.vhd", 409, 233); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("Comparer.vhd", 168, 200); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("Comparer.vhd", 409, 332); // bP (w, cs)
+// Elapsed time: 28 seconds
+selectCodeEditor("Comparer.vhd", 300, 672); // bP (w, cs)
+selectCodeEditor("Comparer.vhd", 552, 199); // bP (w, cs)
+selectCodeEditor("Comparer.vhd", 813, 299); // bP (w, cs)
+selectCodeEditor("Comparer.vhd", 342, 299); // bP (w, cs)
+selectCodeEditor("Comparer.vhd", 366, 347); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("Comparer.vhd", 380, 306); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("Comparer.vhd", 542, 328); // bP (w, cs)
+// Elapsed time: 43 seconds
+selectCodeEditor("Comparer.vhd", 577, 421); // bP (w, cs)
+selectCodeEditor("Comparer.vhd", 559, 408); // bP (w, cs)
+// Elapsed time: 49 seconds
+selectCodeEditor("Comparer.vhd", 225, 426); // bP (w, cs)
+// Elapsed time: 25 seconds
+selectCodeEditor("Comparer.vhd", 578, 442); // bP (w, cs)
+selectCodeEditor("Comparer.vhd", 561, 427); // bP (w, cs)
+// Elapsed time: 69 seconds
+selectCodeEditor("Comparer.vhd", 332, 346); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game(Behavioral) (Game.vhd), GDebouncer0 : GDebouncer(Behavioral) (GDebouncer.vhd)]", 4, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game(Behavioral) (Game.vhd), GDebouncer0 : GDebouncer(Behavioral) (GDebouncer.vhd)]", 4, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game(Behavioral) (Game.vhd), GDebouncer0 : GDebouncer(Behavioral) (GDebouncer.vhd)]", 4, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("GDebouncer.vhd", 74, 207); // bP (w, cs)
+selectCodeEditor("GDebouncer.vhd", 181, 623); // bP (w, cs)
+selectCodeEditor("GDebouncer.vhd", 178, 648); // bP (w, cs)
+// Elapsed time: 36 seconds
+selectCodeEditor("GDebouncer.vhd", 325, 158); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Comparer.vhd", 4); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "GDebouncer.vhd", 5); // m (l, cs)
+selectCodeEditor("GDebouncer.vhd", 188, 86); // bP (w, cs)
+// Elapsed time: 33 seconds
+selectCodeEditor("GDebouncer.vhd", 660, 224); // bP (w, cs)
+selectCodeEditor("GDebouncer.vhd", 760, 225); // bP (w, cs)
+selectCodeEditor("GDebouncer.vhd", 592, 227); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Comparer.vhd", 4); // m (l, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game(Behavioral) (Game.vhd)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game(Behavioral) (Game.vhd)]", 1, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+// Elapsed time: 136 seconds
+selectCodeEditor("Game.vhd", 35, 155); // bP (w, cs)
+selectCodeEditor("Game.vhd", 39, 133); // bP (w, cs)
+selectCodeEditor("Game.vhd", 38, 148); // bP (w, cs)
+selectCodeEditor("Game.vhd", 42, 226); // bP (w, cs)
+selectCodeEditor("Game.vhd", 39, 219); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("Game.vhd", 69, 326); // bP (w, cs)
+selectCodeEditor("Game.vhd", 227, 295); // bP (w, cs)
+selectCodeEditor("Game.vhd", 233, 303); // bP (w, cs)
+selectCodeEditor("Game.vhd", 271, 535); // bP (w, cs)
+selectCodeEditor("Game.vhd", 399, 410); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Comparer.vhd", 4); // m (l, cs)
+selectCodeEditor("Comparer.vhd", 340, 327); // bP (w, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cs): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b (a, Q)
+// bz (Q):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+dismissDialog("Analyze source files for top modules"); // bz (Q)
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("OptionPane.button", "Overwrite"); // JButton (v, B)
+selectButton("FINISH", "Finish"); // JButton (j, Q)
+// 'q' command handler elapsed time: 10 seconds
+dismissDialog("Create and Package New IP"); // Q (cs)
+// TclEventType: LOAD_FEATURE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: ipx::package_project -root_dir c:/users/gusta/documents/sep_projects/game/game.srcs -vendor xilinx.com -library user -taxonomy /UserIP -force 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cs):  IP Packager : addNotify
+// [GUI Memory]: 138 MB (+69kb) [01:26:06]
+dismissDialog("IP Packager"); // bz (cs)
+// [GUI Memory]: 147 MB (+2090kb) [01:26:08]
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (J, cs)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cs)
+// [GUI Memory]: 161 MB (+7601kb) [01:26:10]
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cs):  Package IP : addNotify
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/gusta/Documents/SEP_projects/Game/Game.srcs 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/gusta/Documents/SEP_projects/Game/Game.srcs' 
+// TclEventType: LOAD_FEATURE
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 80 MB. Current time: 5/11/24, 11:53:13 AM CLST
+// WARNING: HEventQueue.dispatchEvent() is taking  1335 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 80 MB. Current time: 5/11/24, 12:23:15 PM CLST
+// WARNING: HEventQueue.dispatchEvent() is taking  1782 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 77 MB. Current time: 5/11/24, 12:53:15 PM CLST
+// WARNING: HEventQueue.dispatchEvent() is taking  1324 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 77 MB. Current time: 5/11/24, 1:23:15 PM CLST
+// WARNING: HEventQueue.dispatchEvent() is taking  2013 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 77 MB. Current time: 5/11/24, 1:53:17 PM CLST
+// WARNING: HEventQueue.dispatchEvent() is taking  3551 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2851 ms. Increasing delay to 8553 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3021 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2662 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2673 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 78 MB. Current time: 5/11/24, 2:23:18 PM CLST
+// WARNING: HEventQueue.dispatchEvent() is taking  1240 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 78 MB. Current time: 5/11/24, 2:53:16 PM CLST
+// WARNING: HEventQueue.dispatchEvent() is taking  2849 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 77 MB. Current time: 5/11/24, 3:23:18 PM CLST

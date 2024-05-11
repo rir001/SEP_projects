@@ -2,10 +2,10 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Fri May 10 00:58:30 2024
-# Process ID: 27816
+# Start of session at: Sat May 11 10:16:50 2024
+# Process ID: 27084
 # Current directory: C:/Users/gusta/Documents/SEP_projects/SM
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14148 C:\Users\gusta\Documents\SEP_projects\SM\SM.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4912 C:\Users\gusta\Documents\SEP_projects\SM\SM.xpr
 # Log file: C:/Users/gusta/Documents/SEP_projects/SM/vivado.log
 # Journal file: C:/Users/gusta/Documents/SEP_projects/SM\vivado.jou
 #-----------------------------------------------------------

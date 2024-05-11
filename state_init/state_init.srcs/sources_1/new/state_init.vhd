@@ -6,11 +6,19 @@ use ieee.numeric_std.all;
 
 
 entity state_init is
+    generic(
+    duration1: integer := 1;
+    duration2: integer := 2;
+    duration3: integer := 3;
+    duration4: integer := 4;
+    scale: integer := 100000000
+    );
     Port (
         clk:        in std_logic;
         sm_state:   in std_logic_vector(2 downto 0);
-
-        active:     out std_logic:= '0';
+        
+        rgb:     out std_logic:= '0';
+        --active:     out std_logic:= '0';
         leds:       out std_logic_vector(3 downto 0):= "0000"
     );
 end state_init;
@@ -18,11 +26,15 @@ end state_init;
 architecture Behavioral of state_init is
 
     signal complete: std_logic:= '0';
-    constant scale: integer:= 10;
+    signal active: std_logic := '0';
 
 begin
-    process(clk, sm_state)
+    rgb <= active;
+    
+    process(clk)
     variable counter: integer:= 0;
+    
+    
     begin
         if rising_edge(clk) then
             if (to_integer(unsigned(sm_state)) = 2) then
@@ -30,13 +42,13 @@ begin
                     active <= '1';
                     counter := counter + 1;
 
-                    if    (counter < 1*scale) then
+                    if    (counter < duration1*scale) then
                         leds <= "0001";
-                    elsif (counter < 2*scale) then
+                    elsif (counter < duration2*scale) then
                         leds <= "0010";
-                    elsif (counter < 3*scale) then
+                    elsif (counter < duration3*scale) then
                         leds <= "0100";
-                    elsif (counter < 4*scale) then
+                    elsif (counter < duration4*scale) then
                         leds <= "1111";
                     else
                         leds <= "0000";

@@ -33,17 +33,21 @@ use ieee.numeric_std.all;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
+-- Codigo de la parte de juego del memorice
+-- rota entre emitir las luces en la secuencia correspondiente
+-- y recibir y comparar el input de botones
+
 entity Game is
   Port ( 
   clk0: in std_logic;
   sm_s0: in std_logic_vector (2 downto 0);
-  --data0: in std_logic_vector (31 downto 0);
+  data0: in std_logic_vector (31 downto 0);
   btns: in std_logic_vector (3 downto 0); 
   
   
   --rgb0: out std_logic := '0';
-  --active_g: out std_logic := '0';
-  --result: out std_logic := '0';
+  active_g: out std_logic := '0';
+  result: out std_logic := '0';
   led: out std_logic_vector (3 downto 0):= "0000"
   
   );
@@ -52,7 +56,9 @@ end Game;
 architecture Behavioral of Game is
 
  -- instanciacion de los components
- 
+    
+    -- componente comparador, compara los inputs de boton, con la secuencia esperada
+    -- devuelve un señal indicando si fue correcto o no
     component Comparer is 
         port(
         sm_s: in std_logic_vector (1 downto 0);
@@ -67,6 +73,7 @@ architecture Behavioral of Game is
         );
      end component Comparer;
 
+    -- componente leds, indica que leds se van prendiendo segun la secuencia escogida.
     component LedShow is
         port(
         clk:        in STD_LOGIC;
@@ -83,6 +90,7 @@ architecture Behavioral of Game is
         );
     end component LedShow;
     
+    -- componente deboouncer, le hace debounce a todos los botones.
     component GDebouncer is
         port(
         clk: in std_logic; 
@@ -93,9 +101,9 @@ architecture Behavioral of Game is
     
     
     -- fixed values for simulation:
-    constant data0:  std_logic_vector (31 downto 0) := "10000100001000011000010000100001";
+    -- constant data0:  std_logic_vector (31 downto 0) := "10000100001000011000010000100001";
     
-    
+    -- señales auxiliares
     signal state: std_logic_vector (1 downto 0) := "01";
     signal sublevel0: std_logic_vector (3 downto 0):= "0001"; -- en volada no va el valor inicial
     signal active_c: std_logic := '0';
@@ -108,7 +116,7 @@ architecture Behavioral of Game is
     signal complete_c: std_logic := '0';
     signal dbtns: std_logic_vector (3 downto 0) := "0000";
 
-    
+    -- funcion auxiliar para aumentar en uno una variabel std_logic_vector
     function "+" (a: std_logic_vector (3 downto 0)) return std_logic_vector is
         
         begin 
@@ -161,39 +169,44 @@ begin
      begin
      
      
-     --active_g <= buff;
+     active_g <= buff;
      
+     -- logica que pasa entre el comparador y los leds
      if rising_edge (clk0) then
      
          if sm = '1' then
             if complete_g = '0' then
                 buff <= '1';
-                if complete_c = '1' then
+                
+                
+                if complete_c = '1' then -- cuando se completa la comparacion, indicado por complete_c
+                    -- se debe o terminar el juego, o seguir con la siguiente ronda de leds
                     --rgb0 <= '1';
-                    if opt0 = "01" then
-                        --result <= '0';
+                    if opt0 = "01" then -- si se fallo se resetean los valores y se indica que e perdio
+                        result <= '0';
                         buff <= '0';
                         sublevel0 <= "0001";
                         state <= "01";
                         complete_g <= '1';
                         
                         
-                    elsif opt0 = "11" then
+                    elsif opt0 = "11" then -- si no se fallo
+                        -- depende si ya se termino el juego o si faltan mas rondas
                         
-                        if sublevel0 = "1000" then -- quizas es 0111
-                            --result <= '1';
+                        if sublevel0 = "1000" then -- en caso de que se termino, se reinician los valores, y se indica que se gano
+                            result <= '1';
                             buff <= '0';
                             sublevel0 <= "0001";
                             state <= "01";
                             complete_g <= '1';
                             
-                        else 
+                        else  --  si aun no se termina, se pasa a la siguiente ronda, y se cambia al estado de los leds
                             sublevel0 <= +(sublevel0);
                             state <= "01";
                         end if;
                      end if; 
                 
-                elsif complete_l = '1' then -- quias agregar el and 
+                elsif complete_l = '1' then -- cuando se completa la secuencia de leds, se pasa directo a el estado de comparacion
                     --rgb0 <= '1';
                     state <= "10";
                 end if; 

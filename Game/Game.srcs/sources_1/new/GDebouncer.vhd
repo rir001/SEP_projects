@@ -31,14 +31,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
+-- debouncer
 entity GDebouncer is
   Port ( clk: in std_logic; 
         btns_in: in std_logic_vector (3 downto 0);
         btns_out: out std_logic_vector (3 downto 0):= "0000" );
 end GDebouncer;
 
+
 architecture Behavioral of GDebouncer is
-    
+    -- se utiliza el modulo debounce para cada boton.
     component Debouncer is
         port( button: in std_logic;
                 clk: in std_logic;
@@ -79,3 +81,5 @@ architecture Behavioral of GDebouncer is
 
 
 end Behavioral;
+
+-- Codigo de los debouncer individuales recuperrado de la ayudantia 3.
