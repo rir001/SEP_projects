@@ -29,3 +29,32 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr1/ip_repo/Init_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
 open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1048.848 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/gusta/Documents/SEP_projects/init_axi/init_axi.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:user:Init:1.0 - Init_0
+Adding component instance block -- xilinx.com:ip:axi_traffic_gen:3.0 - axi_traffic_gen_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz
+Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /vio_0/probe_out0(undef) and /proc_sys_reset_0/ext_reset_in(rst)
+Successfully read diagram <design_1> from BD file <C:/Users/gusta/Documents/SEP_projects/init_axi/init_axi.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1061.691 ; gain = 12.844
+ipx::edit_ip_in_project -upgrade true -name Init_v1_0_project -directory C:/Users/gusta/Documents/SEP_projects/init_axi/init_axi.tmp/Init_v1_0_project c:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr1/ip_repo/Init_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1083.105 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr1/ip_repo/Init_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1085.641 ; gain = 2.535
+update_compile_order -fileset sources_1
+set_property core_revision 9 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project init_axi
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 11 19:43:49 2024...
