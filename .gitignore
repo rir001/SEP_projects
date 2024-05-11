@@ -38,4 +38,9 @@ init_axi/init_axi.sim/*
 init_axi/init_axi.ip_user_files/*
 init_axi/init_axi.runs/*
 
+LightController/LightController.cache/*
+LightController/LightController.sim/*
+LightController/LightController.ip_user_files/*
+LightController/LightController.runs/*
+
 memorice *
