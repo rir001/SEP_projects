@@ -19,7 +19,7 @@ begin
     process(state, sw)
     begin
         if state = '1' then
-            ID <= "0"&sw;
+            ID(2 downto 0) <= sw;
         end if;
     end process;
 

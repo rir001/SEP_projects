@@ -21,9 +21,7 @@ architecture Behavioral of SM is
 
 begin
     process(state, next_state, back_state)
-    
-    
-    
+
     begin
         if falling_edge(state) then
             sm <= 1;
@@ -39,7 +37,6 @@ begin
                     sm <= sm + 1;
                 end if;
             end if;
-            
             if rising_edge(back_state) then
                 sm <= sm - 1;
                 if sm = 4 then
@@ -50,13 +47,8 @@ begin
         else
             sm <= 0;
         end if;
-        
         --sub <= std_logic_vector(to_unsigned(sub_level, sub'length));
         sm_state <= std_logic_vector(to_unsigned(sm, sm_state'length));
-    
 
     end process;
-    
-    
-
 end Behavioral;

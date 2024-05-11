@@ -26,7 +26,7 @@ begin
     variable counter: integer:= 0;
     begin
         if rising_edge(clk) then
-            if (to_integer(unsigned(sm_state)) = 5) then
+            if sm_state = "100" then
                 if (complete = '0') then
                     active <= '1';
                     counter := counter + 1;

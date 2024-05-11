@@ -12,12 +12,11 @@ entity LedShow is
         sub:        in std_logic_vector (3 downto 0);
         data:       in std_logic_vector (31 downto 0);
         enable:     in std_logic;
-        
+
         --rgb:        out std_logic;
         active:     out std_logic:= '0';
         leds:       out std_logic_vector (3 DOWNTO 0):= "0000";
         complete:   out std_logic := '0'
-        
     );
 end LedShow;
 

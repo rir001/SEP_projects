@@ -14,14 +14,12 @@ entity ram_reader is
 end ram_reader;
 
 architecture Behavioral of ram_reader is
-
     component levels is
         Port (
             a: in std_logic_vector(3 downto 0);
             spo: out std_logic_vector(31 downto 0)
         );
     end component levels;
-
 begin
 
     levels_1: levels port map( a => ID, spo => data );

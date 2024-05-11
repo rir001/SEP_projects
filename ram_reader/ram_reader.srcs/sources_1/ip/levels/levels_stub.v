@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Fri May  3 12:28:26 2024
-// Host        : lel running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub {c:/DATA/2024/7mo
-//               semestre/SEP/Proyectos/ram_reader/ram_reader.srcs/sources_1/ip/levels/levels_stub.v}
+// Date        : Sat May 11 03:21:36 2024
+// Host        : zez running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               c:/DATA/2024/sem07/SEP/SEP_projects/ram_reader/ram_reader.srcs/sources_1/ip/levels/levels_stub.v
 // Design      : levels
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1
