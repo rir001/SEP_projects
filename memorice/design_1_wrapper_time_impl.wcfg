@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_1_wrapper_time_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="design_1_wrapper" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="427000fs"></ZoomStartTime>
+      <ZoomEndTime time="3041001fs"></ZoomEndTime>
+      <Cursor1Time time="2375000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="193"></NameColumnWidth>
+      <ValueColumnWidth column_width="108"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/design_1_wrapper/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/btn" type="array">
+      <obj_property name="ElementShortName">btn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/state" type="logic">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/sw" type="array">
+      <obj_property name="ElementShortName">sw[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/rgb" type="array">
+      <obj_property name="ElementShortName">rgb[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/led" type="array">
+      <obj_property name="ElementShortName">led[3:0]</obj_property>
+      <obj_property name="ObjectShortName">led[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/state_machine_0/U0/sm_state" type="array">
+      <obj_property name="ElementShortName">sm_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sm_state[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/ram_reader_0/U0/data" type="array">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/state_wait_0_active" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">state_wait_0_active</obj_property>
+      <obj_property name="ObjectShortName">state_wait_0_active</obj_property>
+      <obj_property name="label">active wait</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/Init_0_active" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Init_0_active</obj_property>
+      <obj_property name="ObjectShortName">Init_0_active</obj_property>
+      <obj_property name="label">active init</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/Game_0_active_g" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Game_0_active_g</obj_property>
+      <obj_property name="ObjectShortName">Game_0_active_g</obj_property>
+      <obj_property name="label">active game</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/state_results_0_active" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">state_results_0_active</obj_property>
+      <obj_property name="ObjectShortName">state_results_0_active</obj_property>
+      <obj_property name="label">active results</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/Init_0/active" type="logic">
+      <obj_property name="ElementShortName">active</obj_property>
+      <obj_property name="ObjectShortName">active</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/Init_0/sm_state" type="array">
+      <obj_property name="ElementShortName">sm_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sm_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/Init_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+</wave_config>

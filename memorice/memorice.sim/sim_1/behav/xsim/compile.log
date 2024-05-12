@@ -1,0 +1,62 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_ram_reader_0_0/ip/levels/sim/levels.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module levels
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_axi_traffic_gen_0_0/sim/design_1_axi_traffic_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_axi_traffic_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ipshared/629a/hdl/Init_v1_0_S00_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Init_v1_0_S00_AXI'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ipshared/629a/hdl/Init_v1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Init_v1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_Init_0_0/sim/design_1_Init_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_Init_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ipshared/c1f6/ID_selector.srcs/sources_1/new/ID_selector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ID_selector'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_ID_selector_0_0/sim/design_1_ID_selector_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_ID_selector_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ipshared/24bf/new/ram_reader.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ram_reader'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_ram_reader_0_0/sim/design_1_ram_reader_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_ram_reader_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ipshared/8921/state_machine.srcs/sources_1/new/state_machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'state_machine'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_state_machine_0_0/sim/design_1_state_machine_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_state_machine_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ipshared/877c/state_wait.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'state_wait'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_state_wait_0_0/sim/design_1_state_wait_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_state_wait_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ipshared/597c/state_results.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'state_results'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_state_results_0_0/sim/design_1_state_results_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_state_results_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ipshared/c152/sources_1/new/Comparer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Comparer'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ipshared/c152/sources_1/new/Debouncer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clock_enable_debouncing_button'
+INFO: [VRFC 10-3107] analyzing entity 'DFF_Debouncing_Button'
+INFO: [VRFC 10-3107] analyzing entity 'Debouncer'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ipshared/c152/sources_1/new/GDebouncer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'GDebouncer'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ipshared/c152/sources_1/new/LedShow.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedShow'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ipshared/c152/sources_1/new/Game.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Game'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_Game_0_0/sim/design_1_Game_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_Game_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ipshared/4274/sources_1/new/LightController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LightController'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_LightController_0_0/sim/design_1_LightController_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_LightController_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_vio_0_1/sim/design_1_vio_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_vio_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_proc_sys_reset_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.ip_user_files/bd/design_1/sim/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'

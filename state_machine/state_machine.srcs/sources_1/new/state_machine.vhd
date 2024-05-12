@@ -30,7 +30,7 @@ begin
 
     process(clk)
     begin
-        if rising_edge(clk) then
+        if clk'event and clk = '1' then
 
             if (reg_state = '1') and (state = '0') then
                 sm <= "001";

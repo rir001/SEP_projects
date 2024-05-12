@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat May 11 17:25:12 2024
+# Process ID: 23808
+# Current directory: C:/DATA/2024/sem07/SEP/SEP_projects/state_machine/state_machine.runs/synth_1
+# Command line: vivado.exe -log state_machine.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source state_machine.tcl
+# Log file: C:/DATA/2024/sem07/SEP/SEP_projects/state_machine/state_machine.runs/synth_1/state_machine.vds
+# Journal file: C:/DATA/2024/sem07/SEP/SEP_projects/state_machine/state_machine.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source state_machine.tcl -notrace

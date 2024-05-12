@@ -1,0 +1,89 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f020ef262bce4024aaac958fee6c3504 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L blk_mem_gen_v8_4_4 -L lib_bmg_v1_0_13 -L axi_traffic_gen_v3_0_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'wea' [/wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/axi_traffic_gen_v3_0/hdl/axi_traffic_gen_v3_0_rfs.v:13848]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.Comparer [comparer_default]
+Compiling architecture behavioral of entity xil_defaultlib.LedShow [ledshow_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable_debouncing_button [clock_enable_debouncing_button_d...]
+Compiling architecture behavioral of entity xil_defaultlib.DFF_Debouncing_Button [dff_debouncing_button_default]
+Compiling architecture behavioral of entity xil_defaultlib.Debouncer [debouncer_default]
+Compiling architecture behavioral of entity xil_defaultlib.GDebouncer [gdebouncer_default]
+Compiling architecture behavioral of entity xil_defaultlib.Game [game_default]
+Compiling architecture design_1_game_0_0_arch of entity xil_defaultlib.design_1_Game_0_0 [design_1_game_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.ID_selector [id_selector_default]
+Compiling architecture design_1_id_selector_0_0_arch of entity xil_defaultlib.design_1_ID_selector_0_0 [design_1_id_selector_0_0_default]
+Compiling architecture arch_imp of entity xil_defaultlib.Init_v1_0_S00_AXI [init_v1_0_s00_axi_default]
+Compiling architecture arch_imp of entity xil_defaultlib.Init_v1_0 [init_v1_0_default]
+Compiling architecture design_1_init_0_0_arch of entity xil_defaultlib.design_1_Init_0_0 [design_1_init_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.LightController [lightcontroller_default]
+Compiling architecture design_1_lightcontroller_0_0_arch of entity xil_defaultlib.design_1_LightController_0_0 [design_1_lightcontroller_0_0_def...]
+Compiling module axi_traffic_gen_v3_0_7.axi_traffic_gen_v3_0_7_asynch_rs...
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=1,c_mtb...]
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=0,ME...
+Compiling module xpm.xpm_memory_spram(MEMORY_SIZE=512...
+Compiling module axi_traffic_gen_v3_0_7.axi_traffic_gen_v3_0_7_systemini...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=0,ME...
+Compiling module xpm.xpm_memory_spram(MEMORY_SIZE=512...
+Compiling module axi_traffic_gen_v3_0_7.axi_traffic_gen_v3_0_7_systemini...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=0,ME...
+Compiling module xpm.xpm_memory_spram(MEMORY_SIZE=512...
+Compiling module axi_traffic_gen_v3_0_7.axi_traffic_gen_v3_0_7_systemini...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=0,ME...
+Compiling module xpm.xpm_memory_spram(MEMORY_SIZE=512...
+Compiling module axi_traffic_gen_v3_0_7.axi_traffic_gen_v3_0_7_systemini...
+Compiling module axi_traffic_gen_v3_0_7.axi_traffic_gen_v3_0_7_static_cm...
+Compiling module axi_traffic_gen_v3_0_7.axi_traffic_gen_v3_0_7_systemini...
+Compiling module axi_traffic_gen_v3_0_7.axi_traffic_gen_v3_0_7_systemini...
+Compiling module axi_traffic_gen_v3_0_7.axi_traffic_gen_v3_0_7_top(C_FAM...
+Compiling module xil_defaultlib.design_1_axi_traffic_gen_0_0
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture design_1_proc_sys_reset_0_0_arch of entity xil_defaultlib.design_1_proc_sys_reset_0_0 [design_1_proc_sys_reset_0_0_defa...]
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="z...
+Compiling module xil_defaultlib.levels
+Compiling architecture behavioral of entity xil_defaultlib.ram_reader [ram_reader_default]
+Compiling architecture design_1_ram_reader_0_0_arch of entity xil_defaultlib.design_1_ram_reader_0_0 [design_1_ram_reader_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.state_machine [state_machine_default]
+Compiling architecture design_1_state_machine_0_0_arch of entity xil_defaultlib.design_1_state_machine_0_0 [design_1_state_machine_0_0_defau...]
+Compiling architecture behavioral of entity xil_defaultlib.state_results [state_results_default]
+Compiling architecture design_1_state_results_0_0_arch of entity xil_defaultlib.design_1_state_results_0_0 [design_1_state_results_0_0_defau...]
+Compiling architecture behavioral of entity xil_defaultlib.state_wait [state_wait_default]
+Compiling architecture design_1_state_wait_0_0_arch of entity xil_defaultlib.design_1_state_wait_0_0 [design_1_state_wait_0_0_default]
+Compiling architecture design_1_vio_0_1_arch of entity xil_defaultlib.design_1_vio_0_1 [design_1_vio_0_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper
+Built simulation snapshot design_1_wrapper_behav

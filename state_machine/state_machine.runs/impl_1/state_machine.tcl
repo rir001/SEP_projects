@@ -131,6 +131,8 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/DATA/2024/sem07/SEP/SEP_projects/state_machine/state_machine.cache/wt [current_project]
   set_property parent.project_path C:/DATA/2024/sem07/SEP/SEP_projects/state_machine/state_machine.xpr [current_project]
+  set_property ip_repo_paths C:/data/2024/sem07/sep/sep_projects/state_machine [current_project]
+  update_ip_catalog
   set_property ip_output_repo C:/DATA/2024/sem07/SEP/SEP_projects/state_machine/state_machine.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }

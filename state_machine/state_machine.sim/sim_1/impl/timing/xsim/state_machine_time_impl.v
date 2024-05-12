@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Sat May 11 17:26:24 2024
+// Date        : Sat May 11 22:50:18 2024
 // Host        : zez running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
 //               C:/DATA/2024/sem07/SEP/SEP_projects/state_machine/state_machine.sim/sim_1/impl/timing/xsim/state_machine_time_impl.v

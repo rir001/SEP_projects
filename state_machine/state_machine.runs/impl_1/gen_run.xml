@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1715462711">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1715482149">
   <File Type="BITSTR-BMM" Name="state_machine_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="state_machine_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="state_machine_timing_summary_init.rpt"/>
@@ -82,6 +82,9 @@
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../data/2024/sem07/sep/sep_projects/state_machine/component.xml">
+      <FileInfo SFType="IPXACT"/>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>

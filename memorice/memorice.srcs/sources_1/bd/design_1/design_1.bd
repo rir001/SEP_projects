@@ -1,0 +1,344 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x25314CB22B800F63",
+      "device": "xc7z010clg400-1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ID_selector_0": "",
+      "ram_reader_0": "",
+      "state_machine_0": "",
+      "state_wait_0": "",
+      "Game_0": "",
+      "LightController_0": "",
+      "vio_0": "",
+      "clk_wiz_0": "",
+      "proc_sys_reset_0": "",
+      "axi_traffic_gen_0": "",
+      "state_results_0": "",
+      "Init_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "state": {
+        "direction": "I"
+      },
+      "btn": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "sw": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "led": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "rgb": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      }
+    },
+    "components": {
+      "ID_selector_0": {
+        "vlnv": "xilinx.com:user:ID_selector:1.0",
+        "xci_name": "design_1_ID_selector_0_0"
+      },
+      "ram_reader_0": {
+        "vlnv": "xilinx.com:user:ram_reader:1.0",
+        "xci_name": "design_1_ram_reader_0_0"
+      },
+      "state_machine_0": {
+        "vlnv": "xilinx.com:user:state_machine:1.0",
+        "xci_name": "design_1_state_machine_0_0"
+      },
+      "state_wait_0": {
+        "vlnv": "xilinx.com:user:state_wait:1.0",
+        "xci_name": "design_1_state_wait_0_0"
+      },
+      "Game_0": {
+        "vlnv": "xilinx.com:user:Game:1.0",
+        "xci_name": "design_1_Game_0_0"
+      },
+      "LightController_0": {
+        "vlnv": "xilinx.com:user:LightController:1.0",
+        "xci_name": "design_1_LightController_0_0"
+      },
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "design_1_vio_0_1",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "0"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "1"
+          },
+          "C_PROBE_OUT0_INIT_VAL": {
+            "value": "0x1"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "parameters": {
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "proc_sys_reset_0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "design_1_proc_sys_reset_0_0"
+      },
+      "axi_traffic_gen_0": {
+        "vlnv": "xilinx.com:ip:axi_traffic_gen:3.0",
+        "xci_name": "design_1_axi_traffic_gen_0_0",
+        "parameters": {
+          "C_ATG_MODE": {
+            "value": "AXI4-Lite"
+          },
+          "C_ATG_SYSINIT_MODES": {
+            "value": "System_Test"
+          },
+          "C_ATG_SYSTEM_CMD_MAX_RETRY": {
+            "value": "2147483647"
+          },
+          "C_ATG_SYSTEM_INIT_ADDR_MIF": {
+            "value": "../../../../../../../axi_files/addr.coe"
+          },
+          "C_ATG_SYSTEM_INIT_CTRL_MIF": {
+            "value": "../../../../../../../axi_files/ctrl.coe"
+          },
+          "C_ATG_SYSTEM_INIT_DATA_MIF": {
+            "value": "../../../../../../../axi_files/data.coe"
+          },
+          "C_ATG_SYSTEM_INIT_MASK_MIF": {
+            "value": "../../../../../../../axi_files/mask.coe"
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "Reg1": {
+              "range": "4G",
+              "width": "32"
+            }
+          },
+          "interface_ports": {
+            "M_AXI_LITE_CH1": {
+              "mode": "Master",
+              "address_space_ref": "Reg1",
+              "base_address": {
+                "minimum": "0x00000000",
+                "maximum": "0xFFFFFFFF"
+              }
+            }
+          }
+        }
+      },
+      "state_results_0": {
+        "vlnv": "xilinx.com:user:state_results:1.0",
+        "xci_name": "design_1_state_results_0_0"
+      },
+      "Init_0": {
+        "vlnv": "xilinx.com:user:Init:1.0",
+        "xci_name": "design_1_Init_0_0"
+      }
+    },
+    "interface_nets": {
+      "axi_traffic_gen_0_M_AXI_LITE_CH1": {
+        "interface_ports": [
+          "axi_traffic_gen_0/M_AXI_LITE_CH1",
+          "Init_0/S00_AXI"
+        ]
+      }
+    },
+    "nets": {
+      "ID_selector_0_ID": {
+        "ports": [
+          "ID_selector_0/ID",
+          "ram_reader_0/ID"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "state_machine_0/clk",
+          "Game_0/clk0",
+          "vio_0/clk",
+          "clk_wiz_0/clk_in1",
+          "state_results_0/clk",
+          "Init_0/clk"
+        ]
+      },
+      "state_machine_0_sm_state": {
+        "ports": [
+          "state_machine_0/sm_state",
+          "state_wait_0/sm_state",
+          "Game_0/sm_s0",
+          "state_results_0/sm_state",
+          "LightController_0/state",
+          "Init_0/sm_state"
+        ]
+      },
+      "state_0_1": {
+        "ports": [
+          "state",
+          "state_machine_0/state",
+          "ID_selector_0/state"
+        ]
+      },
+      "state_wait_0_active": {
+        "ports": [
+          "state_wait_0/active",
+          "state_machine_0/active_state_wait"
+        ]
+      },
+      "Game_0_active_g": {
+        "ports": [
+          "Game_0/active_g",
+          "state_machine_0/active_state_game"
+        ]
+      },
+      "state_results_0_active": {
+        "ports": [
+          "state_results_0/active",
+          "state_machine_0/active_state_result"
+        ]
+      },
+      "state_results_0_RGB": {
+        "ports": [
+          "state_results_0/RGB",
+          "LightController_0/rgb_in"
+        ]
+      },
+      "Game_0_led": {
+        "ports": [
+          "Game_0/led",
+          "LightController_0/led2"
+        ]
+      },
+      "ram_reader_0_data": {
+        "ports": [
+          "ram_reader_0/data",
+          "Game_0/data0"
+        ]
+      },
+      "btn_0_1": {
+        "ports": [
+          "btn",
+          "state_wait_0/btn"
+        ]
+      },
+      "sw_0_1": {
+        "ports": [
+          "sw",
+          "ID_selector_0/sw"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "proc_sys_reset_0/slowest_sync_clk",
+          "axi_traffic_gen_0/s_axi_aclk",
+          "Init_0/s00_axi_aclk"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "proc_sys_reset_0/dcm_locked"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "proc_sys_reset_0/ext_reset_in"
+        ]
+      },
+      "proc_sys_reset_0_peripheral_aresetn": {
+        "ports": [
+          "proc_sys_reset_0/peripheral_aresetn",
+          "axi_traffic_gen_0/s_axi_aresetn",
+          "Init_0/s00_axi_aresetn"
+        ]
+      },
+      "Init_0_leds": {
+        "ports": [
+          "Init_0/leds",
+          "LightController_0/led1"
+        ]
+      },
+      "Game_0_result": {
+        "ports": [
+          "Game_0/result",
+          "LightController_0/result"
+        ]
+      },
+      "LightController_0_led_out": {
+        "ports": [
+          "LightController_0/led_out",
+          "led"
+        ]
+      },
+      "LightController_0_rgb": {
+        "ports": [
+          "LightController_0/rgb",
+          "rgb"
+        ]
+      },
+      "Init_0_active": {
+        "ports": [
+          "Init_0/active",
+          "state_machine_0/active_state_init"
+        ]
+      }
+    },
+    "addressing": {
+      "/axi_traffic_gen_0": {
+        "address_spaces": {
+          "Reg1": {
+            "range": "4G",
+            "width": "32"
+          }
+        }
+      }
+    }
+  }
+}

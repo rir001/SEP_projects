@@ -1,0 +1,270 @@
+
+*** Running vivado
+    with args -log design_1_Game_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Game_0_0.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_Game_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DATA/2024/sem07/SEP/SEP_projects'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/DATA/2024/sem07/SEP/SEP_projects' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.runs/design_1_Game_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ID_selector:1.0'. The one found in IP location 'c:/DATA/2024/sem07/SEP/SEP_projects/ID_selector' will take precedence over the same IP in location c:/DATA/2024/sem07/SEP/SEP_projects/ID_selector/ID_selector.srcs/sources_1/new
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ram_reader:1.0'. The one found in IP location 'c:/DATA/2024/sem07/SEP/SEP_projects/ram_reader/ram_reader.srcs/sources_1' will take precedence over the same IP in location c:/DATA/2024/sem07/SEP/SEP_projects/ram_reader
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:state_init:1.0'. The one found in IP location 'c:/DATA/2024/sem07/SEP/SEP_projects/state_init/state_init.srcs/sources_1/new' will take precedence over the same IP in location c:/DATA/2024/sem07/SEP/SEP_projects/state_init/state_init.srcs
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:state_wait:1.0'. The one found in IP location 'c:/DATA/2024/sem07/SEP/SEP_projects/state_wait/state_wait.srcs/sources_1/new' will take precedence over the same IP in location c:/DATA/2024/sem07/SEP/SEP_projects/state_wait/state_wait.srcs
+Command: synth_design -top design_1_Game_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13208
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.105 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_Game_0_0' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ip/design_1_Game_0_0/synth/design_1_Game_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'Game' declared at 'c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Game.vhd:8' bound to instance 'U0' of component 'Game' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ip/design_1_Game_0_0/synth/design_1_Game_0_0.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'Game' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Game.vhd:24]
+INFO: [Synth 8-3491] module 'Comparer' declared at 'c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Comparer.vhd:9' bound to instance 'Comparer0' of component 'Comparer' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Game.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'Comparer' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Comparer.vhd:23]
+WARNING: [Synth 8-2897] clock signal used as data [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Comparer.vhd:50]
+WARNING: [Synth 8-2897] clock signal used as data [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Comparer.vhd:50]
+WARNING: [Synth 8-2897] clock signal used as data [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Comparer.vhd:50]
+WARNING: [Synth 8-614] signal 'buff' is read in the process but is not in the sensitivity list [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Comparer.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'Comparer' (1#1) [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Comparer.vhd:23]
+INFO: [Synth 8-3491] module 'LedShow' declared at 'c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/LedShow.vhd:8' bound to instance 'LedShow0' of component 'LedShow' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Game.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'LedShow' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/LedShow.vhd:23]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/LedShow.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'LedShow' (2#1) [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/LedShow.vhd:23]
+INFO: [Synth 8-3491] module 'GDebouncer' declared at 'c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/GDebouncer.vhd:35' bound to instance 'GDebouncer0' of component 'GDebouncer' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Game.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'GDebouncer' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/GDebouncer.vhd:42]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Debouncer.vhd:62' bound to instance 'Debouncer0' of component 'Debouncer' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/GDebouncer.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Debouncer.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'clock_enable_debouncing_button' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Debouncer.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'clock_enable_debouncing_button' (3#1) [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Debouncer.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'DFF_Debouncing_Button' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Debouncer.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'DFF_Debouncing_Button' (4#1) [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Debouncer.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (5#1) [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Debouncer.vhd:70]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Debouncer.vhd:62' bound to instance 'Debouncer1' of component 'Debouncer' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/GDebouncer.vhd:60]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Debouncer.vhd:62' bound to instance 'Debouncer2' of component 'Debouncer' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/GDebouncer.vhd:67]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Debouncer.vhd:62' bound to instance 'Debouncer3' of component 'Debouncer' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/GDebouncer.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'GDebouncer' (6#1) [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/GDebouncer.vhd:42]
+WARNING: [Synth 8-614] signal 'buff' is read in the process but is not in the sensitivity list [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Game.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'Game' (7#1) [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/c152/sources_1/new/Game.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'design_1_Game_0_0' (8#1) [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ip/design_1_Game_0_0/synth/design_1_Game_0_0.vhd:68]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.516 ; gain = 34.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.516 ; gain = 34.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.516 ; gain = 34.410
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1054.516 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ip/design_1_Game_0_0/constrs_1/new/Zybo-Z7-Master.xdc] for cell 'U0'
+WARNING: [Vivado 12-584] No ports matched 'rgb0'. [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ip/design_1_Game_0_0/constrs_1/new/Zybo-Z7-Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ip/design_1_Game_0_0/constrs_1/new/Zybo-Z7-Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ip/design_1_Game_0_0/constrs_1/new/Zybo-Z7-Master.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ip/design_1_Game_0_0/constrs_1/new/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_Game_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_Game_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.runs/design_1_Game_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.runs/design_1_Game_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1167.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1172.801 ; gain = 5.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1172.801 ; gain = 152.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1172.801 ; gain = 152.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.runs/design_1_Game_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1172.801 ; gain = 152.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1172.801 ; gain = 152.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 6     
+	   5 Input   31 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 28    
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1172.801 ; gain = 152.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1172.801 ; gain = 152.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1172.801 ; gain = 152.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1174.977 ; gain = 154.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1180.703 ; gain = 160.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1180.703 ; gain = 160.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1180.703 ; gain = 160.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1180.703 ; gain = 160.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1180.703 ; gain = 160.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1180.703 ; gain = 160.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    84|
+|2     |LUT1   |    15|
+|3     |LUT2   |    92|
+|4     |LUT3   |    65|
+|5     |LUT4   |    64|
+|6     |LUT5   |    24|
+|7     |LUT6   |    84|
+|8     |MUXF7  |     4|
+|9     |FDCE   |    39|
+|10    |FDRE   |   197|
+|11    |FDSE   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1180.703 ; gain = 160.598
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1180.703 ; gain = 42.312
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1180.703 ; gain = 160.598
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1191.812 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1196.863 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 12 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 1196.863 ; gain = 176.758
+INFO: [Common 17-1381] The checkpoint 'C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.runs/design_1_Game_0_0_synth_1/design_1_Game_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 24 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.runs/design_1_Game_0_0_synth_1/design_1_Game_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_Game_0_0_utilization_synth.rpt -pb design_1_Game_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 11 20:15:17 2024...

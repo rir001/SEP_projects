@@ -1,0 +1,261 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat May 11 20:57:10 2024
+# Process ID: 22424
+# Current directory: C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.runs/design_1_Init_0_0_synth_1
+# Command line: vivado.exe -log design_1_Init_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Init_0_0.tcl
+# Log file: C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.runs/design_1_Init_0_0_synth_1/design_1_Init_0_0.vds
+# Journal file: C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.runs/design_1_Init_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_Init_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DATA/2024/sem07/SEP/SEP_projects'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/DATA/2024/sem07/SEP/SEP_projects' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.runs/design_1_Init_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ID_selector:1.0'. The one found in IP location 'c:/DATA/2024/sem07/SEP/SEP_projects/ID_selector' will take precedence over the same IP in location c:/DATA/2024/sem07/SEP/SEP_projects/ID_selector/ID_selector.srcs/sources_1/new
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ram_reader:1.0'. The one found in IP location 'c:/DATA/2024/sem07/SEP/SEP_projects/ram_reader/ram_reader.srcs/sources_1' will take precedence over the same IP in location c:/DATA/2024/sem07/SEP/SEP_projects/ram_reader
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:state_init:1.0'. The one found in IP location 'c:/DATA/2024/sem07/SEP/SEP_projects/state_init/state_init.srcs/sources_1/new' will take precedence over the same IP in location c:/DATA/2024/sem07/SEP/SEP_projects/state_init/state_init.srcs
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:state_wait:1.0'. The one found in IP location 'c:/DATA/2024/sem07/SEP/SEP_projects/state_wait/state_wait.srcs/sources_1/new' will take precedence over the same IP in location c:/DATA/2024/sem07/SEP/SEP_projects/state_wait/state_wait.srcs
+Command: synth_design -top design_1_Init_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23916
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1036.508 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_Init_0_0' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ip/design_1_Init_0_0/synth/design_1_Init_0_0.vhd:86]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter duration1 bound to: 1 - type: integer 
+	Parameter duration2 bound to: 2 - type: integer 
+	Parameter duration3 bound to: 3 - type: integer 
+	Parameter duration4 bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'Init_v1_0' declared at 'c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/629a/hdl/Init_v1_0.vhd:5' bound to instance 'U0' of component 'Init_v1_0' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ip/design_1_Init_0_0/synth/design_1_Init_0_0.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'Init_v1_0' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/629a/hdl/Init_v1_0.vhd:56]
+	Parameter duration1 bound to: 1 - type: integer 
+	Parameter duration2 bound to: 2 - type: integer 
+	Parameter duration3 bound to: 3 - type: integer 
+	Parameter duration4 bound to: 4 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter duration1 bound to: 1 - type: integer 
+	Parameter duration2 bound to: 2 - type: integer 
+	Parameter duration3 bound to: 3 - type: integer 
+	Parameter duration4 bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'Init_v1_0_S00_AXI' declared at 'c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/629a/hdl/Init_v1_0_S00_AXI.vhd:5' bound to instance 'Init_v1_0_S00_AXI_inst' of component 'Init_v1_0_S00_AXI' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/629a/hdl/Init_v1_0.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'Init_v1_0_S00_AXI' [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/629a/hdl/Init_v1_0_S00_AXI.vhd:94]
+	Parameter duration1 bound to: 1 - type: integer 
+	Parameter duration2 bound to: 2 - type: integer 
+	Parameter duration3 bound to: 3 - type: integer 
+	Parameter duration4 bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/629a/hdl/Init_v1_0_S00_AXI.vhd:237]
+INFO: [Synth 8-226] default block is never used [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/629a/hdl/Init_v1_0_S00_AXI.vhd:367]
+INFO: [Synth 8-256] done synthesizing module 'Init_v1_0_S00_AXI' (1#1) [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/629a/hdl/Init_v1_0_S00_AXI.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'Init_v1_0' (2#1) [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ipshared/629a/hdl/Init_v1_0.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'design_1_Init_0_0' (3#1) [c:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.srcs/sources_1/bd/design_1/ip/design_1_Init_0_0/synth/design_1_Init_0_0.vhd:86]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1061.418 ; gain = 24.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1061.418 ; gain = 24.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1061.418 ; gain = 24.910
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1061.418 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1161.320 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1161.320 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1161.320 ; gain = 124.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1161.320 ; gain = 124.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1161.320 ; gain = 124.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1161.320 ; gain = 124.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Multipliers : 
+	               3x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1161.320 ; gain = 124.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1161.320 ; gain = 124.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1161.320 ; gain = 124.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1175.344 ; gain = 138.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1175.344 ; gain = 138.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1175.344 ; gain = 138.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1175.344 ; gain = 138.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1175.344 ; gain = 138.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1175.344 ; gain = 138.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1175.344 ; gain = 138.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    40|
+|2     |LUT1   |     3|
+|3     |LUT2   |    33|
+|4     |LUT3   |     3|
+|5     |LUT4   |   151|
+|6     |LUT5   |     1|
+|7     |LUT6   |    38|
+|8     |FDRE   |   205|
+|9     |FDSE   |     3|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1175.344 ; gain = 138.836
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1175.344 ; gain = 38.934
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1175.344 ; gain = 138.836
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1175.344 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1180.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1180.906 ; gain = 144.398
+INFO: [Common 17-1381] The checkpoint 'C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.runs/design_1_Init_0_0_synth_1/design_1_Init_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_Init_0_0, cache-ID = 81819ccca8a49652
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/DATA/2024/sem07/SEP/SEP_projects/memorice/memorice.runs/design_1_Init_0_0_synth_1/design_1_Init_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_Init_0_0_utilization_synth.rpt -pb design_1_Init_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 11 20:57:32 2024...

@@ -260,14 +260,27 @@
       </xilinx:taxonomies>
       <xilinx:displayName>state_machine_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-05-11T23:21:06Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-05-12T02:36:57Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a721969_ARCHIVE_LOCATION">c:/data/2024/sem07/sep/sep_projects/state_machine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c30ce68_ARCHIVE_LOCATION">c:/data/2024/sem07/sep/sep_projects/state_machine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7796340a_ARCHIVE_LOCATION">c:/data/2024/sem07/sep/sep_projects/state_machine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fb3d032_ARCHIVE_LOCATION">c:/data/2024/sem07/sep/sep_projects/state_machine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31406343_ARCHIVE_LOCATION">c:/data/2024/sem07/sep/sep_projects/state_machine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f54c510_ARCHIVE_LOCATION">c:/data/2024/sem07/sep/sep_projects/state_machine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@212b5661_ARCHIVE_LOCATION">c:/data/2024/sem07/sep/sep_projects/state_machine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e8bd5a7_ARCHIVE_LOCATION">c:/data/2024/sem07/sep/sep_projects/state_machine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34aad7ac_ARCHIVE_LOCATION">c:/data/2024/sem07/sep/sep_projects/state_machine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@650b9ce6_ARCHIVE_LOCATION">c:/data/2024/sem07/sep/sep_projects/state_machine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2400bf5b_ARCHIVE_LOCATION">c:/data/2024/sem07/sep/sep_projects/state_machine</xilinx:tag>
+      </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a88d4390"/>
       <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="fbfe797f"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="3e30f418"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="c221c3af"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="32b1af3e"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
