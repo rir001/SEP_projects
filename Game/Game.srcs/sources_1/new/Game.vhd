@@ -9,13 +9,13 @@ entity Game is
   Port ( 
   clk0: in std_logic;
   sm_s0: in std_logic_vector (2 downto 0);
-  data0: in std_logic_vector (31 downto 0);
+  --data0: in std_logic_vector (31 downto 0);
   btns: in std_logic_vector (3 downto 0); 
   
   
   --rgb0: out std_logic := '0';
-  active_g: out std_logic := '0';
-  result: out std_logic := '0';
+  --active_g: out std_logic := '0';
+  --result: out std_logic := '0';
   led: out std_logic_vector (3 downto 0):= "0000"
   
   );
@@ -67,7 +67,7 @@ architecture Behavioral of Game is
     end component GDebouncer;
 
     -- fixed values for simulation:
-    -- constant data0:  std_logic_vector (31 downto 0) := "10000100001000011000010000100001";
+    constant data0:  std_logic_vector (31 downto 0) := "10000100001000011000010000100001";
     
     -- se�ales auxiliares
     signal state: std_logic_vector (1 downto 0) := "01";
@@ -135,7 +135,7 @@ begin
      begin
      
      
-     active_g <= buff;
+     --active_g <= buff;
      
      -- logica que pasa entre el comparador y los leds
      if rising_edge (clk0) then
@@ -149,7 +149,7 @@ begin
                     -- se debe o terminar el juego, o seguir con la siguiente ronda de leds
                     --rgb0 <= '1';
                     if opt0 = "01" then -- si se fallo se resetean los valores y se indica que e perdio
-                        result <= '0';
+                        --result <= '0';
                         buff <= '0';
                         sublevel0 <= "0001";
                         state <= "01";
@@ -160,7 +160,7 @@ begin
                         -- depende si ya se termino el juego o si faltan mas rondas
                         
                         if sublevel0 = "1000" then -- en caso de que se termino, se reinician los valores, y se indica que se gano
-                            result <= '1';
+                            --result <= '1';
                             buff <= '0';
                             sublevel0 <= "0001";
                             state <= "01";
