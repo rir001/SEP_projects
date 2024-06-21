@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Jun 20 20:18:59 2024
+# Process ID: 21572
+# Current directory: C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmon
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4356 C:\Users\gusta\Documents\SEP_projects\HW_SW\SEPmonG3\SEPmon\SEPmon.xpr
+# Log file: C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmon/vivado.log
+# Journal file: C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmon\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmon/SEPmon.xpr
