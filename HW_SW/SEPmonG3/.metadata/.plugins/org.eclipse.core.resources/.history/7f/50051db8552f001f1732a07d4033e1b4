@@ -1,0 +1,100 @@
+#include <stdio.h>
+#include <sleep.h>
+#include <time.h>
+#include <unistd.h>
+
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xstatus.h"
+#include "Delay.h"
+#include "LCD_SPI.h"
+#include "LCD_Driver.h"
+#include "LCD_GUI.h"
+#include "ADC.h"
+#include "I2C.h"
+
+#include "xil_io.h"
+#include "xtmrctr.h"
+#include "xil_exception.h"
+#include "xscugic.h"
+
+#include "notes.h"
+
+extern XGpio gpio0;
+extern XSpi  SpiInstance;	 /* The instance of the SPI device */
+extern XSpi  SpiInstance1;
+extern const unsigned char font[] ;
+
+#define BACKGROUND  WHITE
+#define FOREGROUND BLUE
+#define DELAY 1000
+
+
+int init(){
+	int Status;
+	//Initialize the UART
+	init_platform();
+	/* Initialize the GPIO 0 driver */
+	Status = XGpio_Initialize(&gpio0, XPAR_AXI_GPIO_0_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Gpio 0 Initialization Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	// Set up the AXI SPI Controller 0 (Screen)
+	Status = XSpi_Init(&SpiInstance,SPI_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("SPI Mode Failed\r\n");
+		return XST_FAILURE;
+	}
+	// Set up the AXI SPI Controller 0 (Joystick(x,y), accelerometer, potentiometer, mic)
+	Status = init_adc(&SpiInstance1, SPI_DEVICE_ID_1);
+	if (Status != XST_SUCCESS) {
+		xil_printf("SPI-ADC Mode Failed\r\n");
+		return XST_FAILURE;
+	}
+	// Set up the AXI IIC Controller 0 (temperature sensor, light sensor)
+	Status = init_IIC();
+	if (Status != XST_SUCCESS) {
+		xil_printf("IIC Mode Failed\r\n");
+		return XST_FAILURE;
+	}
+	//Write through UART to PC
+	xil_printf("TFT initialized \r\n");
+	xil_printf("**********Init LCD**********\r\n");
+	// Init screen
+	LCD_SCAN_DIR LCD_ScanDir = SCAN_DIR_DFT;//SCAN_DIR_DFT = D2U_L2R
+	LCD_Init(LCD_ScanDir );
+	// Default intro image from screen company
+	xil_printf("LCD Show \r\n");
+
+	GUI_Show();
+	delay_ms(500);
+	LCD_Clear(GUI_BACKGROUND);
+	// Default intro image given by SEP course.
+	GUI_INTRO();
+	delay_ms(500);
+	LCD_Clear(GUI_BACKGROUND);
+	return Status;
+}
+
+int main()
+{
+	int Status;
+	Status = init();
+	if (Status != XST_SUCCESS) {
+		xil_printf("Init Failed\r\n");
+		return XST_FAILURE;
+	}
+
+
+	//Define arrays for joystick, accelerometer, temperatura and ligth sensors.
+	// The ADC transform the data in 10bits, for temperatura and light sensors the data lenght is 16bits. For simplicity all
+	// arrays are defined as 16bits.
+
+	while(1){
+	}
+    return 0;
+}

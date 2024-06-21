@@ -1,0 +1,35 @@
+2024-06-20T20:13:23.657955600255-20:13:23 **** Incremental Build of configuration Debug for project SEPmon_SW ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/main.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+000-../src/main.c: In function 'atacar':
+000/SEPmon_SW/src/main.c149-1-1format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]1-../src/main.c:149:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+000-  149 |  scanf("%d",ataque);
+000-      |         ~^  ~~~~~~
+000-      |          |  |
+000-      |          |  int
+000-      |          int *
+000/SEPmon_SW/src/main.c149-1-1'ataque' is used uninitialized in this function [-Wuninitialized]1-../src/main.c:149:2: warning: 'ataque' is used uninitialized in this function [-Wuninitialized]
+000-  149 |  scanf("%d",ataque);
+000-      |  ^~~~~~~~~~~~~~~~~~
+000-'Finished building: ../src/main.c'
+000-' '
+000-'Building target: SEPmon_SW.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bsplib/lib -o "SEPmon_SW.elf"  ./src/ADC.o ./src/Delay.o ./src/I2C.o ./src/LCD_Driver.o ./src/LCD_GUI.o ./src/LCD_SPI.o ./src/font12.o ./src/font16.o ./src/font20.o ./src/font24.o ./src/font8.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: SEPmon_SW.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size SEPmon_SW.elf  |tee "SEPmon_SW.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000- 550442	  17390	  23040	 590872	  90418	SEPmon_SW.elf
+000-'Finished building: SEPmon_SW.elf.size'
+000-' '
+00255-
+20:13:24 Build Finished (took 1s.197ms)
+
