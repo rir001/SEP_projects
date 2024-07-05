@@ -28,3 +28,28 @@ INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/dat
 WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Reproductor:1.0'. The one found in IP location 'c:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/Musica/Musica.srcs' will take precedence over the same IP in location c:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/Musica/Musica.srcs/sources_1/new
 WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:module_ref:BUZZER:1.0'. The one found in IP location 'c:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmon/SEPmon.srcs/sources_1/bd/mref/BUZZER' will take precedence over the same IP in location c:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmon/SEPmon.srcs/sources_1/bd/mref/BUZZER
 open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1050.035 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmon/SEPmon.srcs/sources_1/bd/DEMO/DEMO.bd}
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - axi_iic_0
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_1
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_1
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:user:ReproductorAXI:1.0 - ReproductorAXI_0
+Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Successfully read diagram <DEMO> from BD file <C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmon/SEPmon.srcs/sources_1/bd/DEMO/DEMO.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1675.430 ; gain = 0.000
