@@ -1,6 +1,7 @@
 #include "images.h"
 #include "colors.h"
 #include <stdio.h>
+#include <string.h>
 
 
 void print_image(const int image[][3])
@@ -13,7 +14,7 @@ void print_image(const int image[][3])
     {
         int xx = image[n][0];
         int yy = image[n][1];
-        GUI_DrawPoint(x+xx, y+yy, image[n][2], DOT_PIXEL_1X1, DOT_FILL_AROUND);
+        // GUI_DrawPoint(x+xx, y+yy, image[n][2], DOT_PIXEL_1X1, DOT_FILL_AROUND);
     }
 }
 
@@ -38,15 +39,26 @@ void draw_hp_bar(int hp, int max_hp, int pokemon_id)
         base_x = 73;
     }
 
-
     for (int x = 0; x < (int)(48); x++) {
         if (x >= (int)(48 * percent)) {
             color = hp_white;
         }
-        GUI_DrawPoint(base_x + x, base_y  , color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
-        GUI_DrawPoint(base_x + x, base_y+1, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+        // GUI_DrawPoint(base_x + x, base_y  , color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+        // GUI_DrawPoint(base_x + x, base_y+1, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
     }
+}
 
+
+void display_string_in_box(const char *string) {
+
+    printf("%s\n", string);
+
+    long int len = strlen(string);
+
+    printf("%ld\n", len);
+
+
+    
 
 
 }
@@ -59,9 +71,11 @@ int main()
 
     printf("Start\n");
 
-    print_image(gengar_0_1);
+    display_string_in_box("Hello Worlooooooooood");
 
-    draw_hp_bar(15, 100, 0);
+    // print_image(gengar_0_1);
+
+    // draw_hp_bar(15, 100, 0);
 
     return 0;
 }
