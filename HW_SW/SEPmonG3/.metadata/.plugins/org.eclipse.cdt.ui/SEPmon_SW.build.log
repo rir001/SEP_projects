@@ -1,4 +1,4 @@
-20:13:23 **** Incremental Build of configuration Debug for project SEPmon_SW ****
+14:46:44 **** Incremental Build of configuration Debug for project SEPmon_SW ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -8,14 +8,19 @@ make --no-print-directory main-build
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'atacar':
-../src/main.c:149:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
-  149 |  scanf("%d",ataque);
+../src/main.c:204:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  204 |  scanf("%d",ataque);
       |         ~^  ~~~~~~
       |          |  |
       |          |  int
       |          int *
-../src/main.c:149:2: warning: 'ataque' is used uninitialized in this function [-Wuninitialized]
-  149 |  scanf("%d",ataque);
+../src/main.c: In function 'init':
+../src/main.c:302:7: warning: unused variable 'dir_vol' [-Wunused-variable]
+  302 |  int *dir_vol = &vol;
+      |       ^~~~~~~
+../src/main.c: In function 'atacar':
+../src/main.c:204:2: warning: 'ataque' is used uninitialized in this function [-Wuninitialized]
+  204 |  scanf("%d",ataque);
       |  ^~~~~~~~~~~~~~~~~~
 'Finished building: ../src/main.c'
 ' '
@@ -27,9 +32,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size SEPmon_SW.elf  |tee "SEPmon_SW.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 550442	  17390	  23040	 590872	  90418	SEPmon_SW.elf
+ 752418	  17390	  23088	 792896	  c1940	SEPmon_SW.elf
 'Finished building: SEPmon_SW.elf.size'
 ' '
 
-20:13:24 Build Finished (took 1s.197ms)
+14:46:45 Build Finished (took 1s.172ms)
 
