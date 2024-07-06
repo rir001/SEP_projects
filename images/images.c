@@ -39,7 +39,10 @@ void draw_hp_bar(int hp, int max_hp, int pokemon_id)
     }
 
 
-    for (int x = 0; x < (int)(48*percent); x++) {
+    for (int x = 0; x < (int)(48); x++) {
+        if (x > (int)(48 * percent)) {
+            color = hp_white;
+        }
         GUI_DrawPoint(base_x + x, base_y  , color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
         GUI_DrawPoint(base_x + x, base_y+1, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
     }
