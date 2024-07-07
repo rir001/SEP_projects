@@ -188,7 +188,7 @@ void draw_attacks()
     x = 9 + 60 + 5;
     y = y + 15;
     string = "Alarido";
-    for (int i = 0; i < 6; i++) {
+    for (int i = 0; i < 7; i++) {
         GUI_DisChar(x, y, string[i],&Font8, GUI_BACKGROUND, GUI_BACKGROUND );
         x = x + 5;
     }
