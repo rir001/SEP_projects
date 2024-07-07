@@ -3,6 +3,7 @@
 
 #include "LCD_Driver.h"
 #include "fonts.h"
+#include "colors.h"
 
 /********************************************************************************
 function:	
@@ -88,6 +89,11 @@ void GUI_DisNum(POINT Xpoint, POINT Ypoint, int32_t Nummber, sFONT* Font, COLOR 
 void GUI_Show(void);
 void GUI_INTRO(void);
 void print_image(const int image[][3]);
+void draw_hp_bar(int hp, int max_hp, int pokemon_id);
+void display_string_in_box(const char *string);
+void draw_attacks();
+void draw_select_box(int n);
+void clear_box();
 
 
 

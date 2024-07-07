@@ -334,6 +334,7 @@
 #define XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR 61U
 #define XPAR_FABRIC_AXI_TIMER_1_INTERRUPT_INTR 62U
 #define XPAR_FABRIC_AXI_GPIO_1_IP2INTC_IRPT_INTR 63U
+#define XPAR_FABRIC_AXI_TIMER_2_INTERRUPT_INTR 64U
 
 /******************************************************************/
 
@@ -341,6 +342,7 @@
 #define XPAR_FABRIC_TMRCTR_0_VEC_ID XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
 #define XPAR_FABRIC_TMRCTR_1_VEC_ID XPAR_FABRIC_AXI_TIMER_1_INTERRUPT_INTR
 #define XPAR_FABRIC_GPIO_1_VEC_ID XPAR_FABRIC_AXI_GPIO_1_IP2INTC_IRPT_INTR
+#define XPAR_FABRIC_TMRCTR_2_VEC_ID XPAR_FABRIC_AXI_TIMER_2_INTERRUPT_INTR
 
 /******************************************************************/
 
@@ -508,7 +510,7 @@
 /******************************************************************/
 
 /* Definitions for driver TMRCTR */
-#define XPAR_XTMRCTR_NUM_INSTANCES 2U
+#define XPAR_XTMRCTR_NUM_INSTANCES 3U
 
 /* Definitions for peripheral AXI_TIMER_0 */
 #define XPAR_AXI_TIMER_0_DEVICE_ID 0U
@@ -524,6 +526,13 @@
 #define XPAR_AXI_TIMER_1_CLOCK_FREQ_HZ 100000000U
 
 
+/* Definitions for peripheral AXI_TIMER_2 */
+#define XPAR_AXI_TIMER_2_DEVICE_ID 2U
+#define XPAR_AXI_TIMER_2_BASEADDR 0x42820000U
+#define XPAR_AXI_TIMER_2_HIGHADDR 0x4282FFFFU
+#define XPAR_AXI_TIMER_2_CLOCK_FREQ_HZ 100000000U
+
+
 /******************************************************************/
 
 /* Canonical definitions for peripheral AXI_TIMER_0 */
@@ -536,6 +545,11 @@
 #define XPAR_TMRCTR_1_BASEADDR 0x42810000U
 #define XPAR_TMRCTR_1_HIGHADDR 0x4281FFFFU
 #define XPAR_TMRCTR_1_CLOCK_FREQ_HZ XPAR_AXI_TIMER_1_CLOCK_FREQ_HZ
+/* Canonical definitions for peripheral AXI_TIMER_2 */
+#define XPAR_TMRCTR_2_DEVICE_ID 2U
+#define XPAR_TMRCTR_2_BASEADDR 0x42820000U
+#define XPAR_TMRCTR_2_HIGHADDR 0x4282FFFFU
+#define XPAR_TMRCTR_2_CLOCK_FREQ_HZ XPAR_AXI_TIMER_2_CLOCK_FREQ_HZ
 
 /******************************************************************/
 
