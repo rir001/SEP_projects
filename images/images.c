@@ -32,11 +32,11 @@ void draw_hp_bar(int hp, int max_hp, int pokemon_id)
     }
 
     if (pokemon_id == 0) {
-        base_y = 16;
-        base_x =  9;
+        base_y = 17;
+        base_x = 10;
     } else {
-        base_y = 71;
-        base_x = 73;
+        base_y = 72;
+        base_x = 74;
     }
 
     for (int x = 0; x < (int)(48); x++) {
@@ -49,18 +49,64 @@ void draw_hp_bar(int hp, int max_hp, int pokemon_id)
 }
 
 
-void display_string_in_box(const char *string) {
 
-    printf("%s\n", string);
+
+
+void display_string_in_box(const char *string) {
 
     long int len = strlen(string);
 
-    printf("%ld\n", len);
+    int line_large = 18;
 
+    int large = 0;
+    int start = 0;
 
-    
+    int d = 0;
 
+    int x = 10;
+    int y = 89;
 
+    for (int n = 0; n < len; n++)
+    {
+
+        large ++;
+
+        if (string[n+1] == ' ' | string[n+1] == '\0' | n == (line_large*3)-1+d)
+        {
+            for (int i = start; i <= n; i++) {
+                GUI_DisChar(x, y, string[i],&Font8, GUI_BACKGROUND, GUI_BACKGROUND );
+                // printf("%c", string[i]);
+                x = x + 5;
+            }
+
+            start = n+1;
+            if (n == (line_large*3)-1+d)
+            {
+                break;
+            }
+        }
+
+        if (large == line_large)
+        {
+            x = 89;
+            y = y + 10;
+
+            // printf("\n-------------------\n")
+
+            if (string[n] == ' ') {
+                large = 0;
+            } else if (string[n+1] == ' ') {
+                n = start;
+                large = 0;
+                d++;
+            } else {
+                large = n - start;
+                d = d + start - n;
+            }
+            start++;
+        }
+    }
+    // printf("\n");
 }
 
 
@@ -71,7 +117,7 @@ int main()
 
     printf("Start\n");
 
-    display_string_in_box("Hello Worlooooooooood");
+    display_string_in_box("Nidorino hizo 1 de dano a Gengar y murio abcdefghijklmn");
 
     // print_image(gengar_0_1);
 
