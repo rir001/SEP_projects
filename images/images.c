@@ -107,8 +107,6 @@ void display_string_in_box(const char *string) {
 
 
 
-
-
 void clear_box()
 {
     for (int x = 9; x < 120; x++)
@@ -143,13 +141,13 @@ void draw_select_box(int n)
             color = 0xffff;
         }
 
-        for (int xx = 0; xx < data[i][2]; xx++)
+        for (int xx = 1; xx < data[i][2]-1; xx++)
         {
             GUI_DrawPoint(x+xx, y   , color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
             GUI_DrawPoint(x+xx, y+11, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
         }
 
-        for (int yy = 0; yy < 11; yy++)
+        for (int yy = 1; yy < 11-1; yy++)
         {
             GUI_DrawPoint(x   , y+yy, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
             GUI_DrawPoint(x+data[i][2], y+yy, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
