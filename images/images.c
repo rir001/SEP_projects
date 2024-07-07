@@ -88,7 +88,7 @@ void display_string_in_box(const char *string) {
 
         if (large == line_large)
         {
-            x = 89;
+            x = 10;
             y = y + 10;
 
             // printf("\n-------------------\n")
