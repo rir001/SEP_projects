@@ -123,11 +123,11 @@ void clear_box()
 
 void draw_select_box(int n)
 {
-    int data [4][2] = {
-        {7 , 91 },
-        {7 , 106},
-        {72, 91 },
-        {72, 106}
+    int data [4][3] = {
+        {7 , 90 , 64},
+        {7 , 105, 64},
+        {72, 90 , 49},
+        {72, 105, 49}
     };
 
     int color;
@@ -143,16 +143,16 @@ void draw_select_box(int n)
             color = 0xffff;
         }
 
-        for (int xx = 0; xx < 64; xx++)
+        for (int xx = 0; xx < data[i][2]; xx++)
         {
             GUI_DrawPoint(x+xx, y   , color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
-            GUI_DrawPoint(x+xx, y+14, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+            GUI_DrawPoint(x+xx, y+11, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
         }
 
-        for (int yy = 0; yy < 14; yy++)
+        for (int yy = 0; yy < 11; yy++)
         {
             GUI_DrawPoint(x   , y+yy, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
-            GUI_DrawPoint(x+64, y+yy, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+            GUI_DrawPoint(x+data[i][2], y+yy, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
         }
     }
 }
