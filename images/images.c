@@ -109,7 +109,7 @@ void display_string_in_box(const char *string) {
 
 
 
-void clear_box(int n)
+void clear_box()
 {
     for (int x = 9; x < 120; x++)
     {
@@ -138,17 +138,21 @@ void draw_select_box(int n)
         int y = data[i][1];
 
         if (i == n) {
-            color = GUI_FOREGROUND;
+            color = 0x0000;
         } else {
-            color = GUI_BACKGROUND;
+            color = 0xffff;
         }
 
         for (int xx = 0; xx < 64; xx++)
         {
-            for (int yy = 0; yy < 14; yy++)
-            {
-                GUI_DrawPoint(x+xx, y+yy, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
-            }
+            GUI_DrawPoint(x+xx, y   , color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+            GUI_DrawPoint(x+xx, y+14, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+        }
+
+        for (int yy = 0; yy < 14; yy++)
+        {
+            GUI_DrawPoint(x   , y+yy, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+            GUI_DrawPoint(x+64, y+yy, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
         }
     }
 }
@@ -160,7 +164,7 @@ void draw_attacks()
     int x = 9;
     int y = 93;
     char *string = "NocheOscura";
-    for (int i = start; i < 11; i++) {
+    for (int i = 0; i < 11; i++) {
         GUI_DisChar(x, y, string[i],&Font8, GUI_BACKGROUND, GUI_BACKGROUND );
         x = x + 5;
     }
@@ -168,15 +172,15 @@ void draw_attacks()
     x = 9;
     y = y + 15;
     string = "AtaqueRapido";
-    for (int i = start; i < 12; i++) {
+    for (int i = 0; i < 12; i++) {
         GUI_DisChar(x, y, string[i],&Font8, GUI_BACKGROUND, GUI_BACKGROUND );
         x = x + 5;
     }
 
     x = 9 + 60 + 5;
     y = 93;
-    string = "Terrremoto";
-    for (int i = start; i < 9; i++) {
+    string = "Terremoto";
+    for (int i = 0; i < 9; i++) {
         GUI_DisChar(x, y, string[i],&Font8, GUI_BACKGROUND, GUI_BACKGROUND );
         x = x + 5;
     }
@@ -184,7 +188,7 @@ void draw_attacks()
     x = 9 + 60 + 5;
     y = y + 15;
     string = "Alarido";
-    for (int i = start; i < 6; i++) {
+    for (int i = 0; i < 6; i++) {
         GUI_DisChar(x, y, string[i],&Font8, GUI_BACKGROUND, GUI_BACKGROUND );
         x = x + 5;
     }
