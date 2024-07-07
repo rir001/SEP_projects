@@ -115,7 +115,7 @@ void clear_box()
     {
         for (int y = 90; y < 121; y++)
         {
-            GUI_DrawPoint(x, y, GUI_BACKGROUND, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+            GUI_DrawPoint(x, y, 0xffff, DOT_PIXEL_1X1, DOT_FILL_AROUND);
         }
     }
 }
