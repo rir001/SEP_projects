@@ -56,15 +56,15 @@ void display_string_in_box(const char *string) {
 
     long int len = strlen(string);
 
-    int line_large = 18;
+    int line_large = 22;
 
     int large = 0;
     int start = 0;
 
     int d = 0;
 
-    int x = 10;
-    int y = 89;
+    int x = 9;
+    int y = 90;
 
     for (int n = 0; n < len; n++)
     {
@@ -74,8 +74,7 @@ void display_string_in_box(const char *string) {
         if (string[n+1] == ' ' | string[n+1] == '\0' | n == (line_large*3)-1+d)
         {
             for (int i = start; i <= n; i++) {
-                GUI_DisChar(x, y, string[i],&Font8, GUI_BACKGROUND, GUI_BACKGROUND );
-                // printf("%c", string[i]);
+                // GUI_DisChar(x, y, string[i],&Font8, GUI_BACKGROUND, GUI_BACKGROUND );
                 x = x + 5;
             }
 
@@ -88,10 +87,8 @@ void display_string_in_box(const char *string) {
 
         if (large == line_large)
         {
-            x = 10;
+            x = 9;
             y = y + 10;
-
-            // printf("\n-------------------\n")
 
             if (string[n] == ' ') {
                 large = 0;
@@ -106,8 +103,96 @@ void display_string_in_box(const char *string) {
             start++;
         }
     }
-    // printf("\n");
 }
+
+
+
+
+
+void clear_box(int n)
+{
+    for (int x = 9; x < 120; x++)
+    {
+        for (int y = 90; y < 121; y++)
+        {
+            GUI_DrawPoint(x, y, GUI_BACKGROUND, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+        }
+    }
+}
+
+
+void draw_select_box(int n)
+{
+    int data [4][2] = {
+        {7 , 91 },
+        {7 , 106},
+        {72, 91 },
+        {72, 106}
+    };
+
+    int color;
+
+    for (int i = 0; i < 4; i++)
+    {
+        int x = data[i][0];
+        int y = data[i][1];
+
+        if (i == n) {
+            color = GUI_FOREGROUND;
+        } else {
+            color = GUI_BACKGROUND;
+        }
+
+        for (int xx = 0; xx < 64; xx++)
+        {
+            for (int yy = 0; yy < 14; yy++)
+            {
+                GUI_DrawPoint(x+xx, y+yy, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+            }
+        }
+    }
+}
+
+
+
+void draw_attacks()
+{
+    int x = 9;
+    int y = 93;
+    char *string = "NocheOscura";
+    for (int i = start; i < 11; i++) {
+        GUI_DisChar(x, y, string[i],&Font8, GUI_BACKGROUND, GUI_BACKGROUND );
+        x = x + 5;
+    }
+
+    x = 9;
+    y = y + 15;
+    string = "AtaqueRapido";
+    for (int i = start; i < 12; i++) {
+        GUI_DisChar(x, y, string[i],&Font8, GUI_BACKGROUND, GUI_BACKGROUND );
+        x = x + 5;
+    }
+
+    x = 9 + 60 + 5;
+    y = 93;
+    string = "Terrremoto";
+    for (int i = start; i < 9; i++) {
+        GUI_DisChar(x, y, string[i],&Font8, GUI_BACKGROUND, GUI_BACKGROUND );
+        x = x + 5;
+    }
+
+    x = 9 + 60 + 5;
+    y = y + 15;
+    string = "Alarido";
+    for (int i = start; i < 6; i++) {
+        GUI_DisChar(x, y, string[i],&Font8, GUI_BACKGROUND, GUI_BACKGROUND );
+        x = x + 5;
+    }
+
+}
+
+
+
 
 
 int main()
