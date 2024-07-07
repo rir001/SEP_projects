@@ -20,7 +20,7 @@ src/LCD_GUI.o src/LCD_GUI.o: ../src/LCD_GUI.c ../src/LCD_GUI.h \
  C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bspinclude/include/xil_printf.h \
  C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bspinclude/include/xparameters.h \
  C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bspinclude/include/sleep.h \
- ../src/fonts.h ../src/Delay.h
+ ../src/fonts.h ../src/Delay.h ../src/colors.h
 
 ../src/LCD_GUI.h:
 
@@ -73,3 +73,5 @@ C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/
 ../src/fonts.h:
 
 ../src/Delay.h:
+
+../src/colors.h:

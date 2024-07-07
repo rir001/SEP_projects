@@ -1,0 +1,14 @@
+char nidorinoin[36] = "Te haz encontrado con un Nidorino!!!";
+char gengarin[12] = "Ve Gengar!!!";
+char iniciopelea[25] = "Que deberia hacer Gengar?";
+char alarido[18] = "Gengar uso alarido";
+char terremoto[20] = "Gengar uso terremoto";
+char nocheoscura[23] = "Gengar uso noche oscura";
+char atkrapido[24] = "Gengar uso ataque rapido";
+char muyefectivo[18] = "Fue muy efectivo, ";
+char pocoefectivo[19] = "Fue poco efectivo, ";
+char Nrecibio[16] = "Nidorino recibio ";
+char Grecibio[] = "Gengar recibio ";
+char sdano[7] = "de dano";
+char win[22] = "Felicidades ganaste!!!";
+char lose[33] = "Lastima :(, para la proxima sera.";

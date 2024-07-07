@@ -1,0 +1,3 @@
+static const int hp_green = 0x03f0;
+static const int hp_yellow = 0x03ff;
+static const int hp_red = 0x000f;

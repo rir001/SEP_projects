@@ -131,9 +131,10 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmon/SEPmon.cache/wt [current_project]
   set_property parent.project_path C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmon/SEPmon.xpr [current_project]
   set_property ip_repo_paths {
-  c:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEP/Proyecto_Base_Booster_v2/DEMODEFINITIVA/ip_repo/BUZZER_1.0
+  C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/ip_repo/DigitalPeripherals_1.0
+  C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEP/Proyecto_Base_Booster_v2/DEMODEFINITIVA/ip_repo/BUZZER_1.0
   C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2
-  c:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEP/Proyecto_Base_Booster_v2/DEMODEFINITIVA/ip_repo/My_PWM_1.0
+  C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEP/Proyecto_Base_Booster_v2/DEMODEFINITIVA/ip_repo/My_PWM_1.0
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmon/SEPmon.cache/ip [current_project]

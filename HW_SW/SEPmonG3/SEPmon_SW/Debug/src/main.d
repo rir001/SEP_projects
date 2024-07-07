@@ -20,8 +20,8 @@ src/main.o src/main.o: ../src/main.c \
  ../src/Delay.h ../src/LCD_SPI.h \
  C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bspinclude/include/xspi.h \
  C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bspinclude/include/xspi_l.h \
- ../src/LCD_Driver.h ../src/fonts.h ../src/LCD_GUI.h ../src/ADC.h \
- ../src/I2C.h \
+ ../src/LCD_Driver.h ../src/fonts.h ../src/LCD_GUI.h ../src/colors.h \
+ ../src/ADC.h ../src/I2C.h \
  C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bspinclude/include/xiic.h \
  C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bspinclude/include/xiic_l.h \
  C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bspinclude/include/xil_io.h \
@@ -31,7 +31,7 @@ src/main.o src/main.o: ../src/main.c \
  C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bspinclude/include/xscugic.h \
  C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bspinclude/include/xscugic_hw.h \
  C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bspinclude/include/xil_exception.h \
- ../src/notes.h ../src/Images.h
+ ../src/notes.h ../src/Images.h ../src/sentences.h
 
 C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmonG3/export/SEPmonG3/sw/SEPmonG3/standalone_domain/bspinclude/include/sleep.h:
 
@@ -85,6 +85,8 @@ C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/
 
 ../src/LCD_GUI.h:
 
+../src/colors.h:
+
 ../src/ADC.h:
 
 ../src/I2C.h:
@@ -110,3 +112,5 @@ C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/
 ../src/notes.h:
 
 ../src/Images.h:
+
+../src/sentences.h:

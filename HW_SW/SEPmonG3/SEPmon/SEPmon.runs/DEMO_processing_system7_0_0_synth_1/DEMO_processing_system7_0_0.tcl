@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "DEMO_processing_system7_0_0_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -86,6 +85,7 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property ip_repo_paths {
+  c:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/ip_repo/DigitalPeripherals_1.0
   c:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEP/Proyecto_Base_Booster_v2/DEMODEFINITIVA/ip_repo/BUZZER_1.0
   c:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2
   c:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEP/Proyecto_Base_Booster_v2/DEMODEFINITIVA/ip_repo/My_PWM_1.0
