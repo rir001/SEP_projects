@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Thu Jun 20 17:59:41 2024
+// Date        : Sun Jul  7 16:29:46 2024
 // Host        : LAPTOP-5LB4VBU3 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmon/SEPmon.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_1_0/DEMO_axi_quad_spi_1_0_stub.v
+//               c:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmon/SEPmon.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_1_0/DEMO_axi_quad_spi_1_0_stub.v
 // Design      : DEMO_axi_quad_spi_1_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

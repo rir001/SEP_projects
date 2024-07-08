@@ -1,9 +1,27 @@
-Nothing to build in platform 'SEPmonG3'
+Nothing to build in platform 'SEPmonG3V4'
 
-02:53:28 **** Incremental Build of configuration Debug for project SEPmon_SW ****
+23:28:51 **** Incremental Build of configuration Debug for project SEPmonG3V4_SW ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmonG3V4/export/SEPmonG3V4/sw/SEPmonG3V4/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:219:6: warning: 'Light_Handler' defined but not used [-Wunused-function]
+  219 | void Light_Handler(){
+      |      ^~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: SEPmonG3V4_SW.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmonG3V4/export/SEPmonG3V4/sw/SEPmonG3V4/standalone_domain/bsplib/lib -o "SEPmonG3V4_SW.elf"  ./src/ADC.o ./src/Delay.o ./src/I2C.o ./src/LCD_Driver.o ./src/LCD_GUI.o ./src/LCD_SPI.o ./src/font12.o ./src/font16.o ./src/font20.o ./src/font24.o ./src/font8.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SEPmonG3V4_SW.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size SEPmonG3V4_SW.elf  |tee "SEPmonG3V4_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 514438	  17982	  23152	 555572	  87a34	SEPmonG3V4_SW.elf
+'Finished building: SEPmonG3V4_SW.elf.size'
+' '

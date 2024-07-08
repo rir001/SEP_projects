@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Sat Jul  6 15:13:03 2024
+--Date        : Sun Jul  7 23:26:24 2024
 --Host        : LAPTOP-5LB4VBU3 running 64-bit major release  (build 9200)
 --Command     : generate_target DEMO.bd
 --Design      : DEMO
@@ -2728,11 +2728,12 @@ entity DEMO is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    LuzIRQ_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
     MOSI : out STD_LOGIC;
     RST_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
     RS_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
     SCLK : out STD_LOGIC;
-    TempIRQ_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 );
+    btn0 : in STD_LOGIC_VECTOR ( 0 to 0 );
     clk : in STD_LOGIC;
     iic_rtl_scl_i : in STD_LOGIC;
     iic_rtl_scl_o : out STD_LOGIC;
@@ -2755,12 +2756,142 @@ entity DEMO is
     spi_rtl_ss_t : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of DEMO : entity is "DEMO,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=DEMO,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=27,numReposBlks=16,numNonXlnxBlks=0,numHierBlks=11,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=12,da_board_cnt=9,da_clkrst_cnt=1,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of DEMO : entity is "DEMO,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=DEMO,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=28,numReposBlks=17,numNonXlnxBlks=0,numHierBlks=11,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=13,da_board_cnt=9,da_clkrst_cnt=1,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of DEMO : entity is "DEMO.hwdef";
 end DEMO;
 
 architecture STRUCTURE of DEMO is
+  component DEMO_axi_timer_0_0 is
+  port (
+    capturetrig0 : in STD_LOGIC;
+    capturetrig1 : in STD_LOGIC;
+    generateout0 : out STD_LOGIC;
+    generateout1 : out STD_LOGIC;
+    pwm0 : out STD_LOGIC;
+    interrupt : out STD_LOGIC;
+    freeze : in STD_LOGIC;
+    s_axi_aclk : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_awvalid : in STD_LOGIC;
+    s_axi_awready : out STD_LOGIC;
+    s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_wvalid : in STD_LOGIC;
+    s_axi_wready : out STD_LOGIC;
+    s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_bvalid : out STD_LOGIC;
+    s_axi_bready : in STD_LOGIC;
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_arvalid : in STD_LOGIC;
+    s_axi_arready : out STD_LOGIC;
+    s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_rvalid : out STD_LOGIC;
+    s_axi_rready : in STD_LOGIC
+  );
+  end component DEMO_axi_timer_0_0;
+  component DEMO_axi_timer_1_0 is
+  port (
+    capturetrig0 : in STD_LOGIC;
+    capturetrig1 : in STD_LOGIC;
+    generateout0 : out STD_LOGIC;
+    generateout1 : out STD_LOGIC;
+    pwm0 : out STD_LOGIC;
+    interrupt : out STD_LOGIC;
+    freeze : in STD_LOGIC;
+    s_axi_aclk : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_awvalid : in STD_LOGIC;
+    s_axi_awready : out STD_LOGIC;
+    s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_wvalid : in STD_LOGIC;
+    s_axi_wready : out STD_LOGIC;
+    s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_bvalid : out STD_LOGIC;
+    s_axi_bready : in STD_LOGIC;
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_arvalid : in STD_LOGIC;
+    s_axi_arready : out STD_LOGIC;
+    s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_rvalid : out STD_LOGIC;
+    s_axi_rready : in STD_LOGIC
+  );
+  end component DEMO_axi_timer_1_0;
+  component DEMO_xlconcat_0_0 is
+  port (
+    In0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    In1 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    In2 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    In3 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    In4 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    dout : out STD_LOGIC_VECTOR ( 4 downto 0 )
+  );
+  end component DEMO_xlconcat_0_0;
+  component DEMO_vio_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    probe_out0 : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component DEMO_vio_0_0;
+  component DEMO_ila_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe4 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe5 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe6 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe7 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe8 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe9 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe10 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe11 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe12 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe13 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe14 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe15 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe16 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe17 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe18 : in STD_LOGIC_VECTOR ( 2 downto 0 )
+  );
+  end component DEMO_ila_0_0;
+  component DEMO_axi_timer_2_0 is
+  port (
+    capturetrig0 : in STD_LOGIC;
+    capturetrig1 : in STD_LOGIC;
+    generateout0 : out STD_LOGIC;
+    generateout1 : out STD_LOGIC;
+    pwm0 : out STD_LOGIC;
+    interrupt : out STD_LOGIC;
+    freeze : in STD_LOGIC;
+    s_axi_aclk : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_awvalid : in STD_LOGIC;
+    s_axi_awready : out STD_LOGIC;
+    s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_wvalid : in STD_LOGIC;
+    s_axi_wready : out STD_LOGIC;
+    s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_bvalid : out STD_LOGIC;
+    s_axi_bready : in STD_LOGIC;
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_arvalid : in STD_LOGIC;
+    s_axi_arready : out STD_LOGIC;
+    s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_rvalid : out STD_LOGIC;
+    s_axi_rready : in STD_LOGIC
+  );
+  end component DEMO_axi_timer_2_0;
   component DEMO_axi_gpio_0_0 is
   port (
     s_axi_aclk : in STD_LOGIC;
@@ -2935,7 +3066,7 @@ architecture STRUCTURE of DEMO is
     M_AXI_GP0_BRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    IRQ_F2P : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    IRQ_F2P : in STD_LOGIC_VECTOR ( 4 downto 0 );
     FCLK_CLK0 : out STD_LOGIC;
     FCLK_RESET0_N : out STD_LOGIC;
     MIO : inout STD_LOGIC_VECTOR ( 53 downto 0 );
@@ -2975,100 +3106,13 @@ architecture STRUCTURE of DEMO is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component DEMO_rst_ps7_0_50M_0;
-  component DEMO_axi_gpio_1_0 is
+  component DEMO_Debouncing_Button_VH_0_0 is
   port (
-    s_axi_aclk : in STD_LOGIC;
-    s_axi_aresetn : in STD_LOGIC;
-    s_axi_awaddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
-    s_axi_awvalid : in STD_LOGIC;
-    s_axi_awready : out STD_LOGIC;
-    s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_wvalid : in STD_LOGIC;
-    s_axi_wready : out STD_LOGIC;
-    s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_bvalid : out STD_LOGIC;
-    s_axi_bready : in STD_LOGIC;
-    s_axi_araddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
-    s_axi_arvalid : in STD_LOGIC;
-    s_axi_arready : out STD_LOGIC;
-    s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_rvalid : out STD_LOGIC;
-    s_axi_rready : in STD_LOGIC;
-    ip2intc_irpt : out STD_LOGIC;
-    gpio_io_i : in STD_LOGIC_VECTOR ( 0 to 0 )
+    button : in STD_LOGIC;
+    clk : in STD_LOGIC;
+    debounced_button : out STD_LOGIC
   );
-  end component DEMO_axi_gpio_1_0;
-  component DEMO_axi_timer_0_0 is
-  port (
-    capturetrig0 : in STD_LOGIC;
-    capturetrig1 : in STD_LOGIC;
-    generateout0 : out STD_LOGIC;
-    generateout1 : out STD_LOGIC;
-    pwm0 : out STD_LOGIC;
-    interrupt : out STD_LOGIC;
-    freeze : in STD_LOGIC;
-    s_axi_aclk : in STD_LOGIC;
-    s_axi_aresetn : in STD_LOGIC;
-    s_axi_awaddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    s_axi_awvalid : in STD_LOGIC;
-    s_axi_awready : out STD_LOGIC;
-    s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_wvalid : in STD_LOGIC;
-    s_axi_wready : out STD_LOGIC;
-    s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_bvalid : out STD_LOGIC;
-    s_axi_bready : in STD_LOGIC;
-    s_axi_araddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    s_axi_arvalid : in STD_LOGIC;
-    s_axi_arready : out STD_LOGIC;
-    s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_rvalid : out STD_LOGIC;
-    s_axi_rready : in STD_LOGIC
-  );
-  end component DEMO_axi_timer_0_0;
-  component DEMO_axi_timer_1_0 is
-  port (
-    capturetrig0 : in STD_LOGIC;
-    capturetrig1 : in STD_LOGIC;
-    generateout0 : out STD_LOGIC;
-    generateout1 : out STD_LOGIC;
-    pwm0 : out STD_LOGIC;
-    interrupt : out STD_LOGIC;
-    freeze : in STD_LOGIC;
-    s_axi_aclk : in STD_LOGIC;
-    s_axi_aresetn : in STD_LOGIC;
-    s_axi_awaddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    s_axi_awvalid : in STD_LOGIC;
-    s_axi_awready : out STD_LOGIC;
-    s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_wvalid : in STD_LOGIC;
-    s_axi_wready : out STD_LOGIC;
-    s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_bvalid : out STD_LOGIC;
-    s_axi_bready : in STD_LOGIC;
-    s_axi_araddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    s_axi_arvalid : in STD_LOGIC;
-    s_axi_arready : out STD_LOGIC;
-    s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_rvalid : out STD_LOGIC;
-    s_axi_rready : in STD_LOGIC
-  );
-  end component DEMO_axi_timer_1_0;
-  component DEMO_xlconcat_0_0 is
-  port (
-    In0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    In1 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    In2 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    In3 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    dout : out STD_LOGIC_VECTOR ( 3 downto 0 )
-  );
-  end component DEMO_xlconcat_0_0;
+  end component DEMO_Debouncing_Button_VH_0_0;
   component DEMO_ReproductorAXI_0_0 is
   port (
     clk : in STD_LOGIC;
@@ -3098,48 +3142,11 @@ architecture STRUCTURE of DEMO is
     s00_axi_rready : in STD_LOGIC
   );
   end component DEMO_ReproductorAXI_0_0;
-  component DEMO_vio_0_0 is
+  component DEMO_axi_gpio_1_0 is
   port (
-    clk : in STD_LOGIC;
-    probe_out0 : out STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component DEMO_vio_0_0;
-  component DEMO_ila_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe1 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe2 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe4 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe5 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe6 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe7 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe8 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe9 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe10 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe11 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe12 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe13 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe14 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe15 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe16 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe17 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe18 : in STD_LOGIC_VECTOR ( 2 downto 0 )
-  );
-  end component DEMO_ila_0_0;
-  component DEMO_axi_timer_2_0 is
-  port (
-    capturetrig0 : in STD_LOGIC;
-    capturetrig1 : in STD_LOGIC;
-    generateout0 : out STD_LOGIC;
-    generateout1 : out STD_LOGIC;
-    pwm0 : out STD_LOGIC;
-    interrupt : out STD_LOGIC;
-    freeze : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
-    s_axi_awaddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
     s_axi_awvalid : in STD_LOGIC;
     s_axi_awready : out STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -3149,20 +3156,23 @@ architecture STRUCTURE of DEMO is
     s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_bvalid : out STD_LOGIC;
     s_axi_bready : in STD_LOGIC;
-    s_axi_araddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
     s_axi_arvalid : in STD_LOGIC;
     s_axi_arready : out STD_LOGIC;
     s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
-    s_axi_rready : in STD_LOGIC
+    s_axi_rready : in STD_LOGIC;
+    ip2intc_irpt : out STD_LOGIC;
+    gpio_io_i : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  end component DEMO_axi_timer_2_0;
+  end component DEMO_axi_gpio_1_0;
+  signal Debouncing_Button_VH_0_debounced_button : STD_LOGIC;
   signal ReproductorAXI_0_BUZZER_PWM : STD_LOGIC;
   signal ReproductorAXI_0_leds : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_gpio_0_GPIO2_TRI_O : STD_LOGIC_VECTOR ( 0 to 0 );
   signal axi_gpio_0_GPIO_TRI_O : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal axi_gpio_1_GPIO_TRI_I : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal axi_gpio_1_GPIO_TRI_I : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal axi_gpio_1_ip2intc_irpt : STD_LOGIC;
   signal axi_iic_0_IIC_SCL_I : STD_LOGIC;
   signal axi_iic_0_IIC_SCL_O : STD_LOGIC;
@@ -3188,6 +3198,7 @@ architecture STRUCTURE of DEMO is
   signal axi_timer_0_interrupt : STD_LOGIC;
   signal axi_timer_1_interrupt : STD_LOGIC;
   signal axi_timer_2_interrupt : STD_LOGIC;
+  signal btn0_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal clk_1 : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -3407,7 +3418,7 @@ architecture STRUCTURE of DEMO is
   signal ps7_0_axi_periph_M08_AXI_WVALID : STD_LOGIC;
   signal rst_ps7_0_50M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal vio_0_probe_out0 : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal NLW_axi_iic_0_iic2intc_irpt_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_iic_0_gpo_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_axi_quad_spi_0_io0_o_UNCONNECTED : STD_LOGIC;
@@ -3475,9 +3486,9 @@ architecture STRUCTURE of DEMO is
   attribute X_INTERFACE_INFO of DDR_dqs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
+  attribute X_INTERFACE_INFO of LuzIRQ_tri_i : signal is "xilinx.com:interface:gpio:1.0 LuzIRQ ";
   attribute X_INTERFACE_INFO of RST_tri_o : signal is "xilinx.com:interface:gpio:1.0 RST TRI_O";
   attribute X_INTERFACE_INFO of RS_tri_o : signal is "xilinx.com:interface:gpio:1.0 RS TRI_O";
-  attribute X_INTERFACE_INFO of TempIRQ_tri_i : signal is "xilinx.com:interface:gpio:1.0 TempIRQ TRI_I";
   attribute X_INTERFACE_INFO of spi_rtl_ss_i : signal is "xilinx.com:interface:spi:1.0 spi_rtl SS_I";
   attribute X_INTERFACE_INFO of spi_rtl_ss_o : signal is "xilinx.com:interface:spi:1.0 spi_rtl SS_O";
 begin
@@ -3487,13 +3498,14 @@ begin
   RST_tri_o(0) <= axi_gpio_0_GPIO2_TRI_O(0);
   RS_tri_o(0) <= axi_gpio_0_GPIO_TRI_O(0);
   SCLK <= axi_quad_spi_0_sck_o;
-  axi_gpio_1_GPIO_TRI_I(0) <= TempIRQ_tri_i(0);
+  axi_gpio_1_GPIO_TRI_I(31 downto 0) <= LuzIRQ_tri_i(31 downto 0);
   axi_iic_0_IIC_SCL_I <= iic_rtl_scl_i;
   axi_iic_0_IIC_SDA_I <= iic_rtl_sda_i;
   axi_quad_spi_1_SPI_0_IO0_I <= spi_rtl_io0_i;
   axi_quad_spi_1_SPI_0_IO1_I <= spi_rtl_io1_i;
   axi_quad_spi_1_SPI_0_SCK_I <= spi_rtl_sck_i;
   axi_quad_spi_1_SPI_0_SS_I(0) <= spi_rtl_ss_i(0);
+  btn0_1(0) <= btn0(0);
   clk_1 <= clk;
   iic_rtl_scl_o <= axi_iic_0_IIC_SCL_O;
   iic_rtl_scl_t <= axi_iic_0_IIC_SCL_T;
@@ -3508,6 +3520,12 @@ begin
   spi_rtl_sck_t <= axi_quad_spi_1_SPI_0_SCK_T;
   spi_rtl_ss_o(0) <= axi_quad_spi_1_SPI_0_SS_O(0);
   spi_rtl_ss_t <= axi_quad_spi_1_SPI_0_SS_T;
+Debouncing_Button_VH_0: component DEMO_Debouncing_Button_VH_0_0
+     port map (
+      button => btn0_1(0),
+      clk => clk_1,
+      debounced_button => Debouncing_Button_VH_0_debounced_button
+    );
 ReproductorAXI_0: component DEMO_ReproductorAXI_0_0
      port map (
       BUZZER_PWM => ReproductorAXI_0_BUZZER_PWM,
@@ -3562,7 +3580,7 @@ axi_gpio_0: component DEMO_axi_gpio_0_0
     );
 axi_gpio_1: component DEMO_axi_gpio_1_0
      port map (
-      gpio_io_i(0) => axi_gpio_1_GPIO_TRI_I(0),
+      gpio_io_i(31 downto 0) => axi_gpio_1_GPIO_TRI_I(31 downto 0),
       ip2intc_irpt => axi_gpio_1_ip2intc_irpt,
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_araddr(8 downto 0) => ps7_0_axi_periph_M04_AXI_ARADDR(8 downto 0),
@@ -3748,7 +3766,7 @@ axi_timer_2: component DEMO_axi_timer_2_0
      port map (
       capturetrig0 => '0',
       capturetrig1 => '0',
-      freeze => '0',
+      freeze => clk_1,
       generateout0 => NLW_axi_timer_2_generateout0_UNCONNECTED,
       generateout1 => NLW_axi_timer_2_generateout1_UNCONNECTED,
       interrupt => axi_timer_2_interrupt,
@@ -3817,7 +3835,7 @@ processing_system7_0: component DEMO_processing_system7_0_0
       DDR_WEB => DDR_we_n,
       FCLK_CLK0 => processing_system7_0_FCLK_CLK0,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
-      IRQ_F2P(3 downto 0) => xlconcat_0_dout(3 downto 0),
+      IRQ_F2P(4 downto 0) => xlconcat_0_dout(4 downto 0),
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => processing_system7_0_FCLK_CLK0,
       M_AXI_GP0_ARADDR(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),
@@ -4104,9 +4122,10 @@ vio_0: component DEMO_vio_0_0
 xlconcat_0: component DEMO_xlconcat_0_0
      port map (
       In0(0) => axi_timer_0_interrupt,
-      In1(0) => axi_timer_1_interrupt,
+      In1(0) => Debouncing_Button_VH_0_debounced_button,
       In2(0) => axi_gpio_1_ip2intc_irpt,
-      In3(0) => axi_timer_2_interrupt,
-      dout(3 downto 0) => xlconcat_0_dout(3 downto 0)
+      In3(0) => axi_timer_1_interrupt,
+      In4(0) => axi_timer_2_interrupt,
+      dout(4 downto 0) => xlconcat_0_dout(4 downto 0)
     );
 end STRUCTURE;

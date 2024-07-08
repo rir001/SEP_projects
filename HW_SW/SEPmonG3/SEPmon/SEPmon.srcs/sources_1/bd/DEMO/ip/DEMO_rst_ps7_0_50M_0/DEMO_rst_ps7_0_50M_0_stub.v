@@ -1,11 +1,11 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Thu Jun 20 17:58:17 2024
+// Date        : Sun Jun 16 20:40:41 2024
 // Host        : LAPTOP-5LB4VBU3 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmon/SEPmon.srcs/sources_1/bd/DEMO/ip/DEMO_rst_ps7_0_50M_0/DEMO_rst_ps7_0_50M_0_stub.v
-// Design      : DEMO_rst_ps7_0_50M_0
+// Command     : write_verilog -force -mode synth_stub -rename_top DEMO_rst_ps7_0_50M_0 -prefix
+//               DEMO_rst_ps7_0_50M_0_ Proyecto2PKM_rst_ps7_0_50M_1_stub.v
+// Design      : Proyecto2PKM_rst_ps7_0_50M_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------

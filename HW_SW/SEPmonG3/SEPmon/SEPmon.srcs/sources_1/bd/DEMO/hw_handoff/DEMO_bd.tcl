@@ -44,6 +44,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 set list_projs [get_projects -quiet]
 if { $list_projs eq "" } {
    create_project project_1 myproj -part xc7z010clg400-1
+   set_property BOARD_PART digilentinc.com:zybo-z7-10:part0:1.1 [current_project]
 }
 
 
@@ -159,11 +160,11 @@ proc create_root_design { parentCell } {
 
   set FIXED_IO [ create_bd_intf_port -mode Master -vlnv xilinx.com:display_processing_system7:fixedio_rtl:1.0 FIXED_IO ]
 
+  set LuzIRQ [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 LuzIRQ ]
+
   set RS [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 RS ]
 
   set RST [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 RST ]
-
-  set TempIRQ [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 TempIRQ ]
 
   set iic_rtl [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 iic_rtl ]
 
@@ -175,8 +176,12 @@ proc create_root_design { parentCell } {
   set CS [ create_bd_port -dir O -from 0 -to 0 CS ]
   set MOSI [ create_bd_port -dir O MOSI ]
   set SCLK [ create_bd_port -dir O SCLK ]
+  set btn0 [ create_bd_port -dir I -from 0 -to 0 btn0 ]
   set clk [ create_bd_port -dir I -type clk clk ]
   set leds [ create_bd_port -dir O -from 3 -to 0 leds ]
+
+  # Create instance: Debouncing_Button_VH_0, and set properties
+  set Debouncing_Button_VH_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:Debouncing_Button_VHDL:1.0 Debouncing_Button_VH_0 ]
 
   # Create instance: ReproductorAXI_0, and set properties
   set ReproductorAXI_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:ReproductorAXI:1.0 ReproductorAXI_0 ]
@@ -200,7 +205,6 @@ proc create_root_design { parentCell } {
   set axi_gpio_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1 ]
   set_property -dict [ list \
    CONFIG.C_ALL_INPUTS {1} \
-   CONFIG.C_GPIO_WIDTH {1} \
    CONFIG.C_INTERRUPT_PRESENT {1} \
  ] $axi_gpio_1
 
@@ -1066,13 +1070,13 @@ proc create_root_design { parentCell } {
   # Create instance: xlconcat_0, and set properties
   set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
   set_property -dict [ list \
-   CONFIG.NUM_PORTS {4} \
+   CONFIG.NUM_PORTS {5} \
  ] $xlconcat_0
 
   # Create interface connections
   connect_bd_intf_net -intf_net axi_gpio_0_GPIO [get_bd_intf_ports RS] [get_bd_intf_pins axi_gpio_0/GPIO]
   connect_bd_intf_net -intf_net axi_gpio_0_GPIO2 [get_bd_intf_ports RST] [get_bd_intf_pins axi_gpio_0/GPIO2]
-  connect_bd_intf_net -intf_net axi_gpio_1_GPIO [get_bd_intf_ports TempIRQ] [get_bd_intf_pins axi_gpio_1/GPIO]
+  connect_bd_intf_net -intf_net axi_gpio_1_GPIO [get_bd_intf_ports LuzIRQ] [get_bd_intf_pins axi_gpio_1/GPIO]
   connect_bd_intf_net -intf_net axi_iic_0_IIC [get_bd_intf_ports iic_rtl] [get_bd_intf_pins axi_iic_0/IIC]
   connect_bd_intf_net -intf_net axi_quad_spi_1_SPI_0 [get_bd_intf_ports spi_rtl] [get_bd_intf_pins axi_quad_spi_1/SPI_0]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
@@ -1090,6 +1094,7 @@ connect_bd_intf_net -intf_net [get_bd_intf_nets ps7_0_axi_periph_M07_AXI] [get_b
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M08_AXI [get_bd_intf_pins axi_timer_2/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M08_AXI]
 
   # Create port connections
+  connect_bd_net -net Debouncing_Button_VH_0_debounced_button [get_bd_pins Debouncing_Button_VH_0/debounced_button] [get_bd_pins xlconcat_0/In1]
   connect_bd_net -net ReproductorAXI_0_BUZZER_PWM [get_bd_ports BUZZER_PWM] [get_bd_pins ReproductorAXI_0/BUZZER_PWM]
   connect_bd_net -net ReproductorAXI_0_leds [get_bd_ports leds] [get_bd_pins ReproductorAXI_0/leds]
   connect_bd_net -net axi_gpio_1_ip2intc_irpt [get_bd_pins axi_gpio_1/ip2intc_irpt] [get_bd_pins xlconcat_0/In2]
@@ -1097,9 +1102,10 @@ connect_bd_intf_net -intf_net [get_bd_intf_nets ps7_0_axi_periph_M07_AXI] [get_b
   connect_bd_net -net axi_quad_spi_0_sck_o [get_bd_ports SCLK] [get_bd_pins axi_quad_spi_0/sck_o]
   connect_bd_net -net axi_quad_spi_0_ss_o [get_bd_ports CS] [get_bd_pins axi_quad_spi_0/ss_o]
   connect_bd_net -net axi_timer_0_interrupt [get_bd_pins axi_timer_0/interrupt] [get_bd_pins xlconcat_0/In0]
-  connect_bd_net -net axi_timer_1_interrupt [get_bd_pins axi_timer_1/interrupt] [get_bd_pins xlconcat_0/In1]
-  connect_bd_net -net axi_timer_2_interrupt [get_bd_pins axi_timer_2/interrupt] [get_bd_pins xlconcat_0/In3]
-  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins ReproductorAXI_0/clk] [get_bd_pins vio_0/clk]
+  connect_bd_net -net axi_timer_1_interrupt [get_bd_pins axi_timer_1/interrupt] [get_bd_pins xlconcat_0/In3]
+  connect_bd_net -net axi_timer_2_interrupt [get_bd_pins axi_timer_2/interrupt] [get_bd_pins xlconcat_0/In4]
+  connect_bd_net -net btn0_1 [get_bd_ports btn0] [get_bd_pins Debouncing_Button_VH_0/button]
+  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins Debouncing_Button_VH_0/clk] [get_bd_pins ReproductorAXI_0/clk] [get_bd_pins axi_timer_2/freeze] [get_bd_pins vio_0/clk]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins ReproductorAXI_0/s00_axi_aclk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_gpio_1/s_axi_aclk] [get_bd_pins axi_iic_0/s_axi_aclk] [get_bd_pins axi_quad_spi_0/ext_spi_clk] [get_bd_pins axi_quad_spi_0/s_axi_aclk] [get_bd_pins axi_quad_spi_1/ext_spi_clk] [get_bd_pins axi_quad_spi_1/s_axi_aclk] [get_bd_pins axi_timer_0/s_axi_aclk] [get_bd_pins axi_timer_1/s_axi_aclk] [get_bd_pins axi_timer_2/s_axi_aclk] [get_bd_pins ila_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/M05_ACLK] [get_bd_pins ps7_0_axi_periph/M06_ACLK] [get_bd_pins ps7_0_axi_periph/M07_ACLK] [get_bd_pins ps7_0_axi_periph/M08_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_50M/ext_reset_in]
   connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins ReproductorAXI_0/s00_axi_aresetn] [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_gpio_1/s_axi_aresetn] [get_bd_pins axi_iic_0/s_axi_aresetn] [get_bd_pins axi_quad_spi_0/s_axi_aresetn] [get_bd_pins axi_quad_spi_1/s_axi_aresetn] [get_bd_pins axi_timer_0/s_axi_aresetn] [get_bd_pins axi_timer_1/s_axi_aresetn] [get_bd_pins axi_timer_2/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/M05_ARESETN] [get_bd_pins ps7_0_axi_periph/M06_ARESETN] [get_bd_pins ps7_0_axi_periph/M07_ARESETN] [get_bd_pins ps7_0_axi_periph/M08_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]

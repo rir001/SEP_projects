@@ -1747,7 +1747,7 @@ interrupt is set.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Nov 08 23:49:14 UTC 2023</spirit:value>
+            <spirit:value>Sun Jul 07 20:28:10 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1778,7 +1778,7 @@ interrupt is set.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Nov 08 23:49:14 UTC 2023</spirit:value>
+            <spirit:value>Sun Jul 07 20:28:10 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1810,7 +1810,7 @@ interrupt is set.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Nov 08 23:49:14 UTC 2023</spirit:value>
+            <spirit:value>Sun Jul 07 20:28:10 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1830,7 +1830,7 @@ interrupt is set.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Nov 08 23:49:14 UTC 2023</spirit:value>
+            <spirit:value>Sun Jul 07 20:28:10 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1848,7 +1848,7 @@ interrupt is set.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Nov 08 23:49:14 UTC 2023</spirit:value>
+            <spirit:value>Sun Jul 07 20:28:10 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1866,7 +1866,7 @@ interrupt is set.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jun 20 21:59:29 UTC 2024</spirit:value>
+            <spirit:value>Sun Jul 07 20:29:34 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -2342,8 +2342,9 @@ interrupt is set.
   </spirit:model>
   <spirit:choices>
     <spirit:choice>
-      <spirit:name>choice_list_ac75ef1e</spirit:name>
+      <spirit:name>choice_list_5593766f</spirit:name>
       <spirit:enumeration>Custom</spirit:enumeration>
+      <spirit:enumeration>hdmi_in_ddc</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_pairs_897f2ba9</spirit:name>
@@ -2694,7 +2695,7 @@ interrupt is set.
     <spirit:parameter>
       <spirit:name>IIC_BOARD_INTERFACE</spirit:name>
       <spirit:displayName>IIC Board Interface</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.IIC_BOARD_INTERFACE" spirit:choiceRef="choice_list_ac75ef1e" spirit:order="1001">Custom</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.IIC_BOARD_INTERFACE" spirit:choiceRef="choice_list_5593766f" spirit:order="1001">Custom</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>

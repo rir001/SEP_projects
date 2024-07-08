@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Thu Jun 20 17:59:29 2024
+| Date         : Sun Jul  7 16:29:34 2024
 | Host         : LAPTOP-5LB4VBU3 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file DEMO_axi_iic_0_1_utilization_synth.rpt -pb DEMO_axi_iic_0_1_utilization_synth.pb
 | Design       : DEMO_axi_iic_0_1

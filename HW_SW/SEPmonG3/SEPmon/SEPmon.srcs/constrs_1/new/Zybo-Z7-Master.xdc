@@ -135,11 +135,11 @@ set_property -dict { PACKAGE_PIN U12   IOSTANDARD LVCMOS33     } [get_ports { sp
                                                                                                                                  
 ##Pmod Header JD                                                                                                                  
 set_property -dict { PACKAGE_PIN T14   IOSTANDARD LVCMOS33     } [get_ports { BUZZER_PWM }]; #IO_L5P_T0_34 Sch=jd_p[1]                  
-set_property -dict { PACKAGE_PIN T15   IOSTANDARD LVCMOS33     } [get_ports { BTN0 }]; #IO_L5N_T0_34 Sch=jd_n[1]				 
-set_property -dict { PACKAGE_PIN P14   IOSTANDARD LVCMOS33     } [get_ports { BTN1 }]; #IO_L6P_T0_34 Sch=jd_p[2]                  
-set_property -dict { PACKAGE_PIN R14   IOSTANDARD LVCMOS33     } [get_ports { BTN_JY }]; #IO_L6N_T0_VREF_34 Sch=jd_n[2]             
-set_property -dict { PACKAGE_PIN U14   IOSTANDARD LVCMOS33     } [get_ports { TempIRQ_tri_i }]; #IO_L11P_T1_SRCC_34 Sch=jd_p[3]            
-#set_property -dict { PACKAGE_PIN U15   IOSTANDARD LVCMOS33     } [get_ports { LuzIRQ }]; #IO_L11N_T1_SRCC_34 Sch=jd_n[3]            
+set_property -dict { PACKAGE_PIN T15   IOSTANDARD LVCMOS33     } [get_ports { btn0 }]; #IO_L5N_T0_34 Sch=jd_n[1]				 
+#set_property -dict { PACKAGE_PIN P14   IOSTANDARD LVCMOS33     } [get_ports { BTN1 }]; #IO_L6P_T0_34 Sch=jd_p[2]                  
+#set_property -dict { PACKAGE_PIN R14   IOSTANDARD LVCMOS33     } [get_ports { BTN_JY }]; #IO_L6N_T0_VREF_34 Sch=jd_n[2]             
+#set_property -dict { PACKAGE_PIN U14   IOSTANDARD LVCMOS33     } [get_ports { TempIRQ_tri_i }]; #IO_L11P_T1_SRCC_34 Sch=jd_p[3]            
+set_property -dict { PACKAGE_PIN U15   IOSTANDARD LVCMOS33     } [get_ports { LuzIRQ_tri_i }]; #IO_L11N_T1_SRCC_34 Sch=jd_n[3]            
 set_property -dict { PACKAGE_PIN V17   IOSTANDARD LVCMOS33     } [get_ports { iic_rtl_scl_io }]; #IO_L21P_T3_DQS_34 Sch=jd_p[4]             
 set_property -dict { PACKAGE_PIN V18   IOSTANDARD LVCMOS33     } [get_ports { iic_rtl_sda_io }]; #IO_L21N_T3_DQS_34 Sch=jd_n[4]             
                                                                                                                                  

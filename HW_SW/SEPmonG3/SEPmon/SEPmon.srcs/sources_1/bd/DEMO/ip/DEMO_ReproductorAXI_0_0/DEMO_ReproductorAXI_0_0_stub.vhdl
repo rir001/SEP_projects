@@ -1,11 +1,11 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Wed Jun 19 23:17:57 2024
+-- Date        : Sun Jul  7 18:16:09 2024
 -- Host        : LAPTOP-5LB4VBU3 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top DEMO_ReproductorAXI_0_0 -prefix
---               DEMO_ReproductorAXI_0_0_ SEPmon_ReproductorAXI_0_0_stub.vhdl
--- Design      : SEPmon_ReproductorAXI_0_0
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmon/SEPmon.srcs/sources_1/bd/DEMO/ip/DEMO_ReproductorAXI_0_0/DEMO_ReproductorAXI_0_0_stub.vhdl
+-- Design      : DEMO_ReproductorAXI_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1
 -- --------------------------------------------------------------------------------

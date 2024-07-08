@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jul  7 17:34:21 2024
+# Process ID: 27508
+# Current directory: c:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmon
+# Command line: wbtcv.exe -mode batch -source c:/users/gusta/documents/sep_projects/hw_sw/sepmong3/sepmon/sepmon.tmp/reproductoraxi_v1_0_project/ReproductorAXI_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: c:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmon/webtalk.log
+# Journal file: c:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmon\webtalk.jou
+#-----------------------------------------------------------
+source c:/users/gusta/documents/sep_projects/hw_sw/sepmong3/sepmon/sepmon.tmp/reproductoraxi_v1_0_project/ReproductorAXI_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace

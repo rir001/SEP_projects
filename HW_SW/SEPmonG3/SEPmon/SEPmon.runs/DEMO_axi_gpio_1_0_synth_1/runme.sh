@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/gusta/OneDrive/Documents/universidad/4to/1r/SEP/Proyectos/pr2/SEPmonG3/SEPmon/SEPmon.runs/DEMO_axi_gpio_1_0_synth_1'
+HD_PWD='C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmon/SEPmon.runs/DEMO_axi_gpio_1_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,0 +1,10 @@
+22:34:21 **** Incremental Build of configuration Debug for project SEPmonG3V3_SW ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.
+
+22:34:22 Build Finished (took 497ms)
+

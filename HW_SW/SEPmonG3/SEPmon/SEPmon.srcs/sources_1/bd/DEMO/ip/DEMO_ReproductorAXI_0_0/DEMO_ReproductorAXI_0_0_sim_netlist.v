@@ -1,24 +1,135 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Wed Jun 19 23:17:57 2024
+// Date        : Sun Jul  7 18:16:09 2024
 // Host        : LAPTOP-5LB4VBU3 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top DEMO_ReproductorAXI_0_0 -prefix
-//               DEMO_ReproductorAXI_0_0_ SEPmon_ReproductorAXI_0_0_sim_netlist.v
-// Design      : SEPmon_ReproductorAXI_0_0
+// Command     : write_verilog -force -mode funcsim
+//               c:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmonG3/SEPmon/SEPmon.srcs/sources_1/bd/DEMO/ip/DEMO_ReproductorAXI_0_0/DEMO_ReproductorAXI_0_0_sim_netlist.v
+// Design      : DEMO_ReproductorAXI_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
+(* CHECK_LICENSE_TYPE = "DEMO_ReproductorAXI_0_0,ReproductorAXI_v1_0,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "ReproductorAXI_v1_0,Vivado 2020.1" *) 
+(* NotValidForBitStream *)
+module DEMO_ReproductorAXI_0_0
+   (clk,
+    leds,
+    BUZZER_PWM,
+    mute,
+    s00_axi_aclk,
+    s00_axi_aresetn,
+    s00_axi_awaddr,
+    s00_axi_awprot,
+    s00_axi_awvalid,
+    s00_axi_awready,
+    s00_axi_wdata,
+    s00_axi_wstrb,
+    s00_axi_wvalid,
+    s00_axi_wready,
+    s00_axi_bresp,
+    s00_axi_bvalid,
+    s00_axi_bready,
+    s00_axi_araddr,
+    s00_axi_arprot,
+    s00_axi_arvalid,
+    s00_axi_arready,
+    s00_axi_rdata,
+    s00_axi_rresp,
+    s00_axi_rvalid,
+    s00_axi_rready);
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN DEMO_clk, INSERT_VIP 0" *) input clk;
+  output [3:0]leds;
+  output BUZZER_PWM;
+  input mute;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN DEMO_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s00_axi_aclk;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN DEMO_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [3:0]s00_axi_awaddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT" *) input [2:0]s00_axi_awprot;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWVALID" *) input s00_axi_awvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWREADY" *) output s00_axi_awready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI WDATA" *) input [31:0]s00_axi_wdata;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI WSTRB" *) input [3:0]s00_axi_wstrb;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI WVALID" *) input s00_axi_wvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI WREADY" *) output s00_axi_wready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI BRESP" *) output [1:0]s00_axi_bresp;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI BVALID" *) output s00_axi_bvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI BREADY" *) input s00_axi_bready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI ARADDR" *) input [3:0]s00_axi_araddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI ARPROT" *) input [2:0]s00_axi_arprot;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI ARVALID" *) input s00_axi_arvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI ARREADY" *) output s00_axi_arready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI RDATA" *) output [31:0]s00_axi_rdata;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI RRESP" *) output [1:0]s00_axi_rresp;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI RVALID" *) output s00_axi_rvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *) input s00_axi_rready;
+
+  wire \<const0> ;
+  wire BUZZER_PWM;
+  wire clk;
+  wire [2:1]\^leds ;
+  wire mute;
+  wire s00_axi_aclk;
+  wire [3:0]s00_axi_araddr;
+  wire s00_axi_aresetn;
+  wire s00_axi_arready;
+  wire s00_axi_arvalid;
+  wire [3:0]s00_axi_awaddr;
+  wire s00_axi_awready;
+  wire s00_axi_awvalid;
+  wire s00_axi_bready;
+  wire s00_axi_bvalid;
+  wire [31:0]s00_axi_rdata;
+  wire s00_axi_rready;
+  wire s00_axi_rvalid;
+  wire [31:0]s00_axi_wdata;
+  wire s00_axi_wready;
+  wire [3:0]s00_axi_wstrb;
+  wire s00_axi_wvalid;
+
+  assign leds[3] = \^leds [2];
+  assign leds[2:1] = \^leds [2:1];
+  assign leds[0] = \^leds [1];
+  assign s00_axi_bresp[1] = \<const0> ;
+  assign s00_axi_bresp[0] = \<const0> ;
+  assign s00_axi_rresp[1] = \<const0> ;
+  assign s00_axi_rresp[0] = \<const0> ;
+  GND GND
+       (.G(\<const0> ));
+  DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0 U0
+       (.BUZZER_PWM(BUZZER_PWM),
+        .S_AXI_ARREADY(s00_axi_arready),
+        .S_AXI_AWREADY(s00_axi_awready),
+        .S_AXI_WREADY(s00_axi_wready),
+        .clk(clk),
+        .leds(\^leds ),
+        .mute(mute),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_araddr(s00_axi_araddr[3:2]),
+        .s00_axi_aresetn(s00_axi_aresetn),
+        .s00_axi_arvalid(s00_axi_arvalid),
+        .s00_axi_awaddr(s00_axi_awaddr[3:2]),
+        .s00_axi_awvalid(s00_axi_awvalid),
+        .s00_axi_bready(s00_axi_bready),
+        .s00_axi_bvalid(s00_axi_bvalid),
+        .s00_axi_rdata(s00_axi_rdata),
+        .s00_axi_rready(s00_axi_rready),
+        .s00_axi_rvalid(s00_axi_rvalid),
+        .s00_axi_wdata(s00_axi_wdata),
+        .s00_axi_wstrb(s00_axi_wstrb),
+        .s00_axi_wvalid(s00_axi_wvalid));
+endmodule
+
+(* ORIG_REF_NAME = "ReproductorAXI_v1_0" *) 
 module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0
    (S_AXI_AWREADY,
-    leds,
     S_AXI_WREADY,
     S_AXI_ARREADY,
     s00_axi_rdata,
     BUZZER_PWM,
+    leds,
     s00_axi_rvalid,
     s00_axi_bvalid,
     s00_axi_wvalid,
@@ -35,11 +146,11 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0
     s00_axi_bready,
     s00_axi_rready);
   output S_AXI_AWREADY;
-  output [2:0]leds;
   output S_AXI_WREADY;
   output S_AXI_ARREADY;
   output [31:0]s00_axi_rdata;
   output BUZZER_PWM;
+  output [1:0]leds;
   output s00_axi_rvalid;
   output s00_axi_bvalid;
   input s00_axi_wvalid;
@@ -61,7 +172,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0
   wire S_AXI_AWREADY;
   wire S_AXI_WREADY;
   wire clk;
-  wire [2:0]leds;
+  wire [1:0]leds;
   wire mute;
   wire s00_axi_aclk;
   wire [1:0]s00_axi_araddr;
@@ -102,13 +213,14 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0
         .s00_axi_wvalid(s00_axi_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "ReproductorAXI_v1_0_S00_AXI" *) 
 module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
    (S_AXI_AWREADY,
-    leds,
     S_AXI_WREADY,
     S_AXI_ARREADY,
     s00_axi_rdata,
     BUZZER_PWM,
+    leds,
     s00_axi_rvalid,
     s00_axi_bvalid,
     s00_axi_wvalid,
@@ -125,11 +237,11 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
     s00_axi_bready,
     s00_axi_rready);
   output S_AXI_AWREADY;
-  output [2:0]leds;
   output S_AXI_WREADY;
   output S_AXI_ARREADY;
   output [31:0]s00_axi_rdata;
   output BUZZER_PWM;
+  output [1:0]leds;
   output s00_axi_rvalid;
   output s00_axi_bvalid;
   input s00_axi_wvalid;
@@ -147,8 +259,9 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   input s00_axi_rready;
 
   wire BUZZER_PWM;
-  wire BUZZER_PWM17_in;
   wire BUZZER_PWM1_carry__0_i_15_n_0;
+  wire BUZZER_PWM1_carry__0_i_16_n_0;
+  wire BUZZER_PWM1_carry__0_i_17_n_0;
   wire BUZZER_PWM1_carry__0_i_1_n_0;
   wire BUZZER_PWM1_carry__0_i_2_n_0;
   wire BUZZER_PWM1_carry__0_i_3_n_0;
@@ -164,7 +277,11 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   wire BUZZER_PWM1_carry__1_i_1_n_0;
   wire BUZZER_PWM1_carry__1_i_2_n_0;
   wire BUZZER_PWM1_carry__1_n_3;
+  wire BUZZER_PWM1_carry_i_17_n_0;
+  wire BUZZER_PWM1_carry_i_18_n_0;
+  wire BUZZER_PWM1_carry_i_19_n_0;
   wire BUZZER_PWM1_carry_i_1_n_0;
+  wire BUZZER_PWM1_carry_i_20_n_0;
   wire BUZZER_PWM1_carry_i_2_n_0;
   wire BUZZER_PWM1_carry_i_3_n_0;
   wire BUZZER_PWM1_carry_i_4_n_0;
@@ -265,7 +382,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   wire \counter_PWM_reg[8]_i_1_n_5 ;
   wire \counter_PWM_reg[8]_i_1_n_6 ;
   wire \counter_PWM_reg[8]_i_1_n_7 ;
-  wire [2:0]leds;
+  wire [1:0]leds;
   wire mute;
   wire [1:0]p_0_in;
   wire [31:7]p_1_in;
@@ -286,41 +403,11 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   wire [3:0]s00_axi_wstrb;
   wire s00_axi_wvalid;
   wire [31:0]slv_reg0;
-  wire [1:0]slv_reg1;
+  wire [31:0]slv_reg1;
   wire \slv_reg1[15]_i_1_n_0 ;
   wire \slv_reg1[23]_i_1_n_0 ;
   wire \slv_reg1[31]_i_1_n_0 ;
   wire \slv_reg1[7]_i_1_n_0 ;
-  wire \slv_reg1_reg_n_0_[10] ;
-  wire \slv_reg1_reg_n_0_[11] ;
-  wire \slv_reg1_reg_n_0_[12] ;
-  wire \slv_reg1_reg_n_0_[13] ;
-  wire \slv_reg1_reg_n_0_[14] ;
-  wire \slv_reg1_reg_n_0_[15] ;
-  wire \slv_reg1_reg_n_0_[16] ;
-  wire \slv_reg1_reg_n_0_[17] ;
-  wire \slv_reg1_reg_n_0_[18] ;
-  wire \slv_reg1_reg_n_0_[19] ;
-  wire \slv_reg1_reg_n_0_[20] ;
-  wire \slv_reg1_reg_n_0_[21] ;
-  wire \slv_reg1_reg_n_0_[22] ;
-  wire \slv_reg1_reg_n_0_[23] ;
-  wire \slv_reg1_reg_n_0_[24] ;
-  wire \slv_reg1_reg_n_0_[25] ;
-  wire \slv_reg1_reg_n_0_[26] ;
-  wire \slv_reg1_reg_n_0_[27] ;
-  wire \slv_reg1_reg_n_0_[28] ;
-  wire \slv_reg1_reg_n_0_[29] ;
-  wire \slv_reg1_reg_n_0_[2] ;
-  wire \slv_reg1_reg_n_0_[30] ;
-  wire \slv_reg1_reg_n_0_[31] ;
-  wire \slv_reg1_reg_n_0_[3] ;
-  wire \slv_reg1_reg_n_0_[4] ;
-  wire \slv_reg1_reg_n_0_[5] ;
-  wire \slv_reg1_reg_n_0_[6] ;
-  wire \slv_reg1_reg_n_0_[7] ;
-  wire \slv_reg1_reg_n_0_[8] ;
-  wire \slv_reg1_reg_n_0_[9] ;
   wire [31:0]slv_reg2;
   wire \slv_reg2[15]_i_1_n_0 ;
   wire \slv_reg2[23]_i_1_n_0 ;
@@ -378,45 +465,41 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
         .I2(slv_reg1[0]),
         .I3(slv_reg0[17]),
         .O(p_3_out[13]));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFC0A0C0)) 
     BUZZER_PWM1_carry__0_i_11
        (.I0(slv_reg0[14]),
         .I1(slv_reg0[17]),
         .I2(slv_reg1[0]),
-        .I3(slv_reg0[16]),
-        .I4(slv_reg1[1]),
-        .I5(slv_reg0[18]),
+        .I3(slv_reg1[1]),
+        .I4(slv_reg0[16]),
         .O(p_3_out[10]));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFC0A0C0)) 
     BUZZER_PWM1_carry__0_i_12
        (.I0(slv_reg0[15]),
         .I1(slv_reg0[18]),
         .I2(slv_reg1[0]),
-        .I3(slv_reg0[17]),
-        .I4(slv_reg1[1]),
-        .I5(slv_reg0[19]),
+        .I3(slv_reg1[1]),
+        .I4(slv_reg0[17]),
         .O(p_3_out[11]));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFC0A0C0)) 
     BUZZER_PWM1_carry__0_i_13
        (.I0(slv_reg0[12]),
         .I1(slv_reg0[15]),
         .I2(slv_reg1[0]),
-        .I3(slv_reg0[14]),
-        .I4(slv_reg1[1]),
-        .I5(slv_reg0[16]),
+        .I3(slv_reg1[1]),
+        .I4(slv_reg0[14]),
         .O(p_3_out[8]));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFC0A0C0)) 
     BUZZER_PWM1_carry__0_i_14
        (.I0(slv_reg0[13]),
         .I1(slv_reg0[16]),
         .I2(slv_reg1[0]),
-        .I3(slv_reg0[15]),
-        .I4(slv_reg1[1]),
-        .I5(slv_reg0[17]),
+        .I3(slv_reg1[1]),
+        .I4(slv_reg0[15]),
         .O(p_3_out[9]));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT5 #(
@@ -428,6 +511,26 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
         .I3(slv_reg0[19]),
         .I4(slv_reg1[1]),
         .O(BUZZER_PWM1_carry__0_i_15_n_0));
+  LUT6 #(
+    .INIT(64'hAA95A5955A955595)) 
+    BUZZER_PWM1_carry__0_i_16
+       (.I0(counter_PWM_reg[11]),
+        .I1(slv_reg0[17]),
+        .I2(slv_reg1[1]),
+        .I3(slv_reg1[0]),
+        .I4(slv_reg0[18]),
+        .I5(slv_reg0[15]),
+        .O(BUZZER_PWM1_carry__0_i_16_n_0));
+  LUT6 #(
+    .INIT(64'hAA95A5955A955595)) 
+    BUZZER_PWM1_carry__0_i_17
+       (.I0(counter_PWM_reg[9]),
+        .I1(slv_reg0[15]),
+        .I2(slv_reg1[1]),
+        .I3(slv_reg1[0]),
+        .I4(slv_reg0[16]),
+        .I5(slv_reg0[13]),
+        .O(BUZZER_PWM1_carry__0_i_17_n_0));
   LUT4 #(
     .INIT(16'h2F02)) 
     BUZZER_PWM1_carry__0_i_2
@@ -469,23 +572,20 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
         .I1(counter_PWM_reg[12]),
         .I2(BUZZER_PWM1_carry__0_i_15_n_0),
         .O(BUZZER_PWM1_carry__0_i_6_n_0));
-  LUT4 #(
-    .INIT(16'h9009)) 
+  LUT3 #(
+    .INIT(8'h90)) 
     BUZZER_PWM1_carry__0_i_7
        (.I0(p_3_out[10]),
         .I1(counter_PWM_reg[10]),
-        .I2(p_3_out[11]),
-        .I3(counter_PWM_reg[11]),
+        .I2(BUZZER_PWM1_carry__0_i_16_n_0),
         .O(BUZZER_PWM1_carry__0_i_7_n_0));
-  LUT4 #(
-    .INIT(16'h9009)) 
+  LUT3 #(
+    .INIT(8'h90)) 
     BUZZER_PWM1_carry__0_i_8
        (.I0(p_3_out[8]),
         .I1(counter_PWM_reg[8]),
-        .I2(p_3_out[9]),
-        .I3(counter_PWM_reg[9]),
+        .I2(BUZZER_PWM1_carry__0_i_17_n_0),
         .O(BUZZER_PWM1_carry__0_i_8_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT5 #(
     .INIT(32'hAFC0A0C0)) 
     BUZZER_PWM1_carry__0_i_9
@@ -498,7 +598,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 BUZZER_PWM1_carry__1
        (.CI(BUZZER_PWM1_carry__0_n_0),
-        .CO({NLW_BUZZER_PWM1_carry__1_CO_UNCONNECTED[3:2],BUZZER_PWM17_in,BUZZER_PWM1_carry__1_n_3}),
+        .CO({NLW_BUZZER_PWM1_carry__1_CO_UNCONNECTED[3:2],leds[1],BUZZER_PWM1_carry__1_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O(NLW_BUZZER_PWM1_carry__1_O_UNCONNECTED[3:0]),
@@ -523,76 +623,99 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
         .I2(counter_PWM_reg[7]),
         .I3(p_3_out[7]),
         .O(BUZZER_PWM1_carry_i_1_n_0));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFC0A0C0)) 
     BUZZER_PWM1_carry_i_10
        (.I0(slv_reg0[11]),
         .I1(slv_reg0[14]),
         .I2(slv_reg1[0]),
-        .I3(slv_reg0[13]),
-        .I4(slv_reg1[1]),
-        .I5(slv_reg0[15]),
+        .I3(slv_reg1[1]),
+        .I4(slv_reg0[13]),
         .O(p_3_out[7]));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFC0A0C0)) 
     BUZZER_PWM1_carry_i_11
        (.I0(slv_reg0[8]),
         .I1(slv_reg0[11]),
         .I2(slv_reg1[0]),
-        .I3(slv_reg0[10]),
-        .I4(slv_reg1[1]),
-        .I5(slv_reg0[12]),
+        .I3(slv_reg1[1]),
+        .I4(slv_reg0[10]),
         .O(p_3_out[4]));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFC0A0C0)) 
     BUZZER_PWM1_carry_i_12
        (.I0(slv_reg0[9]),
         .I1(slv_reg0[12]),
         .I2(slv_reg1[0]),
-        .I3(slv_reg0[11]),
-        .I4(slv_reg1[1]),
-        .I5(slv_reg0[13]),
+        .I3(slv_reg1[1]),
+        .I4(slv_reg0[11]),
         .O(p_3_out[5]));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFC0A0C0)) 
     BUZZER_PWM1_carry_i_13
        (.I0(slv_reg0[6]),
         .I1(slv_reg0[9]),
         .I2(slv_reg1[0]),
-        .I3(slv_reg0[8]),
-        .I4(slv_reg1[1]),
-        .I5(slv_reg0[10]),
+        .I3(slv_reg1[1]),
+        .I4(slv_reg0[8]),
         .O(p_3_out[2]));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFC0A0C0)) 
     BUZZER_PWM1_carry_i_14
        (.I0(slv_reg0[7]),
         .I1(slv_reg0[10]),
         .I2(slv_reg1[0]),
-        .I3(slv_reg0[9]),
-        .I4(slv_reg1[1]),
-        .I5(slv_reg0[11]),
+        .I3(slv_reg1[1]),
+        .I4(slv_reg0[9]),
         .O(p_3_out[3]));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFC0A0C0)) 
     BUZZER_PWM1_carry_i_15
        (.I0(slv_reg0[4]),
         .I1(slv_reg0[7]),
         .I2(slv_reg1[0]),
-        .I3(slv_reg0[6]),
-        .I4(slv_reg1[1]),
-        .I5(slv_reg0[8]),
+        .I3(slv_reg1[1]),
+        .I4(slv_reg0[6]),
         .O(p_3_out[0]));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFC0A0C0)) 
     BUZZER_PWM1_carry_i_16
        (.I0(slv_reg0[5]),
         .I1(slv_reg0[8]),
         .I2(slv_reg1[0]),
-        .I3(slv_reg0[7]),
-        .I4(slv_reg1[1]),
-        .I5(slv_reg0[9]),
+        .I3(slv_reg1[1]),
+        .I4(slv_reg0[7]),
         .O(p_3_out[1]));
+  LUT6 #(
+    .INIT(64'hAA95A5955A955595)) 
+    BUZZER_PWM1_carry_i_17
+       (.I0(counter_PWM_reg[7]),
+        .I1(slv_reg0[13]),
+        .I2(slv_reg1[1]),
+        .I3(slv_reg1[0]),
+        .I4(slv_reg0[14]),
+        .I5(slv_reg0[11]),
+        .O(BUZZER_PWM1_carry_i_17_n_0));
+  LUT6 #(
+    .INIT(64'hAA95A5955A955595)) 
+    BUZZER_PWM1_carry_i_18
+       (.I0(counter_PWM_reg[5]),
+        .I1(slv_reg0[11]),
+        .I2(slv_reg1[1]),
+        .I3(slv_reg1[0]),
+        .I4(slv_reg0[12]),
+        .I5(slv_reg0[9]),
+        .O(BUZZER_PWM1_carry_i_18_n_0));
+  LUT6 #(
+    .INIT(64'hAA95A5955A955595)) 
+    BUZZER_PWM1_carry_i_19
+       (.I0(counter_PWM_reg[3]),
+        .I1(slv_reg0[9]),
+        .I2(slv_reg1[1]),
+        .I3(slv_reg1[0]),
+        .I4(slv_reg0[10]),
+        .I5(slv_reg0[7]),
+        .O(BUZZER_PWM1_carry_i_19_n_0));
   LUT4 #(
     .INIT(16'h2F02)) 
     BUZZER_PWM1_carry_i_2
@@ -601,6 +724,16 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
         .I2(counter_PWM_reg[5]),
         .I3(p_3_out[5]),
         .O(BUZZER_PWM1_carry_i_2_n_0));
+  LUT6 #(
+    .INIT(64'hAA95A5955A955595)) 
+    BUZZER_PWM1_carry_i_20
+       (.I0(counter_PWM_reg[1]),
+        .I1(slv_reg0[7]),
+        .I2(slv_reg1[1]),
+        .I3(slv_reg1[0]),
+        .I4(slv_reg0[8]),
+        .I5(slv_reg0[5]),
+        .O(BUZZER_PWM1_carry_i_20_n_0));
   LUT4 #(
     .INIT(16'h2F02)) 
     BUZZER_PWM1_carry_i_3
@@ -617,52 +750,48 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
         .I2(counter_PWM_reg[1]),
         .I3(p_3_out[1]),
         .O(BUZZER_PWM1_carry_i_4_n_0));
-  LUT4 #(
-    .INIT(16'h9009)) 
+  LUT3 #(
+    .INIT(8'h90)) 
     BUZZER_PWM1_carry_i_5
        (.I0(p_3_out[6]),
         .I1(counter_PWM_reg[6]),
-        .I2(p_3_out[7]),
-        .I3(counter_PWM_reg[7]),
+        .I2(BUZZER_PWM1_carry_i_17_n_0),
         .O(BUZZER_PWM1_carry_i_5_n_0));
-  LUT4 #(
-    .INIT(16'h9009)) 
+  LUT3 #(
+    .INIT(8'h90)) 
     BUZZER_PWM1_carry_i_6
        (.I0(p_3_out[4]),
         .I1(counter_PWM_reg[4]),
-        .I2(p_3_out[5]),
-        .I3(counter_PWM_reg[5]),
+        .I2(BUZZER_PWM1_carry_i_18_n_0),
         .O(BUZZER_PWM1_carry_i_6_n_0));
-  LUT4 #(
-    .INIT(16'h9009)) 
+  LUT3 #(
+    .INIT(8'h90)) 
     BUZZER_PWM1_carry_i_7
        (.I0(p_3_out[2]),
         .I1(counter_PWM_reg[2]),
-        .I2(p_3_out[3]),
-        .I3(counter_PWM_reg[3]),
+        .I2(BUZZER_PWM1_carry_i_19_n_0),
         .O(BUZZER_PWM1_carry_i_7_n_0));
-  LUT4 #(
-    .INIT(16'h9009)) 
+  LUT3 #(
+    .INIT(8'h90)) 
     BUZZER_PWM1_carry_i_8
        (.I0(p_3_out[0]),
         .I1(counter_PWM_reg[0]),
-        .I2(p_3_out[1]),
-        .I3(counter_PWM_reg[1]),
+        .I2(BUZZER_PWM1_carry_i_20_n_0),
         .O(BUZZER_PWM1_carry_i_8_n_0));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFC0A0C0)) 
     BUZZER_PWM1_carry_i_9
        (.I0(slv_reg0[10]),
         .I1(slv_reg0[13]),
         .I2(slv_reg1[0]),
-        .I3(slv_reg0[12]),
-        .I4(slv_reg1[1]),
-        .I5(slv_reg0[14]),
+        .I3(slv_reg1[1]),
+        .I4(slv_reg0[12]),
         .O(p_3_out[6]));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT2 #(
     .INIT(4'h2)) 
     BUZZER_PWM_INST_0
-       (.I0(BUZZER_PWM17_in),
+       (.I0(leds[1]),
         .I1(mute),
         .O(BUZZER_PWM));
   LUT6 #(
@@ -709,7 +838,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
         .D(\axi_araddr[3]_i_1_n_0 ),
         .Q(axi_araddr[3]),
         .S(axi_awready_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT2 #(
     .INIT(4'h2)) 
     axi_arready_i_1
@@ -759,7 +888,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
     axi_awready_i_1
        (.I0(s00_axi_aresetn),
         .O(axi_awready_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'h0080)) 
     axi_awready_i_2
@@ -803,7 +932,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[10]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[10] ),
+       (.I0(slv_reg1[10]),
         .I1(slv_reg0[10]),
         .I2(slv_reg3[10]),
         .I3(axi_araddr[3]),
@@ -813,7 +942,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[11]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[11] ),
+       (.I0(slv_reg1[11]),
         .I1(slv_reg0[11]),
         .I2(slv_reg3[11]),
         .I3(axi_araddr[3]),
@@ -823,7 +952,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[12]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[12] ),
+       (.I0(slv_reg1[12]),
         .I1(slv_reg0[12]),
         .I2(slv_reg3[12]),
         .I3(axi_araddr[3]),
@@ -833,7 +962,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[13]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[13] ),
+       (.I0(slv_reg1[13]),
         .I1(slv_reg0[13]),
         .I2(slv_reg3[13]),
         .I3(axi_araddr[3]),
@@ -843,7 +972,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[14]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[14] ),
+       (.I0(slv_reg1[14]),
         .I1(slv_reg0[14]),
         .I2(slv_reg3[14]),
         .I3(axi_araddr[3]),
@@ -853,7 +982,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[15]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[15] ),
+       (.I0(slv_reg1[15]),
         .I1(slv_reg0[15]),
         .I2(slv_reg3[15]),
         .I3(axi_araddr[3]),
@@ -863,7 +992,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[16]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[16] ),
+       (.I0(slv_reg1[16]),
         .I1(slv_reg0[16]),
         .I2(slv_reg3[16]),
         .I3(axi_araddr[3]),
@@ -873,7 +1002,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[17]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[17] ),
+       (.I0(slv_reg1[17]),
         .I1(slv_reg0[17]),
         .I2(slv_reg3[17]),
         .I3(axi_araddr[3]),
@@ -883,7 +1012,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[18]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[18] ),
+       (.I0(slv_reg1[18]),
         .I1(slv_reg0[18]),
         .I2(slv_reg3[18]),
         .I3(axi_araddr[3]),
@@ -893,7 +1022,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[19]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[19] ),
+       (.I0(slv_reg1[19]),
         .I1(slv_reg0[19]),
         .I2(slv_reg3[19]),
         .I3(axi_araddr[3]),
@@ -913,7 +1042,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[20]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[20] ),
+       (.I0(slv_reg1[20]),
         .I1(slv_reg0[20]),
         .I2(slv_reg3[20]),
         .I3(axi_araddr[3]),
@@ -923,7 +1052,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[21]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[21] ),
+       (.I0(slv_reg1[21]),
         .I1(slv_reg0[21]),
         .I2(slv_reg3[21]),
         .I3(axi_araddr[3]),
@@ -933,7 +1062,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[22]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[22] ),
+       (.I0(slv_reg1[22]),
         .I1(slv_reg0[22]),
         .I2(slv_reg3[22]),
         .I3(axi_araddr[3]),
@@ -943,7 +1072,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[23]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[23] ),
+       (.I0(slv_reg1[23]),
         .I1(slv_reg0[23]),
         .I2(slv_reg3[23]),
         .I3(axi_araddr[3]),
@@ -953,7 +1082,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[24]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[24] ),
+       (.I0(slv_reg1[24]),
         .I1(slv_reg0[24]),
         .I2(slv_reg3[24]),
         .I3(axi_araddr[3]),
@@ -963,7 +1092,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[25]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[25] ),
+       (.I0(slv_reg1[25]),
         .I1(slv_reg0[25]),
         .I2(slv_reg3[25]),
         .I3(axi_araddr[3]),
@@ -973,7 +1102,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[26]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[26] ),
+       (.I0(slv_reg1[26]),
         .I1(slv_reg0[26]),
         .I2(slv_reg3[26]),
         .I3(axi_araddr[3]),
@@ -983,7 +1112,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[27]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[27] ),
+       (.I0(slv_reg1[27]),
         .I1(slv_reg0[27]),
         .I2(slv_reg3[27]),
         .I3(axi_araddr[3]),
@@ -993,7 +1122,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[28]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[28] ),
+       (.I0(slv_reg1[28]),
         .I1(slv_reg0[28]),
         .I2(slv_reg3[28]),
         .I3(axi_araddr[3]),
@@ -1003,7 +1132,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[29]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[29] ),
+       (.I0(slv_reg1[29]),
         .I1(slv_reg0[29]),
         .I2(slv_reg3[29]),
         .I3(axi_araddr[3]),
@@ -1013,7 +1142,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[2]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[2] ),
+       (.I0(slv_reg1[2]),
         .I1(slv_reg0[2]),
         .I2(slv_reg3[2]),
         .I3(axi_araddr[3]),
@@ -1023,7 +1152,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[30]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[30] ),
+       (.I0(slv_reg1[30]),
         .I1(slv_reg0[30]),
         .I2(slv_reg3[30]),
         .I3(axi_araddr[3]),
@@ -1040,7 +1169,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[31]_i_2 
-       (.I0(\slv_reg1_reg_n_0_[31] ),
+       (.I0(slv_reg1[31]),
         .I1(slv_reg0[31]),
         .I2(slv_reg3[31]),
         .I3(axi_araddr[3]),
@@ -1050,7 +1179,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[3]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[3] ),
+       (.I0(slv_reg1[3]),
         .I1(slv_reg0[3]),
         .I2(slv_reg3[3]),
         .I3(axi_araddr[3]),
@@ -1060,7 +1189,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[4]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[4] ),
+       (.I0(slv_reg1[4]),
         .I1(slv_reg0[4]),
         .I2(slv_reg3[4]),
         .I3(axi_araddr[3]),
@@ -1070,7 +1199,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[5]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[5] ),
+       (.I0(slv_reg1[5]),
         .I1(slv_reg0[5]),
         .I2(slv_reg3[5]),
         .I3(axi_araddr[3]),
@@ -1080,7 +1209,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[6]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[6] ),
+       (.I0(slv_reg1[6]),
         .I1(slv_reg0[6]),
         .I2(slv_reg3[6]),
         .I3(axi_araddr[3]),
@@ -1090,7 +1219,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[7]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[7] ),
+       (.I0(slv_reg1[7]),
         .I1(slv_reg0[7]),
         .I2(slv_reg3[7]),
         .I3(axi_araddr[3]),
@@ -1100,7 +1229,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[8]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[8] ),
+       (.I0(slv_reg1[8]),
         .I1(slv_reg0[8]),
         .I2(slv_reg3[8]),
         .I3(axi_araddr[3]),
@@ -1110,7 +1239,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[9]_i_1 
-       (.I0(\slv_reg1_reg_n_0_[9] ),
+       (.I0(slv_reg1[9]),
         .I1(slv_reg0[9]),
         .I2(slv_reg3[9]),
         .I3(axi_araddr[3]),
@@ -1309,7 +1438,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
         .D(reg_data_out[9]),
         .Q(s00_axi_rdata[9]),
         .R(axi_awready_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
     .INIT(16'h08F8)) 
     axi_rvalid_i_1
@@ -1324,7 +1453,7 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
         .D(axi_rvalid_i_1_n_0),
         .Q(s00_axi_rvalid),
         .R(axi_awready_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'h0800)) 
     axi_wready_i_1
@@ -1685,26 +1814,12 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
         .D(\counter_PWM_reg[8]_i_1_n_6 ),
         .Q(counter_PWM_reg[9]),
         .R(clear));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT1 #(
     .INIT(2'h1)) 
-    \leds[1]_INST_0 
-       (.I0(slv_reg1[1]),
+    \leds[0]_INST_0 
+       (.I0(leds[1]),
         .O(leds[0]));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
-    \leds[2]_INST_0 
-       (.I0(slv_reg1[1]),
-        .I1(slv_reg1[0]),
-        .O(leds[1]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT2 #(
-    .INIT(4'h8)) 
-    \leds[3]_INST_0 
-       (.I0(slv_reg1[0]),
-        .I1(slv_reg1[1]),
-        .O(leds[2]));
   LUT4 #(
     .INIT(16'h0200)) 
     \slv_reg0[15]_i_1 
@@ -1729,6 +1844,14 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
         .I2(p_0_in[0]),
         .I3(s00_axi_wstrb[3]),
         .O(p_1_in[31]));
+  LUT4 #(
+    .INIT(16'h8000)) 
+    \slv_reg0[31]_i_2 
+       (.I0(S_AXI_WREADY),
+        .I1(S_AXI_AWREADY),
+        .I2(s00_axi_wvalid),
+        .I3(s00_axi_awvalid),
+        .O(slv_reg_wren__0));
   LUT4 #(
     .INIT(16'h0200)) 
     \slv_reg0[7]_i_1 
@@ -1954,14 +2077,6 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
         .I3(p_0_in[0]),
         .O(\slv_reg1[31]_i_1_n_0 ));
   LUT4 #(
-    .INIT(16'h8000)) 
-    \slv_reg1[31]_i_2 
-       (.I0(S_AXI_WREADY),
-        .I1(S_AXI_AWREADY),
-        .I2(s00_axi_wvalid),
-        .I3(s00_axi_awvalid),
-        .O(slv_reg_wren__0));
-  LUT4 #(
     .INIT(16'h0080)) 
     \slv_reg1[7]_i_1 
        (.I0(slv_reg_wren__0),
@@ -1979,61 +2094,61 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[10]),
-        .Q(\slv_reg1_reg_n_0_[10] ),
+        .Q(slv_reg1[10]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[11] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[11]),
-        .Q(\slv_reg1_reg_n_0_[11] ),
+        .Q(slv_reg1[11]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[12] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[12]),
-        .Q(\slv_reg1_reg_n_0_[12] ),
+        .Q(slv_reg1[12]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[13] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[13]),
-        .Q(\slv_reg1_reg_n_0_[13] ),
+        .Q(slv_reg1[13]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[14] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[14]),
-        .Q(\slv_reg1_reg_n_0_[14] ),
+        .Q(slv_reg1[14]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[15] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[15]),
-        .Q(\slv_reg1_reg_n_0_[15] ),
+        .Q(slv_reg1[15]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[16] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[16]),
-        .Q(\slv_reg1_reg_n_0_[16] ),
+        .Q(slv_reg1[16]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[17] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[17]),
-        .Q(\slv_reg1_reg_n_0_[17] ),
+        .Q(slv_reg1[17]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[18] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[18]),
-        .Q(\slv_reg1_reg_n_0_[18] ),
+        .Q(slv_reg1[18]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[19] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[19]),
-        .Q(\slv_reg1_reg_n_0_[19] ),
+        .Q(slv_reg1[19]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[1] 
        (.C(s00_axi_aclk),
@@ -2045,121 +2160,121 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[20]),
-        .Q(\slv_reg1_reg_n_0_[20] ),
+        .Q(slv_reg1[20]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[21] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[21]),
-        .Q(\slv_reg1_reg_n_0_[21] ),
+        .Q(slv_reg1[21]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[22] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[22]),
-        .Q(\slv_reg1_reg_n_0_[22] ),
+        .Q(slv_reg1[22]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[23] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[23]),
-        .Q(\slv_reg1_reg_n_0_[23] ),
+        .Q(slv_reg1[23]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[24] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[24]),
-        .Q(\slv_reg1_reg_n_0_[24] ),
+        .Q(slv_reg1[24]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[25] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[25]),
-        .Q(\slv_reg1_reg_n_0_[25] ),
+        .Q(slv_reg1[25]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[26] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[26]),
-        .Q(\slv_reg1_reg_n_0_[26] ),
+        .Q(slv_reg1[26]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[27] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[27]),
-        .Q(\slv_reg1_reg_n_0_[27] ),
+        .Q(slv_reg1[27]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[28] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[28]),
-        .Q(\slv_reg1_reg_n_0_[28] ),
+        .Q(slv_reg1[28]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[29] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[29]),
-        .Q(\slv_reg1_reg_n_0_[29] ),
+        .Q(slv_reg1[29]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[2] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[2]),
-        .Q(\slv_reg1_reg_n_0_[2] ),
+        .Q(slv_reg1[2]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[30] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[30]),
-        .Q(\slv_reg1_reg_n_0_[30] ),
+        .Q(slv_reg1[30]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[31] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[31]),
-        .Q(\slv_reg1_reg_n_0_[31] ),
+        .Q(slv_reg1[31]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[3] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[3]),
-        .Q(\slv_reg1_reg_n_0_[3] ),
+        .Q(slv_reg1[3]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[4] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[4]),
-        .Q(\slv_reg1_reg_n_0_[4] ),
+        .Q(slv_reg1[4]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[5] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[5]),
-        .Q(\slv_reg1_reg_n_0_[5] ),
+        .Q(slv_reg1[5]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[6] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[6]),
-        .Q(\slv_reg1_reg_n_0_[6] ),
+        .Q(slv_reg1[6]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[7] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[7]),
-        .Q(\slv_reg1_reg_n_0_[7] ),
+        .Q(slv_reg1[7]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[8] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[8]),
-        .Q(\slv_reg1_reg_n_0_[8] ),
+        .Q(slv_reg1[8]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[9] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[9]),
-        .Q(\slv_reg1_reg_n_0_[9] ),
+        .Q(slv_reg1[9]),
         .R(axi_awready_i_1_n_0));
   LUT4 #(
     .INIT(16'h0080)) 
@@ -2609,115 +2724,6 @@ module DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0_S00_AXI
         .D(s00_axi_wdata[9]),
         .Q(slv_reg3[9]),
         .R(axi_awready_i_1_n_0));
-endmodule
-
-(* CHECK_LICENSE_TYPE = "SEPmon_ReproductorAXI_0_0,ReproductorAXI_v1_0,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "ReproductorAXI_v1_0,Vivado 2020.1" *) 
-(* NotValidForBitStream *)
-module DEMO_ReproductorAXI_0_0
-   (clk,
-    leds,
-    BUZZER_PWM,
-    mute,
-    s00_axi_aclk,
-    s00_axi_aresetn,
-    s00_axi_awaddr,
-    s00_axi_awprot,
-    s00_axi_awvalid,
-    s00_axi_awready,
-    s00_axi_wdata,
-    s00_axi_wstrb,
-    s00_axi_wvalid,
-    s00_axi_wready,
-    s00_axi_bresp,
-    s00_axi_bvalid,
-    s00_axi_bready,
-    s00_axi_araddr,
-    s00_axi_arprot,
-    s00_axi_arvalid,
-    s00_axi_arready,
-    s00_axi_rdata,
-    s00_axi_rresp,
-    s00_axi_rvalid,
-    s00_axi_rready);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN SEPmon_clk_0, INSERT_VIP 0" *) input clk;
-  output [3:0]leds;
-  output BUZZER_PWM;
-  input mute;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN SEPmon_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s00_axi_aclk;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN SEPmon_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [3:0]s00_axi_awaddr;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT" *) input [2:0]s00_axi_awprot;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWVALID" *) input s00_axi_awvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWREADY" *) output s00_axi_awready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI WDATA" *) input [31:0]s00_axi_wdata;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI WSTRB" *) input [3:0]s00_axi_wstrb;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI WVALID" *) input s00_axi_wvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI WREADY" *) output s00_axi_wready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI BRESP" *) output [1:0]s00_axi_bresp;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI BVALID" *) output s00_axi_bvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI BREADY" *) input s00_axi_bready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI ARADDR" *) input [3:0]s00_axi_araddr;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI ARPROT" *) input [2:0]s00_axi_arprot;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI ARVALID" *) input s00_axi_arvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI ARREADY" *) output s00_axi_arready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI RDATA" *) output [31:0]s00_axi_rdata;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI RRESP" *) output [1:0]s00_axi_rresp;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI RVALID" *) output s00_axi_rvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *) input s00_axi_rready;
-
-  wire \<const0> ;
-  wire BUZZER_PWM;
-  wire clk;
-  wire [3:1]\^leds ;
-  wire mute;
-  wire s00_axi_aclk;
-  wire [3:0]s00_axi_araddr;
-  wire s00_axi_aresetn;
-  wire s00_axi_arready;
-  wire s00_axi_arvalid;
-  wire [3:0]s00_axi_awaddr;
-  wire s00_axi_awready;
-  wire s00_axi_awvalid;
-  wire s00_axi_bready;
-  wire s00_axi_bvalid;
-  wire [31:0]s00_axi_rdata;
-  wire s00_axi_rready;
-  wire s00_axi_rvalid;
-  wire [31:0]s00_axi_wdata;
-  wire s00_axi_wready;
-  wire [3:0]s00_axi_wstrb;
-  wire s00_axi_wvalid;
-
-  assign leds[3:1] = \^leds [3:1];
-  assign leds[0] = \<const0> ;
-  assign s00_axi_bresp[1] = \<const0> ;
-  assign s00_axi_bresp[0] = \<const0> ;
-  assign s00_axi_rresp[1] = \<const0> ;
-  assign s00_axi_rresp[0] = \<const0> ;
-  GND GND
-       (.G(\<const0> ));
-  DEMO_ReproductorAXI_0_0_ReproductorAXI_v1_0 U0
-       (.BUZZER_PWM(BUZZER_PWM),
-        .S_AXI_ARREADY(s00_axi_arready),
-        .S_AXI_AWREADY(s00_axi_awready),
-        .S_AXI_WREADY(s00_axi_wready),
-        .clk(clk),
-        .leds(\^leds ),
-        .mute(mute),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_araddr(s00_axi_araddr[3:2]),
-        .s00_axi_aresetn(s00_axi_aresetn),
-        .s00_axi_arvalid(s00_axi_arvalid),
-        .s00_axi_awaddr(s00_axi_awaddr[3:2]),
-        .s00_axi_awvalid(s00_axi_awvalid),
-        .s00_axi_bready(s00_axi_bready),
-        .s00_axi_bvalid(s00_axi_bvalid),
-        .s00_axi_rdata(s00_axi_rdata),
-        .s00_axi_rready(s00_axi_rready),
-        .s00_axi_rvalid(s00_axi_rvalid),
-        .s00_axi_wdata(s00_axi_wdata),
-        .s00_axi_wstrb(s00_axi_wstrb),
-        .s00_axi_wvalid(s00_axi_wvalid));
 endmodule
 `ifndef GLBL
 `define GLBL

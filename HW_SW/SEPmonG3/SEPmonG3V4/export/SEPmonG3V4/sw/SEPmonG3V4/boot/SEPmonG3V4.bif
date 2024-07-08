@@ -1,0 +1,7 @@
+/*SEPmonG3V4*/
+the_ROM_image:
+{
+  [bootloader]<SEPmonG3V4/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

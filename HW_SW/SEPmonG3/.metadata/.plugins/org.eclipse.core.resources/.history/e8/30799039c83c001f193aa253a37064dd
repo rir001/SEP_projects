@@ -1,0 +1,7 @@
+#include <stdio.h>
+#include "LCD_GUI.h"
+#include "LCD_GUI.c"
+#include "Images.h"
+#include "sentences.h"
+
+

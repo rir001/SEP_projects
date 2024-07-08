@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:ReproductorAXI:1.0
--- IP Revision: 5
+-- IP Revision: 12
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -124,7 +124,7 @@ ARCHITECTURE DEMO_ReproductorAXI_0_0_arch OF DEMO_ReproductorAXI_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF DEMO_ReproductorAXI_0_0_arch : ARCHITECTURE IS "DEMO_ReproductorAXI_0_0,ReproductorAXI_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF DEMO_ReproductorAXI_0_0_arch: ARCHITECTURE IS "DEMO_ReproductorAXI_0_0,ReproductorAXI_v1_0,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=ReproductorAXI,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}";
+  ATTRIBUTE CORE_GENERATION_INFO OF DEMO_ReproductorAXI_0_0_arch: ARCHITECTURE IS "DEMO_ReproductorAXI_0_0,ReproductorAXI_v1_0,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=ReproductorAXI,x_ipVersion=1.0,x_ipCoreRevision=12,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF s00_axi_rready: SIGNAL IS "xilinx.com:interface:aximm:1.0 S00_AXI RREADY";
