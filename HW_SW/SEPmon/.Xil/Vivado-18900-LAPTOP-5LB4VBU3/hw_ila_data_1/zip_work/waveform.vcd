@@ -1,0 +1,302 @@
+$date
+        2024-Jul-07 22:53:42
+$end
+$version
+        Vivado v2020.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " DEMO_i/ps7_0_axi_periph_M07_AXI_WREADY $end
+$var reg 4 # DEMO_i/ps7_0_axi_periph_M07_AXI_AWADDR [3:0] $end
+$var reg 2 ' DEMO_i/ps7_0_axi_periph_M07_AXI_BRESP [1:0] $end
+$var reg 1 ) DEMO_i/ps7_0_axi_periph_M07_AXI_BVALID $end
+$var reg 1 * DEMO_i/ps7_0_axi_periph_M07_AXI_BREADY $end
+$var reg 4 + DEMO_i/ps7_0_axi_periph_M07_AXI_ARADDR [3:0] $end
+$var reg 1 / DEMO_i/ps7_0_axi_periph_M07_AXI_RREADY $end
+$var reg 1 0 DEMO_i/ps7_0_axi_periph_M07_AXI_WVALID $end
+$var reg 1 1 DEMO_i/ps7_0_axi_periph_M07_AXI_ARVALID $end
+$var reg 1 2 DEMO_i/ps7_0_axi_periph_M07_AXI_ARREADY $end
+$var reg 32 3 DEMO_i/ps7_0_axi_periph_M07_AXI_RDATA [31:0] $end
+$var reg 1 S DEMO_i/ps7_0_axi_periph_M07_AXI_AWVALID $end
+$var reg 1 T DEMO_i/ps7_0_axi_periph_M07_AXI_AWREADY $end
+$var reg 2 U DEMO_i/ps7_0_axi_periph_M07_AXI_RRESP [1:0] $end
+$var reg 32 W DEMO_i/ps7_0_axi_periph_M07_AXI_WDATA [31:0] $end
+$var reg 4 w DEMO_i/ps7_0_axi_periph_M07_AXI_WSTRB [3:0] $end
+$var reg 1 { DEMO_i/ps7_0_axi_periph_M07_AXI_RVALID $end
+$var reg 3 | DEMO_i/ps7_0_axi_periph_M07_AXI_ARPROT [2:0] $end
+$var reg 3 !" DEMO_i/ps7_0_axi_periph_M07_AXI_AWPROT [2:0] $end
+$var reg 1 $" _TRIGGER $end
+$var reg 1 %" _WINDOW $end
+$var reg 1 &" _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+b100 #
+b0 '
+0)
+0*
+b100 +
+0/
+00
+01
+02
+b0 3
+0S
+0T
+b0 U
+b10000110 W
+b1111 w
+0{
+b1 |
+b1 !"
+0$"
+1%"
+0&"
+$end
+#10
+b0 #
+b0 +
+#19
+b100 #
+b100 +
+#32
+b0 #
+b0 +
+#41
+b100 #
+b100 +
+#54
+b0 #
+b0 +
+#63
+b100 #
+b100 +
+#76
+b0 #
+b0 +
+#85
+b100 #
+b100 +
+#98
+b0 #
+b0 +
+#107
+b100 #
+b100 +
+#120
+b0 #
+b0 +
+#129
+b100 #
+b100 +
+#142
+b0 #
+b0 +
+#151
+b100 #
+b100 +
+#164
+b0 #
+b0 +
+#173
+b100 #
+b100 +
+#186
+b0 #
+b0 +
+#195
+b100 #
+b100 +
+#208
+b0 #
+b0 +
+#217
+b100 #
+b100 +
+#230
+b0 #
+b0 +
+#239
+b100 #
+b100 +
+#252
+b0 #
+b0 +
+#261
+b100 #
+b100 +
+#274
+b0 #
+b0 +
+#283
+b100 #
+b100 +
+#296
+b0 #
+b0 +
+#305
+b100 #
+b100 +
+#318
+b0 #
+b0 +
+#327
+b100 #
+b100 +
+#341
+b0 #
+b0 +
+#350
+b100 #
+b100 +
+#361
+b100 W
+#363
+b0 #
+b0 +
+#371
+b100 #
+b100 +
+#413
+b1100 #
+b1100 +
+#428
+b100 #
+b100 +
+#472
+b0 #
+b0 +
+#487
+b100 #
+b100 +
+#498
+b110000110 W
+#500
+b0 #
+b0 +
+#508
+b100 #
+b100 +
+#512
+1$"
+#521
+b1 W
+#524
+b0 #
+b0 +
+#532
+b100 #
+b100 +
+#556
+b1100 #
+b1100 +
+#565
+b100 #
+b100 +
+#577
+b0 W
+#579
+b1100 #
+b1100 +
+#587
+b0 #
+b0 +
+#657
+b110000110 W
+#667
+b100 #
+b100 +
+#707
+b0 W
+#710
+b1000 #
+b1000 +
+#718
+b1100 #
+b1100 +
+#732
+b100 #
+b100 +
+#747
+b1100 #
+b1100 +
+#759
+b11111111111111111111111111111110 W
+#761
+b0 #
+b0 +
+#769
+b100 #
+b100 +
+#783
+b0 #
+b0 +
+#798
+b100 #
+b100 +
+#809
+b10000110 W
+#811
+b0 #
+b0 +
+#819
+b100 #
+b100 +
+#833
+b0 #
+b0 +
+#842
+b100 #
+b100 +
+#855
+b0 #
+b0 +
+#864
+b100 #
+b100 +
+#877
+b0 #
+b0 +
+#886
+b100 #
+b100 +
+#899
+b0 #
+b0 +
+#908
+b100 #
+b100 +
+#921
+b0 #
+b0 +
+#930
+b100 #
+b100 +
+#943
+b0 #
+b0 +
+#952
+b100 #
+b100 +
+#965
+b0 #
+b0 +
+#974
+b100 #
+b100 +
+#987
+b0 #
+b0 +
+#996
+b100 #
+b100 +
+#1009
+b0 #
+b0 +
+#1018
+b100 #
+b100 +

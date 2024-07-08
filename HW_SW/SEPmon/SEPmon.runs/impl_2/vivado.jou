@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Jul  8 04:17:18 2024
+# Process ID: 18020
+# Current directory: C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmon.runs/impl_2
+# Command line: vivado.exe -log DEMO_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DEMO_wrapper.tcl -notrace
+# Log file: C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmon.runs/impl_2/DEMO_wrapper.vdi
+# Journal file: C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmon.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source DEMO_wrapper.tcl -notrace
