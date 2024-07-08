@@ -481,7 +481,7 @@ int atacar(struct pokemon* pkm1, struct pokemon* pkm2)
 }
 
 
-void resultado_ataque(int dano1, int turno, struct pokemon* pkm1){ /// a{adirle la entrada pokemon, para poder bajarle la vida a gengar
+void resultado_ataque(int dano1, int turno){
 
 	char string[50] = "";
 	char n[3] = "";
@@ -497,18 +497,7 @@ void resultado_ataque(int dano1, int turno, struct pokemon* pkm1){ /// a{adirle 
 		strcat(string, Grecibio);
 	}
 	else{
-
 		strcat(string, Nrecibio);
-		if (luminoso){
-			pkm1->vida -= dano1;
-			draw_hp_bar(pkm1->vida,pkm1->vida_max, 1);
-			display_string_in_box(luzzz);
-			delay_ms(500);
-			clear_box();
-			xil_printf("hay luz");
-
-		}
-
 	}
 
 
@@ -661,6 +650,14 @@ int batalla(struct pokemon* pkm1, struct pokemon* pkm2){
 				draw_hp_bar(pkm2->vida,pkm2->vida_max, 0);
 			}
 
+			if (luminoso){
+				pkm1->vida -= dano1;
+				draw_hp_bar(pkm1->vida,pkm1->vida_max, 1);
+				display_string_in_box(luzzz);
+				clear_box();
+				xil_printf("hay luz");
+
+			}
 
 			turno  = 0;
 		}
@@ -684,7 +681,7 @@ int batalla(struct pokemon* pkm1, struct pokemon* pkm2){
 
 		xil_printf("dano: %d", dano1);
 
-		resultado_ataque(dano1,turno, pkm1);
+		resultado_ataque(dano1,turno);
 
 
 

@@ -15072,3 +15072,954 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-29: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:24:06.669
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-29: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:39:43.862
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:39:43.879
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:39:43.880
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:39:43.884
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-07-08 05:39:43.885
+!MESSAGE Generating MD5 hash for file: C:\Users\gusta\OneDrive\Escritorio\SEPmon\SEPmonxdnt\export\SEPmonxdnt\sw\SEPmonxdnt\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:39:43.886
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:39:43.888
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:39:59.140
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Thread: Worker-35: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:39:59.146
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-35: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:39:59.147
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-35: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:39:59.151
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-35: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-07-08 05:39:59.152
+!MESSAGE Generating MD5 hash for file: C:\Users\gusta\OneDrive\Escritorio\SEPmon\SEPmonxdnt\export\SEPmonxdnt\sw\SEPmonxdnt\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:39:59.153
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-35: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:39:59.156
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-35: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:41:30.129
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Thread: Worker-35: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:41:30.136
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-35: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:41:30.137
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-35: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:41:30.142
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-35: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-07-08 05:41:30.142
+!MESSAGE Generating MD5 hash for file: C:\Users\gusta\OneDrive\Escritorio\SEPmon\SEPmonxdnt\export\SEPmonxdnt\sw\SEPmonxdnt\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:41:30.144
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-35: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:41:30.147
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-35: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:10.924
+!MESSAGE XSCT Command: [disconnect tcfchan#15], Thread: Thread-1188
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:10.930
+!MESSAGE XSCT command with result: [disconnect tcfchan#15], Result: [null, ]. Thread: Thread-1188
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:11.945
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:11.951
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#16]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:11.952
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:11.970
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:11.970
+!MESSAGE XSCT Command: [version -server], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:11.972
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:11.972
+!MESSAGE XSCT Command: [version], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:11.973
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:11.973
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:11.980
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:11.981
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:11.995
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:11.996
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.001
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.002
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.015
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.016
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.022
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.022
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.041
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.042
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.049
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.049
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.065
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.066
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.072
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.072
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.091
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.092
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.098
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.099
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.112
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.113
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FC88A" && level == 0}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.127
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FC88A" && level == 0}], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.127
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.129
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.130
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.143
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.144
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.232
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:12.233
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:15.249
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:15.273
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:15.291
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:15.292
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:15.304
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:15.305
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC88A-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:15.328
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC88A-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:15.330
+!MESSAGE XSCT Command: [fpga -file C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/bitstream/SEPmonxd.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:16.559
+!MESSAGE XSCT command with result: [fpga -file C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/bitstream/SEPmonxd.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:16.587
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:16.597
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:16.599
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:16.628
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, DEMO_wrapper_3]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:16.629
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:16.630
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:16.631
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:16.638
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:16.638
+!MESSAGE XSCT Command: [source C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/psinit/ps7_init.tcl], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:16.663
+!MESSAGE XSCT command with result: [source C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:16.664
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:17.079
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:17.080
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:17.132
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:17.133
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:17.141
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:17.142
+!MESSAGE XSCT Command: [dow C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/Debug/SEPmonlol.elf], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:18.590
+!MESSAGE XSCT command with result: [dow C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/Debug/SEPmonlol.elf], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:18.591
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:18.631
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:18.696
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:18.705
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:18.705
+!MESSAGE XSCT Command: [con], Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:42:18.729
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-34: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:45:10.633
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:45:10.640
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:45:10.641
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:45:10.646
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-07-08 05:45:10.647
+!MESSAGE Generating MD5 hash for file: C:\Users\gusta\OneDrive\Escritorio\SEPmon\SEPmonxdnt\export\SEPmonxdnt\sw\SEPmonxdnt\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:45:10.648
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:45:10.652
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:47:03.262
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Thread: Worker-39: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:47:03.268
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-39: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:47:03.269
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-39: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:47:03.275
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-39: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-07-08 05:47:03.275
+!MESSAGE Generating MD5 hash for file: C:\Users\gusta\OneDrive\Escritorio\SEPmon\SEPmonxdnt\export\SEPmonxdnt\sw\SEPmonxdnt\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:47:03.277
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-39: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:47:03.280
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-39: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:52:15.518
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:52:15.526
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:52:15.528
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:52:15.533
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-07-08 05:52:15.534
+!MESSAGE Generating MD5 hash for file: C:\Users\gusta\OneDrive\Escritorio\SEPmon\SEPmonxdnt\export\SEPmonxdnt\sw\SEPmonxdnt\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:52:15.536
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:52:15.539
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:53:57.111
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:53:57.116
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:53:57.117
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:53:57.121
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-07-08 05:53:57.122
+!MESSAGE Generating MD5 hash for file: C:\Users\gusta\OneDrive\Escritorio\SEPmon\SEPmonxdnt\export\SEPmonxdnt\sw\SEPmonxdnt\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:53:57.123
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:53:57.125
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:01.552
+!MESSAGE XSCT Command: [disconnect tcfchan#16], Thread: Thread-1380
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:01.556
+!MESSAGE XSCT command with result: [disconnect tcfchan#16], Result: [null, ]. Thread: Thread-1380
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.562
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.567
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#17]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.567
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.577
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.577
+!MESSAGE XSCT Command: [version -server], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.580
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.580
+!MESSAGE XSCT Command: [version], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.581
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.581
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.587
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.587
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.601
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.602
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.608
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.609
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.622
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.622
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.640
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.641
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.656
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.656
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.665
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.666
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.679
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.680
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.685
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.686
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.703
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.705
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.711
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.711
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.725
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.726
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FC88A" && level == 0}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.740
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FC88A" && level == 0}], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.741
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.742
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.744
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.756
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.757
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.850
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:02.851
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:05.864
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:05.881
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:05.890
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:05.890
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:05.906
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:05.907
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC88A-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:05.944
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC88A-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:05.945
+!MESSAGE XSCT Command: [fpga -file C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/bitstream/SEPmonxd.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.161
+!MESSAGE XSCT command with result: [fpga -file C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/bitstream/SEPmonxd.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.178
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.196
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.197
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.221
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, DEMO_wrapper_3]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.222
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.223
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.224
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.234
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.235
+!MESSAGE XSCT Command: [source C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/psinit/ps7_init.tcl], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.239
+!MESSAGE XSCT command with result: [source C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.239
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.648
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.648
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.654
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.655
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.663
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:07.664
+!MESSAGE XSCT Command: [dow C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/Debug/SEPmonlol.elf], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:09.121
+!MESSAGE XSCT command with result: [dow C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/Debug/SEPmonlol.elf], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:09.122
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:09.182
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:09.241
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:09.254
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:09.255
+!MESSAGE XSCT Command: [con], Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:54:09.279
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-31: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:37.038
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:37.043
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:37.044
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:37.049
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-07-08 05:56:37.050
+!MESSAGE Generating MD5 hash for file: C:\Users\gusta\OneDrive\Escritorio\SEPmon\SEPmonxdnt\export\SEPmonxdnt\sw\SEPmonxdnt\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:37.051
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:37.053
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:44.689
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Thread: Worker-44: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:44.696
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-44: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:44.697
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-44: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:44.702
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-44: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-07-08 05:56:44.703
+!MESSAGE Generating MD5 hash for file: C:\Users\gusta\OneDrive\Escritorio\SEPmon\SEPmonxdnt\export\SEPmonxdnt\sw\SEPmonxdnt\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:44.705
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-44: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:44.708
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-44: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:48.955
+!MESSAGE XSCT Command: [disconnect tcfchan#17], Thread: Thread-1446
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:48.976
+!MESSAGE XSCT command with result: [disconnect tcfchan#17], Result: [null, ]. Thread: Thread-1446
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:49.982
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:49.987
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#18]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:49.988
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.000
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.001
+!MESSAGE XSCT Command: [version -server], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.019
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.020
+!MESSAGE XSCT Command: [version], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.020
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.021
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.028
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.029
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.043
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.044
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.051
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.052
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.071
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.072
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.079
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.079
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.100
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.101
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.109
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.110
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.126
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.127
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.134
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.134
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.150
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.151
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.156
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.156
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.172
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.173
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FC88A" && level == 0}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.186
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FC88A" && level == 0}], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.187
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.188
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.197
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.209
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.210
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.292
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:50.293
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:53.301
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:53.316
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:53.324
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC88A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:53.325
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:53.341
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:53.342
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC88A-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:53.369
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC88A-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:53.370
+!MESSAGE XSCT Command: [fpga -file C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/bitstream/SEPmonxd.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:54.585
+!MESSAGE XSCT command with result: [fpga -file C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/bitstream/SEPmonxd.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:54.612
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:54.624
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:54.624
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:54.656
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, DEMO_wrapper_3]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:54.657
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:54.658
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:54.660
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:54.667
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:54.668
+!MESSAGE XSCT Command: [source C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/psinit/ps7_init.tcl], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:54.672
+!MESSAGE XSCT command with result: [source C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:54.672
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:55.079
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:55.080
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:55.095
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:55.096
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:55.113
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:55.115
+!MESSAGE XSCT Command: [dow C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/Debug/SEPmonlol.elf], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:56.607
+!MESSAGE XSCT command with result: [dow C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/Debug/SEPmonlol.elf], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:56.608
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:56.641
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:56.703
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:56.711
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:56.712
+!MESSAGE XSCT Command: [con], Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 05:56:56.733
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-42: Launching Debugger_SEPmonlol-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 06:10:40.807
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Thread: Worker-41: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 06:10:40.814
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-41: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 06:10:40.814
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-41: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 06:10:40.819
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-41: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-07-08 06:10:40.820
+!MESSAGE Generating MD5 hash for file: C:\Users\gusta\OneDrive\Escritorio\SEPmon\SEPmonxdnt\export\SEPmonxdnt\sw\SEPmonxdnt\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 06:10:40.821
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Thread: Worker-41: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 06:10:40.824
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-41: Build Project

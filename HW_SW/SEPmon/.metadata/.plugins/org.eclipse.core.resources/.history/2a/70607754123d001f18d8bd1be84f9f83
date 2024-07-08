@@ -36,7 +36,7 @@ int init_IIC() {
 		SendBuffer[0] = 0x82;
 		XIic_Send(iic.BaseAddress,TMP_ADDR,(u8 *)&SendBuffer, 1,XIIC_REPEATED_START);
 
-		u8 config3[3] = {0x01, 0xc4, 0x18};
+		u8 config3[3] = {0x01, 0xc4, 0x18}; //interrupt bit 1
 		XIic_Send(iic.BaseAddress,OPT_ADDR,(u8 *)&config3, 3, XIIC_STOP);
 
     return XST_SUCCESS;
@@ -53,7 +53,7 @@ int read_tmp(){
 
 int read_opt(){
     if(Start == 1){
-        u8 config3[3] = {0x01, 0xc4, 0x18};
+        u8 config3[3] = {0x01, 0xc4, 0x18}; //interrupt bit 1
         XIic_Send(iic.BaseAddress,OPT_ADDR,(u8 *)&config3, 3, XIIC_STOP);
 
 
@@ -75,7 +75,6 @@ int read_opt(){
         SendBuffer_hig[0] = 0x03;
 		XIic_Send(iic.BaseAddress,OPT_ADDR,(u8 *)&SendBuffer_hig, 1, XIIC_REPEATED_START);
 		XIic_Recv(iic.BaseAddress,OPT_ADDR,(u8 *)&RecvBuffer, 2, XIIC_STOP);
-
         Start = 0;
     }
 
@@ -89,8 +88,8 @@ int read_opt(){
 
 }
 
-void clearOptIntr(){ // cambiar nombre a reiniciar sensor
-	u8 config3[3] = {0x01, 0xc4, 0x18};
+void clearOptIntr(){
+	u8 config3[3] = {0x01, 0xc4, 0x18}; //interrupt bit 1
 	XIic_Send(iic.BaseAddress,OPT_ADDR,(u8 *)&config3, 3, XIIC_STOP);
 
     SendBuffer[0] = 0x01;

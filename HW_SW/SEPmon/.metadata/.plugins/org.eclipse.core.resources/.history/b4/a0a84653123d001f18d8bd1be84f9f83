@@ -481,7 +481,7 @@ int atacar(struct pokemon* pkm1, struct pokemon* pkm2)
 }
 
 
-void resultado_ataque(int dano1, int turno, struct pokemon* pkm1){ /// a{adirle la entrada pokemon, para poder bajarle la vida a gengar
+void resultado_ataque(int dano1, int turno){ /// a{adirle la entrada pokemon, para poder bajarle la vida a gengar
 
 	char string[50] = "";
 	char n[3] = "";
@@ -684,7 +684,7 @@ int batalla(struct pokemon* pkm1, struct pokemon* pkm2){
 
 		xil_printf("dano: %d", dano1);
 
-		resultado_ataque(dano1,turno, pkm1);
+		resultado_ataque(dano1,turno);
 
 
 

@@ -14,5 +14,4 @@ char sdano[40] = " de dano";
 char win[40] = "Felicidades ganaste!!!";
 char lose[40] = "Lastima :(, para la proxima sera.";
 char luzin[60] = "Hay mucha luz, Gengar perdera 10 de vida cada turno";
-char luzout[60] = "Se fue la luz, Gengar ya no perdera vida";
 char luzzz[40] = "Gengar pierde 10 de vida por la luz";

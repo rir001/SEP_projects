@@ -672,3 +672,151 @@ con
 ----------------End of Script----------------
 
 05:24:06 INFO  : Launch script is exported to file 'C:\Users\gusta\OneDrive\Escritorio\SEPmon\.sdk\launch_scripts\single_application_debug\debugger_sepmonlol-default.tcl'
+05:39:43 INFO  : Checking for BSP changes to sync application flags for project 'SEPmonlol'...
+05:39:59 INFO  : Checking for BSP changes to sync application flags for project 'SEPmonlol'...
+05:41:30 INFO  : Checking for BSP changes to sync application flags for project 'SEPmonlol'...
+05:42:10 INFO  : Disconnected from the channel tcfchan#15.
+05:42:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:42:12 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC88A' is selected.
+05:42:12 INFO  : 'jtag frequency' command is executed.
+05:42:12 INFO  : Context for 'APU' is selected.
+05:42:12 INFO  : System reset is completed.
+05:42:15 INFO  : 'after 3000' command is executed.
+05:42:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC88A-13722093-0"}' command is executed.
+05:42:16 INFO  : FPGA configured successfully with bitstream "C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/bitstream/SEPmonxd.bit"
+05:42:16 INFO  : Context for 'APU' is selected.
+05:42:16 INFO  : Hardware design and registers information is loaded from 'C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa'.
+05:42:16 INFO  : 'configparams force-mem-access 1' command is executed.
+05:42:16 INFO  : Context for 'APU' is selected.
+05:42:16 INFO  : Sourcing of 'C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/psinit/ps7_init.tcl' is done.
+05:42:17 INFO  : 'ps7_init' command is executed.
+05:42:17 INFO  : 'ps7_post_config' command is executed.
+05:42:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+05:42:18 INFO  : The application 'C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/Debug/SEPmonlol.elf' is downloaded to processor 'ps7_cortexa9_0'.
+05:42:18 INFO  : 'configparams force-mem-access 0' command is executed.
+05:42:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC88A-13722093-0"}
+fpga -file C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/bitstream/SEPmonxd.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/Debug/SEPmonlol.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+05:42:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+05:42:18 INFO  : 'con' command is executed.
+05:42:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+05:42:18 INFO  : Launch script is exported to file 'C:\Users\gusta\OneDrive\Escritorio\SEPmon\.sdk\launch_scripts\single_application_debug\debugger_sepmonlol-default.tcl'
+05:45:10 INFO  : Checking for BSP changes to sync application flags for project 'SEPmonlol'...
+05:47:03 INFO  : Checking for BSP changes to sync application flags for project 'SEPmonlol'...
+05:52:15 INFO  : Checking for BSP changes to sync application flags for project 'SEPmonlol'...
+05:53:57 INFO  : Checking for BSP changes to sync application flags for project 'SEPmonlol'...
+05:54:01 INFO  : Disconnected from the channel tcfchan#16.
+05:54:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:54:02 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC88A' is selected.
+05:54:02 INFO  : 'jtag frequency' command is executed.
+05:54:02 INFO  : Context for 'APU' is selected.
+05:54:02 INFO  : System reset is completed.
+05:54:05 INFO  : 'after 3000' command is executed.
+05:54:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC88A-13722093-0"}' command is executed.
+05:54:07 INFO  : FPGA configured successfully with bitstream "C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/bitstream/SEPmonxd.bit"
+05:54:07 INFO  : Context for 'APU' is selected.
+05:54:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa'.
+05:54:07 INFO  : 'configparams force-mem-access 1' command is executed.
+05:54:07 INFO  : Context for 'APU' is selected.
+05:54:07 INFO  : Sourcing of 'C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/psinit/ps7_init.tcl' is done.
+05:54:07 INFO  : 'ps7_init' command is executed.
+05:54:07 INFO  : 'ps7_post_config' command is executed.
+05:54:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+05:54:09 INFO  : The application 'C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/Debug/SEPmonlol.elf' is downloaded to processor 'ps7_cortexa9_0'.
+05:54:09 INFO  : 'configparams force-mem-access 0' command is executed.
+05:54:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC88A-13722093-0"}
+fpga -file C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/bitstream/SEPmonxd.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/Debug/SEPmonlol.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+05:54:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+05:54:09 INFO  : 'con' command is executed.
+05:54:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+05:54:09 INFO  : Launch script is exported to file 'C:\Users\gusta\OneDrive\Escritorio\SEPmon\.sdk\launch_scripts\single_application_debug\debugger_sepmonlol-default.tcl'
+05:56:37 INFO  : Checking for BSP changes to sync application flags for project 'SEPmonlol'...
+05:56:44 INFO  : Checking for BSP changes to sync application flags for project 'SEPmonlol'...
+05:56:48 INFO  : Disconnected from the channel tcfchan#17.
+05:56:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:56:50 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC88A' is selected.
+05:56:50 INFO  : 'jtag frequency' command is executed.
+05:56:50 INFO  : Context for 'APU' is selected.
+05:56:50 INFO  : System reset is completed.
+05:56:53 INFO  : 'after 3000' command is executed.
+05:56:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC88A-13722093-0"}' command is executed.
+05:56:54 INFO  : FPGA configured successfully with bitstream "C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/bitstream/SEPmonxd.bit"
+05:56:54 INFO  : Context for 'APU' is selected.
+05:56:54 INFO  : Hardware design and registers information is loaded from 'C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa'.
+05:56:54 INFO  : 'configparams force-mem-access 1' command is executed.
+05:56:54 INFO  : Context for 'APU' is selected.
+05:56:54 INFO  : Sourcing of 'C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/psinit/ps7_init.tcl' is done.
+05:56:55 INFO  : 'ps7_init' command is executed.
+05:56:55 INFO  : 'ps7_post_config' command is executed.
+05:56:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+05:56:56 INFO  : The application 'C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/Debug/SEPmonlol.elf' is downloaded to processor 'ps7_cortexa9_0'.
+05:56:56 INFO  : 'configparams force-mem-access 0' command is executed.
+05:56:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC88A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC88A-13722093-0"}
+fpga -file C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/bitstream/SEPmonxd.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/hw/SEPmonxd.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonlol/Debug/SEPmonlol.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+05:56:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+05:56:56 INFO  : 'con' command is executed.
+05:56:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+05:56:56 INFO  : Launch script is exported to file 'C:\Users\gusta\OneDrive\Escritorio\SEPmon\.sdk\launch_scripts\single_application_debug\debugger_sepmonlol-default.tcl'
+06:10:40 INFO  : Checking for BSP changes to sync application flags for project 'SEPmonlol'...
