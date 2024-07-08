@@ -1,3 +1,4 @@
+char sincio[40] = "Press btno 0";
 char nidorinoin[40] = "Te haz encontrado con un Nidorino!!!";
 char gengarin[40] = "Ve Gengar!!!";
 char iniciopelea[40] = "Que deberia hacer Gengar?";

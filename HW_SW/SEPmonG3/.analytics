@@ -662,3 +662,21 @@ timestamp=[2024-07-07 23:02:00], mode=BUILD, duration=0:00:00.444, duration_ms=4
 timestamp=[2024-07-07 23:03:15], mode=BUILD, duration=0:00:01.115, duration_ms=1115, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
 timestamp=[2024-07-07 23:05:58], mode=BUILD, duration=0:00:01.129, duration_ms=1129, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
 timestamp=[2024-07-07 23:28:53], mode=BUILD, duration=0:00:01.572, duration_ms=1572, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
+timestamp=[2024-07-08 03:43:11], mode=WORKBENCH_START, duration=0:00:16.141, duration_ms=16141, data={}
+timestamp=[2024-07-08 03:43:12], mode=WORKBENCH_UI_INIT, duration=0:00:01.509, duration_ms=1509, data={editors_count=7, platform_editors_count=4, projects_count=10, platform_projects_count=3, active_platform_editor=false, projects=RemoteSystemsTempFiles,SEPmonG3,SEPmonG3V3,SEPmonG3V3_SW,SEPmonG3V3_SW_system,SEPmonG3V4,SEPmonG3V4_SW,SEPmonG3V4_SW_system,SEPmon_SW,SEPmon_SW_system}
+timestamp=[2024-07-08 03:43:13], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.195, duration_ms=195, data={}
+timestamp=[2024-07-08 03:43:51], mode=PLATFORM_GENERATION, duration=0:00:33.629, duration_ms=33629, data={name=SEPmonG3V4}
+timestamp=[2024-07-08 03:44:00], mode=BUILD, duration=0:00:05.742, duration_ms=5742, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
+timestamp=[2024-07-08 03:44:36], mode=BUILD, duration=0:00:01.412, duration_ms=1412, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
+timestamp=[2024-07-08 03:45:10], mode=BUILD, duration=0:00:02.792, duration_ms=2792, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
+timestamp=[2024-07-08 04:55:13], mode=BUILD, duration=0:00:00.521, duration_ms=521, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
+timestamp=[2024-07-08 04:56:41], mode=BUILD, duration=0:00:00.449, duration_ms=449, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
+timestamp=[2024-07-08 04:57:19], mode=BUILD, duration=0:00:01.203, duration_ms=1203, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
+timestamp=[2024-07-08 05:01:42], mode=BUILD, duration=0:00:00.871, duration_ms=871, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
+timestamp=[2024-07-08 05:02:06], mode=BUILD, duration=0:00:00.709, duration_ms=709, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
+timestamp=[2024-07-08 05:02:38], mode=BUILD, duration=0:00:00.636, duration_ms=636, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
+timestamp=[2024-07-08 05:02:58], mode=BUILD, duration=0:00:00.694, duration_ms=694, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
+timestamp=[2024-07-08 05:03:47], mode=BUILD, duration=0:00:01.138, duration_ms=1138, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
+timestamp=[2024-07-08 05:04:23], mode=BUILD, duration=0:00:01.338, duration_ms=1338, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
+timestamp=[2024-07-08 05:06:02], mode=BUILD, duration=0:00:01.349, duration_ms=1349, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}
+timestamp=[2024-07-08 05:07:24], mode=BUILD, duration=0:00:01.565, duration_ms=1565, data={name=SEPmonG3V4_SW, configuration=Debug, clean_build=false}

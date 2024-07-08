@@ -19,7 +19,8 @@ C_SRCS += \
 ../src/font24.c \
 ../src/font8.c \
 ../src/main.c \
-../src/platform.c 
+../src/platform.c \
+../src/sdCard.c 
 
 OBJS += \
 ./src/ADC.o \
@@ -34,7 +35,8 @@ OBJS += \
 ./src/font24.o \
 ./src/font8.o \
 ./src/main.o \
-./src/platform.o 
+./src/platform.o \
+./src/sdCard.o 
 
 C_DEPS += \
 ./src/ADC.d \
@@ -49,7 +51,8 @@ C_DEPS += \
 ./src/font24.d \
 ./src/font8.d \
 ./src/main.d \
-./src/platform.d 
+./src/platform.d \
+./src/sdCard.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

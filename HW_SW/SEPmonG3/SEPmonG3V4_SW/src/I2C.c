@@ -31,11 +31,8 @@ int init_IIC() {
 		SendBuffer[0] = 0x82;
 		XIic_Send(iic.BaseAddress,TMP_ADDR,(u8 *)&SendBuffer, 1,XIIC_REPEATED_START);
 
-		u8 lower[3] = {0x02, 0x00, 0x01};
-		XIic_Send(iic.BaseAddress,OPT_ADDR,(u8 *)&lower, 3, XIIC_STOP);
-
-		u8 higher[3] = {0x03, 0xFF, 0xFF};
-		XIic_Send(iic.BaseAddress,OPT_ADDR,(u8 *)&higher, 3, XIIC_STOP);
+		u8 config[3] = {0x01, 0xc4, 0x10};
+		XIic_Send(iic.BaseAddress,OPT_ADDR,(u8 *)&config, 3, XIIC_STOP);
 
     return XST_SUCCESS;
 }
@@ -62,6 +59,8 @@ int read_opt(){
 	XIic_Send(iic.BaseAddress,OPT_ADDR,(u8 *)&SendBuffer, 1, XIIC_REPEATED_START);
 	XIic_Recv(iic.BaseAddress,OPT_ADDR,(u8 *)&RecvBuffer, 2, XIIC_STOP);
 	Lux = (int)((RecvBuffer[0])*256 + (RecvBuffer[1]));
+
+
 
 	return Lux;
 }

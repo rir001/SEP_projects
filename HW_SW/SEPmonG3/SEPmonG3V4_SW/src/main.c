@@ -763,7 +763,7 @@ int init(){
 	XTmrCtr_SetOptions(&TmrDano, TIMER_CNTR_0, XTC_INT_MODE_OPTION | XTC_AUTO_RELOAD_OPTION );
 
 	xil_printf("ccc\r\n");
-	Status = IntcInitFunction(INTC_DEVICE_ID,  &TmrMusic, &TmrScreen, &TmrDano);
+
 
 	xil_printf("lol\r\n");
 	if(Status != XST_SUCCESS) return XST_FAILURE;
@@ -795,8 +795,10 @@ int init(){
 		xil_printf("IIC Mode Failed\r\n");
 		return XST_FAILURE;
 	}
+
+	int a = read_opt();
 	//Write through UART to PC
-	xil_printf("TFT initialized \r\n");
+	xil_printf("light %d \r\n", a);
 	xil_printf("**********Init LCD**********\r\n");
 	// Init screen
 	LCD_SCAN_DIR LCD_ScanDir = SCAN_DIR_DFT;//SCAN_DIR_DFT = D2U_L2R
@@ -813,6 +815,7 @@ int init(){
 
 	//delay_ms(500);
 
+	Status = IntcInitFunction(INTC_DEVICE_ID,  &TmrMusic, &TmrScreen, &TmrDano);
 
 	LCD_Clear(BACKGROUND);
 
@@ -824,6 +827,8 @@ int init(){
 int main()
 {
 	int Status;
+
+
 
 
 

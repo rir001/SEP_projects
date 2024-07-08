@@ -24,6 +24,12 @@ src/main.o src/main.o: ../src/main.c \
  ../src/ADC.h ../src/I2C.h \
  C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/xiic.h \
  C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/xiic_l.h \
+ ../src/sdCard.h \
+ C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/xil_types.h \
+ C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/ff.h \
+ C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/integer.h \
+ C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/ffconf.h \
+ C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/xil_cache.h \
  C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/xil_io.h \
  C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/xtmrctr.h \
  C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/xtmrctr_l.h \
@@ -94,6 +100,18 @@ C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmon
 C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/xiic.h:
 
 C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/xiic_l.h:
+
+../src/sdCard.h:
+
+C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/xil_types.h:
+
+C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/ff.h:
+
+C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/integer.h:
+
+C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/ffconf.h:
+
+C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/xil_cache.h:
 
 C:/Users/gusta/OneDrive/Escritorio/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/bspinclude/include/xil_io.h:
 
