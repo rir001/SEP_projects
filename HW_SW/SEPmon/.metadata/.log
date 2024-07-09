@@ -10201,3 +10201,23 @@ error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thr
 
 !ENTRY com.xilinx.sdk.utils 0 0 2024-07-08 22:16:08.786
 !MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmon/export/SEPmon/sw/SEPmon/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY org.eclipse.tcf 4 0 2024-07-08 22:18:22.530
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2024-07-08 22:18:22.531
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)

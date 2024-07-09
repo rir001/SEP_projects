@@ -1,10 +1,0 @@
-2024-07-08T19:21:24.471732700255-19:21:24 **** Incremental Build of configuration Debug for project SEPmonlol ****
-000-make all 
-000-make --no-print-directory pre-build
-000-a9-linaro-pre-build-step
-000-' '
-000-make --no-print-directory main-build
-000-make[1]: Nothing to be done for 'main-build'.
-00255-
-19:21:24 Build Finished (took 440ms)
-
