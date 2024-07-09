@@ -1,0 +1,9 @@
+TRACE::2024-07-08.21:53:11::SCWBifWriter::Found the complete platform C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmon/export/SEPmon/SEPmon.xpfm
+TRACE::2024-07-08.21:53:11::SCWBifWriter::hardware databse : DEMO_wrapper_10
+TRACE::2024-07-08.21:53:11::SCWBifWriter::bitstream found in the design
+TRACE::2024-07-08.21:53:11::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2024-07-08.21:53:11::SCWBifWriter::proc type : 
+TRACE::2024-07-08.21:53:11::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2024-07-08.21:53:11::SCWBifWriter::Device type is : zynq
+TRACE::2024-07-08.21:53:11::SCWBifWriter::Writing BIF to file : C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonSW_system/_ide/bootimage/template_SEPmonSW_system.bif
+TRACE::2024-07-08.21:53:11::SCWBifWriter::Writing the Zynq Baremetal bif 

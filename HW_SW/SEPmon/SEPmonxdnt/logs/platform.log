@@ -4474,3 +4474,622 @@ TRACE::2024-07-08.18:38:11::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documen
 C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_0||
 
 TRACE::2024-07-08.18:38:11::SCWMssOS::Sw design exists and opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:20::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:20::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:20::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:20::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:20::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:20::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:20::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_2
+TRACE::2024-07-08.19:10:20::SCWPlatform::Opened existing hwdb DEMO_wrapper_2
+TRACE::2024-07-08.19:10:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:20::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/tempdsa/SEPmon.xsa
+TRACE::2024-07-08.19:10:20::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/tempdsa/SEPmon.xsa
+TRACE::2024-07-08.19:10:20::SCWPlatform:: Platform location is C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/tempdsa
+TRACE::2024-07-08.19:10:20::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/tempdsa/SEPmon.xsa
+TRACE::2024-07-08.19:10:20::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:22::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2024-07-08.19:10:22::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:22::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:22::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_2
+TRACE::2024-07-08.19:10:22::SCWPlatform::Opened existing hwdb DEMO_wrapper_2
+TRACE::2024-07-08.19:10:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:22::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:22::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:22::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_2
+TRACE::2024-07-08.19:10:22::SCWPlatform::Opened existing hwdb DEMO_wrapper_2
+TRACE::2024-07-08.19:10:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:22::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:22::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_0||
+
+TRACE::2024-07-08.19:10:22::SCWMssOS::Sw design exists and opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:22::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/tempdsa/SEPmon.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/tempdsa/SEPmon.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/tempdsa/SEPmon.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/tempdsa
+TRACE::2024-07-08.19:10:22::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/tempdsa/SEPmon.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:22::SCWPlatform::update - Opened existing hwdb DEMO_wrapper_3
+TRACE::2024-07-08.19:10:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:22::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2024-07-08.19:10:22::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:22::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:22::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_2
+TRACE::2024-07-08.19:10:22::SCWPlatform::Opened existing hwdb DEMO_wrapper_2
+TRACE::2024-07-08.19:10:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:22::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:22::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmonxd.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:22::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_2
+TRACE::2024-07-08.19:10:22::SCWPlatform::Opened existing hwdb DEMO_wrapper_2
+TRACE::2024-07-08.19:10:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:22::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:22::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_0||
+
+TRACE::2024-07-08.19:10:22::SCWMssOS::Sw design exists and opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:22::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/tempdsa/SEPmon.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/tempdsa/SEPmon.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/tempdsa/SEPmon.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/tempdsa
+TRACE::2024-07-08.19:10:22::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/tempdsa/SEPmon.xsa
+TRACE::2024-07-08.19:10:22::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:22::SCWPlatform::update - Opened existing hwdb DEMO_wrapper_3
+TRACE::2024-07-08.19:10:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:22::SCWMssOS::Saving the mss changes C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:22::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-08.19:10:22::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-08.19:10:22::SCWMssOS::Commit changes completed.
+TRACE::2024-07-08.19:10:22::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2024-07-08.19:10:22::SCWMssOS::Removing the swdes entry for  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:22::SCWMssOS::Saving the mss changes C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:22::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-08.19:10:22::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-08.19:10:22::SCWMssOS::Commit changes completed.
+TRACE::2024-07-08.19:10:22::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2024-07-08.19:10:22::SCWMssOS::Removing the swdes entry for  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:23::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:23::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:23::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:23::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:23::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:23::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:23::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-07-08.19:10:25::SCWPlatform::Opened new HwDB with name DEMO_wrapper_4
+TRACE::2024-07-08.19:10:25::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:25::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:25::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:25::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:25::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:25::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:25::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_4
+TRACE::2024-07-08.19:10:25::SCWPlatform::Opened existing hwdb DEMO_wrapper_4
+TRACE::2024-07-08.19:10:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:25::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:25::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-07-08.19:10:25::SCWMssOS::No sw design opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:25::SCWMssOS::mss exists loading the mss file  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:25::SCWMssOS::Opened the sw design from mss  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:25::SCWMssOS::Adding the swdes entry C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-07-08.19:10:25::SCWMssOS::updating the scw layer about changes
+TRACE::2024-07-08.19:10:25::SCWMssOS::Opened the sw design.  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:25::SCWMssOS::Saving the mss changes C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:25::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-08.19:10:25::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-08.19:10:25::SCWMssOS::Commit changes completed.
+TRACE::2024-07-08.19:10:25::SCWMssOS::Saving the mss changes C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:25::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2024-07-08.19:10:25::SCWMssOS::Writing the mss file completed C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:25::SCWMssOS::Commit changes completed.
+TRACE::2024-07-08.19:10:25::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:25::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:25::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:25::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:25::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:25::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:25::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_4
+TRACE::2024-07-08.19:10:25::SCWPlatform::Opened existing hwdb DEMO_wrapper_4
+TRACE::2024-07-08.19:10:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:25::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:25::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-08.19:10:25::SCWMssOS::Sw design exists and opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:25::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:25::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:25::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:25::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:25::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:25::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:25::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_4
+TRACE::2024-07-08.19:10:25::SCWPlatform::Opened existing hwdb DEMO_wrapper_4
+TRACE::2024-07-08.19:10:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:25::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:25::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-08.19:10:25::SCWMssOS::Sw design exists and opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:25::SCWWriter::formatted JSON is {
+	"platformName":	"SEPmonxdnt",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"SEPmonxdnt",
+	"platHandOff":	"C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmon.xsa",
+	"platIntHandOff":	"<platformDir>/hw/SEPmon.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"SEPmonxdnt",
+	"systems":	[{
+			"systemName":	"SEPmonxdnt",
+			"systemDesc":	"SEPmonxdnt",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"SEPmonxdnt",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"ef619e9a4ad96eea5de71fb93ea32396",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"53e8e6f8e558097a392821293de232e9",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-07-08.19:10:27::SCWPlatform::Clearing the existing platform
+TRACE::2024-07-08.19:10:27::SCWSystem::Clearing the existing sysconfig
+TRACE::2024-07-08.19:10:27::SCWBDomain::clearing the fsbl build
+TRACE::2024-07-08.19:10:27::SCWMssOS::Removing the swdes entry for  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:27::SCWMssOS::Removing the swdes entry for  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:27::SCWSystem::Clearing the domains completed.
+TRACE::2024-07-08.19:10:27::SCWPlatform::Clearing the opened hw db.
+TRACE::2024-07-08.19:10:27::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:27::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:27::SCWPlatform:: Platform location is C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:27::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:27::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:27::SCWPlatform::Removing the HwDB with name C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:27::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:27::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:27::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:27::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:27::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:27::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:27::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-07-08.19:10:29::SCWPlatform::Opened new HwDB with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWReader::Active system found as  SEPmonxdnt
+TRACE::2024-07-08.19:10:29::SCWReader::Handling sysconfig SEPmonxdnt
+TRACE::2024-07-08.19:10:29::SCWDomain::checking for install qemu data   : 
+TRACE::2024-07-08.19:10:29::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2024-07-08.19:10:29::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2024-07-08.19:10:29::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:29::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:29::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:29::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:29::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:29::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:29::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:29::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:29::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:29::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-07-08.19:10:29::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:29::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:29::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:29::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:29::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-07-08.19:10:29::SCWMssOS::No sw design opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:29::SCWMssOS::mss exists loading the mss file  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:29::SCWMssOS::Opened the sw design from mss  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:29::SCWMssOS::Adding the swdes entry C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-07-08.19:10:29::SCWMssOS::updating the scw layer about changes
+TRACE::2024-07-08.19:10:29::SCWMssOS::Opened the sw design.  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:29::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:29::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:29::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:29::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:29::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-08.19:10:29::SCWMssOS::Sw design exists and opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:29::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2024-07-08.19:10:29::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:29::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:29::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:29::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:29::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-08.19:10:29::SCWMssOS::Sw design exists and opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:29::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2024-07-08.19:10:29::SCWMssOS::Saving the mss changes C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:29::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-08.19:10:29::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-08.19:10:29::SCWMssOS::Commit changes completed.
+TRACE::2024-07-08.19:10:29::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-07-08.19:10:29::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-07-08.19:10:29::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:29::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:29::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:29::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:30::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-08.19:10:30::SCWMssOS::Sw design exists and opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:30::SCWReader::No isolation master present  
+TRACE::2024-07-08.19:10:30::SCWDomain::checking for install qemu data   : 
+TRACE::2024-07-08.19:10:30::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2024-07-08.19:10:30::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2024-07-08.19:10:30::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:30::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:30::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:30::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:30::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:30::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:30::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:30::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:30::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:30::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:30::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:30::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:30::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-08.19:10:30::SCWMssOS::No sw design opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:30::SCWMssOS::mss exists loading the mss file  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:30::SCWMssOS::Opened the sw design from mss  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:30::SCWMssOS::Adding the swdes entry C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2024-07-08.19:10:30::SCWMssOS::updating the scw layer about changes
+TRACE::2024-07-08.19:10:30::SCWMssOS::Opened the sw design.  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:30::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:30::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:30::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:30::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:30::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-08.19:10:30::SCWMssOS::Sw design exists and opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:30::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2024-07-08.19:10:30::SCWMssOS::Saving the mss changes C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:30::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-08.19:10:30::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-08.19:10:30::SCWMssOS::Commit changes completed.
+TRACE::2024-07-08.19:10:30::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-07-08.19:10:30::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-07-08.19:10:30::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:30::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:30::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:30::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:30::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:30::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-08.19:10:30::SCWMssOS::Sw design exists and opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:30::SCWReader::No isolation master present  
+LOG::2024-07-08.19:10:35::SCWPlatform::Started generating the artifacts platform SEPmonxdnt
+TRACE::2024-07-08.19:10:35::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-07-08.19:10:35::SCWPlatform::Started generating the artifacts for system configuration SEPmonxdnt
+LOG::2024-07-08.19:10:35::SCWSystem::Checking the domain zynq_fsbl
+LOG::2024-07-08.19:10:35::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2024-07-08.19:10:35::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-07-08.19:10:35::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2024-07-08.19:10:35::SCWSystem::Checking the domain standalone_domain
+LOG::2024-07-08.19:10:35::SCWSystem::Not a boot domain 
+LOG::2024-07-08.19:10:35::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-07-08.19:10:35::SCWDomain::Generating domain artifcats
+TRACE::2024-07-08.19:10:35::SCWMssOS::Generating standalone artifcats
+TRACE::2024-07-08.19:10:35::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/qemu/
+TRACE::2024-07-08.19:10:35::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/export/SEPmonxdnt/sw/SEPmonxdnt/standalone_domain/qemu/
+TRACE::2024-07-08.19:10:35::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-07-08.19:10:35::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:35::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:35::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:35::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:35::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:35::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-08.19:10:35::SCWMssOS::Sw design exists and opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:35::SCWMssOS::Completed writing the mss file at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2024-07-08.19:10:35::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:35::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-07-08.19:10:35::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-07-08.19:10:35::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2024-07-08.19:10:35::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-07-08.19:10:35::SCWMssOS::Copying to export directory.
+TRACE::2024-07-08.19:10:35::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-07-08.19:10:35::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-07-08.19:10:35::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-07-08.19:10:35::SCWSystem::Completed Processing the sysconfig SEPmonxdnt
+LOG::2024-07-08.19:10:35::SCWPlatform::Completed generating the artifacts for system configuration SEPmonxdnt
+TRACE::2024-07-08.19:10:35::SCWPlatform::Started preparing the platform 
+TRACE::2024-07-08.19:10:35::SCWSystem::Writing the bif file for system config SEPmonxdnt
+TRACE::2024-07-08.19:10:35::SCWSystem::dir created 
+TRACE::2024-07-08.19:10:35::SCWSystem::Writing the bif 
+TRACE::2024-07-08.19:10:35::SCWPlatform::Started writing the spfm file 
+TRACE::2024-07-08.19:10:35::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-07-08.19:10:35::SCWPlatform::Completed generating the platform
+TRACE::2024-07-08.19:10:35::SCWMssOS::Saving the mss changes C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:35::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-08.19:10:35::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-08.19:10:35::SCWMssOS::Commit changes completed.
+TRACE::2024-07-08.19:10:35::SCWMssOS::Saving the mss changes C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:35::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-08.19:10:35::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-08.19:10:35::SCWMssOS::Commit changes completed.
+TRACE::2024-07-08.19:10:35::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:35::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:35::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:35::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:35::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:35::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-08.19:10:35::SCWMssOS::Sw design exists and opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-08.19:10:35::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:35::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:35::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:35::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:35::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:35::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-08.19:10:35::SCWMssOS::Sw design exists and opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:35::SCWWriter::formatted JSON is {
+	"platformName":	"SEPmonxdnt",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"SEPmonxdnt",
+	"platHandOff":	"C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmon.xsa",
+	"platIntHandOff":	"<platformDir>/hw/SEPmon.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"SEPmonxdnt",
+	"systems":	[{
+			"systemName":	"SEPmonxdnt",
+			"systemDesc":	"SEPmonxdnt",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"SEPmonxdnt",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"ef619e9a4ad96eea5de71fb93ea32396",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"53e8e6f8e558097a392821293de232e9",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-07-08.19:10:35::SCWPlatform::updated the xpfm file.
+TRACE::2024-07-08.19:10:35::SCWPlatform::Trying to open the hw design at C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform::DSA given C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform::DSA absoulate path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform::DSA directory C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw
+TRACE::2024-07-08.19:10:35::SCWPlatform:: Platform Path C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/hw/SEPmon.xsa
+TRACE::2024-07-08.19:10:35::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-08.19:10:35::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper_5
+TRACE::2024-07-08.19:10:35::SCWPlatform::Opened existing hwdb DEMO_wrapper_5
+TRACE::2024-07-08.19:10:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-08.19:10:35::SCWMssOS::Checking the sw design at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-08.19:10:35::SCWMssOS::DEBUG:  swdes dump  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-08.19:10:35::SCWMssOS::Sw design exists and opened at  C:/Users/gusta/Documents/SEP_projects/HW_SW/SEPmon/SEPmonxdnt/ps7_cortexa9_0/standalone_domain/bsp/system.mss
