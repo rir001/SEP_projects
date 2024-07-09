@@ -118,7 +118,7 @@ void GUI_DrawRectangle(POINT Xstart, POINT Ystart, POINT Xend, POINT Yend,
        Xend > sLCD_DIS.LCD_Dis_Column || Yend > sLCD_DIS.LCD_Dis_Page) {
         return;
     }
-	
+
     if(Xstart > Xend)
         GUI_Swop(Xstart,Xend);
     if(Ystart > Yend)
@@ -351,19 +351,19 @@ function:	LCD_Show
 parameter:
 ********************************************************************************/
 void GUI_Show(void)
-{	
+{
 	LCD_Clear(GUI_BACKGROUND);
-	
+
 	printf("GUI Draw Line \r\n");
 	GUI_DrawLine(0, 10, sLCD_DIS.LCD_Dis_Column, 10, RED,LINE_SOLID, DOT_PIXEL_2X2);
-	//GUI_DrawLine(0, sLCD_DIS.LCD_Dis_Page - 10, sLCD_DIS.LCD_Dis_Column, sLCD_DIS.LCD_Dis_Page - 10, RED,LINE_SOLID, DOT_PIXEL_2X2);	
+	//GUI_DrawLine(0, sLCD_DIS.LCD_Dis_Page - 10, sLCD_DIS.LCD_Dis_Column, sLCD_DIS.LCD_Dis_Page - 10, RED,LINE_SOLID, DOT_PIXEL_2X2);
 	GUI_DrawLine(0, 20, sLCD_DIS.LCD_Dis_Column, 20, RED,LINE_DOTTED, DOT_PIXEL_DFT);
 	//GUI_DrawLine(0, sLCD_DIS.LCD_Dis_Page - 20, sLCD_DIS.LCD_Dis_Column, sLCD_DIS.LCD_Dis_Page - 20, RED,LINE_DOTTED, DOT_PIXEL_DFT);
 
 	printf("GUI Draw Rectangle \r\n");
 	GUI_DrawRectangle(0,0,160,9,BLUE, DRAW_FULL, DOT_PIXEL_1X1);
 	//GUI_DrawRectangle(1,1,128,128,RED,DRAW_EMPTY,DOT_PIXEL_2X2);
-	
+
 	printf("GUI Draw Olympic Rings\r\n");
 	uint16_t Cx1 = 40, Cy1 = 85, Cr = 12;
 	uint16_t Cx2 = Cx1 + (2.5 * Cr), Cy2 = Cy1;
@@ -392,13 +392,18 @@ void GUI_Show(void)
 void GUI_INTRO(){
 	for (int y = 0; y < 128; y++) {
 	        for (int x = 0; x < 128; x++) {
-	            // Aquí puedes ajustar el tamaño del punto y el color si es necesario.
+	            // Aquï¿½ puedes ajustar el tamaï¿½o del punto y el color si es necesario.
 	            GUI_DrawPoint(x, y, intro[y][x], DOT_PIXEL_1X1, DOT_FILL_AROUND);
 	        }
 	    }
 }
 
-
+/********************************************************************************
+function:	print_image
+parameter:
+            image : image to print, first element is the coordinates of the image
+                    and size of the image
+********************************************************************************/
 void print_image(const int image[][3])
 {
     int x = image[0][1];
@@ -413,11 +418,21 @@ void print_image(const int image[][3])
     }
 }
 
+/********************************************************************************
+function:	draw_hp_bar
+parameter:
+            hp : current hp
+            max_hp : max hp
+            pokemon_id : 1 for player, 0 for enemy
+********************************************************************************/
 void draw_hp_bar(int hp, int max_hp, int pokemon_id)
 {
     int color, base_x, base_y;
 
+    // calcula el porcentaje de vida
     float percent = (float)hp / max_hp;
+
+    // selecciona el color de la barra
     if (percent > 0.5) {
         color = hp_green;
     } else if (percent > 0.2) {
@@ -426,6 +441,7 @@ void draw_hp_bar(int hp, int max_hp, int pokemon_id)
         color = hp_red;
     }
 
+    // selecciona la posiciï¿½n de la barra
     if (pokemon_id == 0) {
         base_y = 17;
         base_x =  10;
@@ -434,19 +450,22 @@ void draw_hp_bar(int hp, int max_hp, int pokemon_id)
         base_x = 74;
     }
 
+    // dibuja la barra
     for (int x = 0; x < (int)(48); x++) {
-		if (x > (int)(48 * percent)) {
+        // luego de cierto porcentaje, la barra se vuelve blanca
+		if (x >= (int)(48 * percent)) {
 			color = hp_white;
 		}
 		GUI_DrawPoint(base_x + x, base_y  , color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
 		GUI_DrawPoint(base_x + x, base_y+1, color, DOT_PIXEL_1X1, DOT_FILL_AROUND);
 	}
-
-
-
 }
 
-
+/********************************************************************************
+function:	display_string_in_box
+parameter:
+            string : string to display
+********************************************************************************/
 void display_string_in_box(const char *string) {
 
     long int len = strlen(string);
@@ -463,15 +482,13 @@ void display_string_in_box(const char *string) {
 
     for (int n = 0; n < len; n++)
     {
-
         large ++;
 
+        // si encuentra un espacio o llega al final de la lï¿½nea, imprime la palabra
         if (string[n+1] == ' ' | string[n+1] == '\0' | n == (line_large*3)-1+d)
         {
             for (int i = start; i <= n; i++) {
                 GUI_DisChar(x, y, string[i],&Font8, GUI_BACKGROUND, GUI_BACKGROUND );
-
-                // printf("%c", string[i]);
                 x = x + 5;
                 delay_ms(50);
             }
@@ -483,12 +500,11 @@ void display_string_in_box(const char *string) {
             }
         }
 
+        // si llega al final de la lï¿½nea, reinicia las variables y baja una lï¿½nea
         if (large == line_large)
         {
             x = 9;
             y = y + 10;
-
-            // printf("\n-------------------\n")
 
             if (string[n] == ' ') {
                 large = 0;
@@ -505,12 +521,13 @@ void display_string_in_box(const char *string) {
     }
 }
 
-
-
-
-
+/********************************************************************************
+function:	clear_box
+parameter:
+********************************************************************************/
 void clear_box()
 {
+    // limpia la caja de texto
     for (int x = 9; x < 120; x++)
     {
         for (int y = 90; y < 121; y++)
@@ -520,9 +537,14 @@ void clear_box()
     }
 }
 
-
+/********************************************************************************
+function:	draw_select_box
+parameter:
+            n : box to select
+********************************************************************************/
 void draw_select_box(int n)
 {
+    // dibuja las cajas de selecciï¿½n
     int data [4][3] = {
         {7 , 90 , 64},
         {7 , 105, 64},
@@ -537,6 +559,7 @@ void draw_select_box(int n)
         int x = data[i][0];
         int y = data[i][1];
 
+        // si es la caja seleccionada, el color es negro, si no, blanco
         if (i == n) {
             color = 0x0000;
         } else {
@@ -558,9 +581,14 @@ void draw_select_box(int n)
 }
 
 
-
+/********************************************************************************
+function:	draw_attacks
+parameter:
+********************************************************************************/
 void draw_attacks()
 {
+    // escribe los nombres de los ataques en el cuadrado de texto
+
     int x = 9;
     int y = 93;
     char *string = "NocheOscura";
